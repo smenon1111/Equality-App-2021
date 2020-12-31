@@ -1,3 +1,176 @@
 <resources>
-    <string name="app_name">Information App 2021</string>
+    <string name="app_name">Auxillium</string>
+    <string name="action_settings">Settings</string>
+    <string name="editText">Technovation 2020!</string>
+    <string name="SophiesButton">Sophies button</string>
+    <string name="AnirrasButton">Anirras Button</string>
+    <string name="profileButton">Profile</string>
+    <string name="infoButton">Info</string>
+    <string name="settingsButton">Settings</string>
+    <string name="levelsButton">Levels</string>
+    <string name="infoPage">this is info page</string>
+    <string name="levelNumberHome">Level 1: Shooting</string>
+    <string name="categoryHome">Public Disasters</string>
+    <string name="playText">P L A Y</string>
+    <string name="EmergencyMessage">Emergency Message</string>
+    <string name="AppName">Auxilium</string>
+    <string name="iAmSafe">I Am Safe</string>
+    <integer name="myScore">0</integer>
+    <string name="buttonEarthquake">Earthquake</string>
+
+    <string name="CPRtext">CPR</string>
+    <string name="strokeText">Stroke</string>
+    <string name="drowningText">Drowning</string>
+    <string name="chokingText">Choking</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="hello_world">hello world</string>
+
+
+    <string name="QuestionText">Question:</string>
+    <string name="YourAnswerText">Your Answer:</string>
+    <string name="CorrectIncorrectText">Correct/Incorrect:</string>
+
+    Info Page: Strings
+
+    CPR Strings
+    <string name="title_CPR">How to Perform CPR:</string>
+    <string name="step1_CPR">1.Call 911 or ask a bystander to call 911</string>
+    <string name="step2_CPR">2.Open their airway, to do this you can tilt their head back to slightly lift the chin while they are lying on their back</string>
+    <string name="step3_CPR">3.Check for breathing (for no more than 10 seconds), occasional gasping sounds does not mean they are breathing. If there is none, begin CPR</string>
+    <string name="step4_CPR">4.Place your hands, one on top of the other, in the middle of the chest. Use your body weight to administer compressions that are at least 2 inches deep and around 100 chest compressions per minute. Push hard and fast.</string>
+    <string name="step5_CPR">5.Deliver rescue breaths. With the person\'s head tilted back slightly and the chin lifted, pinch the nose shut and place your mouth over the person\'s mouth to make a complete seal. Blow into the person\'s mouth to make the chest rise. Deliver two rescue breaths, then continue compressions.</string>
+    <string name="step6_CPR">6.Continue CPR steps. Keep performing cycles of chest compressions and breathing until the person exhibits signs of life, such as breathing, an AED becomes available, or EMS or a trained medical responder arrives on scene.</string>
+    <string name="note1_CPR"> Note: If the chest does not rise with the initial rescue breath, re-tilt the head before delivering the second breath. If the chest doesn\'t rise with the second breath, the person may be choking. After each subsequent set of 30 chest compressions, and before attempting breaths, look for an object and, if seen, remove it.</string>
+    <string name="note2_CPR">  Note: End the cycles if the scene becomes unsafe or you cannot continueeath, the person may be choking. After each subsequent set of 30 chest compressions, and before attempting breaths, look for an object and, if seen, remove it.</string>
+
+    Stroke Strings
+    <string name = "title_Stroke">How to Tell if Someone is Having a Stroke:</string>
+    <string name = "beginningSentence_Stroke">Follow the acronym FAST.</string>
+    <string name = "F_Stroke">1. F – Face drooping. Is one side of the person’s face drooping or numb? When he or she smiles, is the smile uneven?</string>
+    <string name = "A_Stroke">2. A – Arm weakness. Is the person experiencing weakness or numbness in one arm? Have the person raise both arms. Does one of the arms drift downward?</string>
+    <string name = "S_Stroke">3. S – Speech difficulty. Is the person’s speech suddenly slurred or hard to understand? Is he or she unable to speak? Ask the person to repeat a simple sentence. Can he or she repeat it back?</string>
+    <string name = "T_Stroke">4. T – Time to call 9–1–1. If any of these symptoms are present, dial 9–1–1 immediately. Check the time so you can report when the symptoms began</string>
+
+    Choking Strings
+    <string name = "title_Choking">What To Do If Someone Is Choking:</string>
+    <string name = "subtitle_Choking">This is called the 5 on 5 method. Do this if a person can’t talk, laugh, cry, or cough forcefully.</string>
+    <string name = "step1_Choking">1. Give 5 back blows. Stand to the side and just behind a choking adult. For a child, kneel down behind. Place one arm across the person\'s chest for support. Bend the person over at the waist so that the upper body is parallel with the ground. Deliver five separate back blows between the person\'s shoulder blades with the heel of your hand.</string>
+    <string name = "step2_Choking">2. Give 5 abdominal thrusts. Perform five abdominal thrusts (also known as the Heimlich maneuver).</string>
+    <string name = "step3_Choking">3. Alternate between 5 blows and 5 thrusts until the blockage is dislodged.</string>
+
+    Drowning Strings
+    <string name = "title_Drowning">What To Do If Someone Has Drowned:</string>
+    <string name = "subtitle_Drowning">(is out of the water but unconscious)</string>
+    <string name = "step1_Drowning">1. Try to wake the casualty. Give them a good shake, or even pinch their earlobe. If they don’t show any signs of consciousness…</string>
+    <string name = "step2_Drowning">2. Lie them on t   heir back and tilt their chin and head backwards to help clear their airway. This could be enough to get them to start breathing. Check if they’re breathing by leaning over them and placing your cheek near their mouth. LOOK along their chest as you do this to see if their chest is rising and falling, FEEL for breath on your cheek and LISTEN for breathing sounds. If there is no sign of breath then you should…</string>
+    <string name = "step3_Drowning">3. Give them 5 rescue breaths. Pinch their nose and keep their head tilted back as you breathe into their mouth from yours, making as good a seal as you can with your mouth over theirs. Each breath you give them should last 1 second, and make sure that you take a good deep breath yourself in between each one. These breaths will get valuable oxygen into their lungs, which is particularly important in a drowned casualty. After you’ve done 5 rescue breaths try…</string>
+    <string name = "step4_Drowning">4. CPR.*see CPR page*</string>
+    <string name = "step5_Drowning">5. If you are on your own, then once you’ve done 5 rescue breaths and one minute of CPR you can take the time to call the emergency services. Hopefully you will have helped get some oxygen to their brain. But as soon as you have called for help, then continue:</string>
+    <string name = "step6_Drowning">6. 30 chest compressions followed by 2 rescue breaths over and over again until they start breathing normally or help arrives (if there’s more than one of you then take it in turns).</string>
+
+    <string name="Q1">You hear gunshots and see a shooter, what should you do?</string>
+    <string name="Q1_A1">Run and Escape</string>
+    <string name="Q1_A2">Grab your phone and other belongings</string>
+    <string name="Q1_A3">Call 911</string>
+    <string name="Q1_A4">Hide behind other people</string>
+
+    <string name="Q2">You start running and realize that there are no exits near you, what should you do?</string>
+    <string name="Q2_A1">Jump in front of the shooter to startle them</string>
+    <string name="Q2_A2">Maintain eye-contact with the shooter</string>
+    <string name="Q2_A3">Hide out of the shooter\'s view</string>
+    <string name="Q2_A4">Try to find your friends or another group of people</string>
+
+    <string name="Q3">The shooter is coming towards you and you can not escape, what should you do?</string>
+    <string name="Q3_A1">Scream</string>
+    <string name="Q3_A2">Stay still</string>
+    <string name="Q3_A3">Fight the shooter aggressively</string>
+    <string name="Q3_A4">Turn around and hope you are not seen</string>
+
+    <string name="Q4">The shooter falls to the ground, what should you do?</string>
+    <string name="Q4_A1">Run from the shooter and call 911</string>
+    <string name="Q4_A2">Post the story on social media</string>
+    <string name="Q4_A3">Run from the shooter and call your family</string>
+    <string name="Q4_A4">Call your best friend</string>
+
+    <string name="S1_End">Good Try!</string>
+    <string name="S1_Congrats">Congratulations!</string>
+    <string name="S1_Try">Try harder.</string>
+    <string name="Blank"> </string>
+
+    <string name="Q1Earthquake">You feel an earthquake, what should you do?</string>
+    <string name="Q1_A1Earthquake">Run outside</string>
+    <string name="Q1_A2Earthquake">Get under a roof</string>
+    <string name="Q1_A3Earthquake">Drop to the ground</string>
+    <string name="Q1_A4Earthquake">Panic</string>
+
+    <string name="Q2Earthquake">What should you do next?</string>
+    <string name="Q2_A1Earthquake">Cover your neck and head, and get under a table</string>
+    <string name="Q2_A2Earthquake">Call your parents</string>
+    <string name="Q2_A3Earthquake">Scream for help</string>
+    <string name="Q2_A4Earthquake">Hide under a glass table</string>
+
+    <string name="Q3Earthquake">What should you do next?</string>
+    <string name="Q3_A1Earthquake">Hold onto a sturdy object</string>
+    <string name="Q3_A2Earthquake">Run for help</string>
+    <string name="Q3_A3Earthquake">Call 911</string>
+    <string name="Q3_A4Earthquake">Get under a tree</string>
+
+    <string name="Q4Earthquake">The earthquake has stopped, what should you do?</string>
+    <string name="Q4_A1Earthquake">Scream “Yay”</string>
+    <string name="Q4_A2Earthquake">Post the story on social media</string>
+    <string name="Q4_A3Earthquake">Call 911</string>
+    <string name="Q4_A4Earthquake">Check for injuries</string>
+
+    <string name="Q5Earthquake">No one is injured, what should you do?</string>
+    <string name="Q5_A1Earthquake">Call to make sure your friends and family are okay</string>
+    <string name="Q5_A2Earthquake">Carry on with your day</string>
+    <string name="Q5_A3Earthquake">Listen to a radio for emergency updates and reports</string>
+    <string name="Q5_A4Earthquake">Call 911</string>
+
+    <string name="Q1Covid19">How should you sneeze?</string>
+    <string name="Q1_A1Covid19">Away from any source of water</string>
+    <string name="Q1_A2Covid19">Anywhere, it does not matter</string>
+    <string name="Q1_A3Covid19">Into your elbow, or a tissue</string>
+    <string name="Q1_A4Covid19">Into your clothes</string>
+
+    <string name="Q2Covid19">How long should you wash your hands?</string>
+    <string name="Q2_A1Covid19">10 seconds</string>
+    <string name="Q2_A2Covid19">20 seconds</string>
+    <string name="Q2_A3Covid19">30 seconds</string>
+    <string name="Q2_A4Covid19">40 seconds </string>
+
+    <string name="Q3Covid19">What part of your body should you especially not touch?</string>
+    <string name="Q3_A1Covid19">Your feet</string>
+    <string name="Q3_A2Covid19">Your hair</string>
+    <string name="Q3_A3Covid19">Your arms</string>
+    <string name="Q3_A4Covid19">Your face</string>
+
+    <string name="Q4Covid19">How far away should you stay from others?</string>
+    <string name="Q4_A1Covid19">3 feet</string>
+    <string name="Q4_A2Covid19">6 feet</string>
+    <string name="Q4_A3Covid19">10 feet</string>
+    <string name="Q4_A4Covid19">15 feet</string>
+
+    <string name="Q5Covid19">Which of these is the most true?</string>
+    <string name="Q5_A1Covid19">It is okay for you to go outside</string>
+    <string name="Q5_A2Covid19">You should stay home unless you need to go out for essentials</string>
+    <string name="Q5_A3Covid19">Do not stay inside</string>
+    <string name="Q5_A4Covid19">You must not leave your house at all for any reason</string>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="signUp">Sign Up</string>
+    <string name="Name">Name</string>
+    <string name="Password">Password</string>
+    <string name="Username">Username</string>
+    <string name="Email">Email</string>
+    <string name="Register">Register</string>
+
+
+
+
+
+
 </resources>
