@@ -17,6 +17,10 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.google.android.gms.maps.SupportMapFragment;
+
+import java.util.Map;
+
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 
@@ -25,4 +29,20 @@ import androidx.fragment.app.Fragment;
 public class Home extends Fragment {
 
 
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        View homeView = inflater.inflate(R.layout.home, container, false);
+
+        Button opengamebutton = homeView.findViewById(R.id.opengame);
+
+        opengamebutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), MapOfCharacters.class);
+                startActivity(intent);            }
+        });
+
+        return homeView;
+    }
 }

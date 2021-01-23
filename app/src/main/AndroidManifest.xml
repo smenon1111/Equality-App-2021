@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
         <activity
             android:name=".Hamburger"
             android:label="Information App 2021"
@@ -21,9 +24,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Home" android:label="Diversity Run"
-            tools:ignore="Instantiatable" />
+        <activity android:name=".Home"
+            android:label="Diversity Run" />
         <activity android:name=".View_Profile" />
+        <activity android:name=".MapOfCharacters" />
         <activity android:name=".User_Registration"
             tools:ignore="Instantiatable" />
     </application>
