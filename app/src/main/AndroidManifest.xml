@@ -28,8 +28,21 @@
             android:label="Diversity Run" />
         <activity android:name=".View_Profile" />
         <activity android:name=".MapOfCharacters" />
+
         <activity android:name=".User_Registration"
             tools:ignore="Instantiatable" />
+        //Character Classes
+        <activity android:name=".SimranJeetSingh" />
+        <activity android:name=".AliceWong" />
+        <activity android:name=".BeverlyPalesaDitsie"/>
+        <activity android:name=".ChadGriffin"/>
+        <activity android:name=".JameyJesperson"/>
+        <activity android:name=".JoseAntonioVargas"/>
+        <activity android:name=".LaverneCox"/>
+        <activity android:name=".MalalaYousafzai"/>
+        <activity android:name=".MelanieCampbell" />
+        <activity android:name=".ThandiweAbdullah" />
+
     </application>
 
 </manifest>

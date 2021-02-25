@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/MalalaTitle"
+        android:layout_width="214dp"
+        android:layout_height="36dp"
+        android:text="@string/MalalaTitle"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/MalalaBio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.142"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.046" />
+
+    <TextView
+        android:id="@+id/MalalaBio"
+        android:layout_width="352dp"
+        android:layout_height="50dp"
+        android:text="@string/MalalaBio"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@id/MalalaInfo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MalalaTitle"
+        app:layout_constraintVertical_bias="0.037" />
+
+    <TextView
+        android:id="@+id/MalalaInfo"
+        android:layout_width="369dp"
+        android:layout_height="496dp"
+        android:text="@string/MalalaInfo1"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@id/NextButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MalalaBio"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/MalalaReferences"
+        android:layout_width="359dp"
+        android:layout_height="69dp"
+        android:text="@string/MalalaReferences"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NextButton"
+        app:layout_constraintVertical_bias="0.037" />
+
+    <Button
+        android:id="@+id/NextButton"
+        android:layout_width="213dp"
+        android:layout_height="39dp"
+        android:text="@string/NextButton"
+        app:layout_constraintBottom_toTopOf="@id/MalalaReferences"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MalalaInfo" />
+</androidx.constraintlayout.widget.ConstraintLayout>

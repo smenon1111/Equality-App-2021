@@ -20,15 +20,196 @@
     <string name="buttonEarthquake">Earthquake</string>
 
     <string name="CPRtext">CPR</string>
-<string name="navigation_drawer_close">Close</string>
+    <string name="navigation_drawer_close">Close</string>
     <string name="navigation_drawer_open">Open</string>
     <string name="title_activity_maps">Map</string>
-<string name="open_game">Open Game</string>
+    <string name="open_game">Open Game</string>
+    <string name="title">Title</string>
+    <string name="NextButton">NEXT</string>
+    <string name="TakeQuiz">TAKE QUIZ</string>
 
 
 
+    //Simran Jeet Singh Strings
+
+    <string name="SimranTitle">Simran Jeet Singh</string>
+    <string name="SimranBio"> An activist who advocates for religious equality in America
+        Gender: Male
+        Pronouns: He/Him
+        Age: 36
+        Race: American</string>
+    <string name="SimranInfo1">Simran Jeet Singh was born on July 25, 1984, in San Antonio, Texas. Growing up, there were not a lot of Sikh families where he lived and his parents felt it was important to stay connected to their culture. Singh started learning Punjabi from a young age and also consistently did kirtan and ardas (religious practices) , as there were no Gurdwaras (Sikh places of worship) where he lived. His community was small and they met on Friday nights but Singh also had friends who weren’t Sikh. He felt like he was living in two different worlds.
+
+        Singh went to camps around America during the years that were connected with Sikhi but he didn’t feel truly (tied) until he started learning about the recent history of his people. He learned he was named by his parents after a famous political activist at the time. From these places came his inspiration to help his community. From his emotional connections came his spiritual connections to the world.
+
+</string>
+
+    <string name="SimranInfo2"> After 9/11, Singh realized that identity includes how other people view you as well as how you view yourself. He saw himself being grouped into places while his community was turning invisible, trying to explain their story. 9/11 showed him the pain and ignorance people show towards certain religions and faiths. He felt he had the responsibility and privilege, that others didn’t have, to change that.
+
+    Today, Simran Jeet Singh is a writer, a professor at Columbia University, and a Senior Religion Fellow for the Sikh Coalition, and a Truman National Security Fellow for the Truman National Security Project. He has multiple degrees from Harvard and Columbia University and has a podcast called Spirited where he talks about leaders and activists. He has also written a book called Fauja Singh Keeps Going about the oldest person who was believed to run a marathon. He lives with his two children and his wife.
+
+</string>
+
+    <string name="SimranReferences">http://www.wearesikhs.org/simran_jeet_singh
+https://theconversation.com/profiles/simran-jeet-singh-486698#:~:text=Born%20and%20raised%20in%20San,at%20Weill%20Cornell%20Medical%20College.
+</string>
+
+    //Alice Wong Strings
+
+    <string name="AliceTitle">Alice Wong</string>
+    <string name="AliceBio"> Pronouns: She/Her Gender: Female Age: 46 Activist for the rights of disabled people </string>
+
+    <string name="AliceInfo1">Alice Wong was born in Indianapolis, Indiana on March 24, 1974, with Spinal Muscular Atrophy (SMA). As a young girl, she always felt lonely being a wheel-chair user. It was a three-hour drive from her home to buy lunch and groceries as Chinese-Americans living in Indiana. She found the distance made her appreciate the food more. She also experienced bullying at schools. Her classmates would push her and hit her because she was weak and her teachers did not make enough accommodations for people with disabilities.
+        Wong became a sociologist and learned about different groups and what they meant. From there, she started thinking about disabilities as less of just a biological difference but also how it affected people mentally. She found she had a lot of anger due to her disability which she started channeling into writing and research. She experienced microaggressions from others towards people with disabilities such as when she was denied a drama course because she would not be able to be “physical enough”.
+    </string>
+
+    <string name="AliceInfo2"> In early 2014, she started developing the Disability Visibility Project after she attended a StoryCorps event in San Francisco for animated portions on NPR’s Morning Edition. She found it left a lasting impression on her and reached out to someone to ask if they were interested in creating a project with a disability community-specific partnership. The project was launched in July 2014 to help document the experiences of people with disabilities.
+        Wong has also written an essay published in Amerasia Journal, “Musings from an Angry Asian American Disabled Girl”, where she wrote about her experiences growing up. She strives to connect young women and girls with disabilities to empower them.
+    </string>
+
+    <string name="AliceReferences">https://letterstothrive.tumblr.com/post/55608302401/hey-angry-girl  https://www.easterseals.com/thrive/who-we-are/alice-wong.html  https://disabilityvisibilityproject.com/2015/12/12/dvp-interview-alice-wong-and-ellen-wu/</string>
+
+    //Thandiwe Abdullah Strings
+
+    <string name="ThandiweTitle">Thandiwe Abdullah</string>
+    <string name="ThandiweBio"> Pronouns: She/Her Gender: Female Age: 17 Activist for anti-racism and equality movements</string>
+
+    <string name="ThandiweInfo1">Thandiwe Abdullah was born in the Crenshaw District Los Angeles California in 2003. She was born to an activist family and started attending Black Lives Matter meetings at the young age of 10. Along with this, she was raised by many strong African American women in her community. Her mom was a professor of Pan African Studies at CSULA and she later (became) a co-founder of the LA chapter of Black Lives Matter. The founders of the Black Lives Matter Movement, Patrisse Kahn Cullors, Opal Tometti, and Alicia Garza, taught her to expand her thinking. She learned about pronouns, gender fluidity, and more about African American culture. However, Abdullah realized that she and her siblings were the only children being raised by the movement despite its goal to encourage a family community.
+        She felt the effects of colorism, being called prettier because she was “lighter-skinned” and realized that lighter skin girls were more heard. In school, she felt as if she was fitting into the “angry Black girl mold” that society perpetuated. People around her wanted her to stop but she would not stop her activism and calling people out on their racism.
+    </string>
+
+    <string name="ThandiweInfo2"> She felt she did not fit into the women’s rights movement, that it was just white women who talked about microaggressions and the wage gap. However, she noticed that African American women get paid 21% less than an average white woman. She wanted to bring to light the privilege that some people have that others do not and to make sure movements reflect all people they stand for.
+        Today, Abdullah says she works for all her sisters and people of color. She is an activist in the Black Lives Matter movement and a co-founder of Black Lives Matter Youth Vanguard which is a program to help Black youth, specifically in the LA area. She is greatly dedicated to her activism and changing the world to make sure no one has to worry about affording basic human needs.
+    </string>
+
+    <string name="ThandiweReferences">https://www.seventeen.com/life/a34717855/thandiwe-abdullah-black-lives-matter-voices-of-the-year-2020/</string>
+
+    //Beverly Palesa Ditsie Strings
+
+    <string name="BeverlyTitle">Beverly Palesa Ditsie</string>
+    <string name="BeverlyBio"> Pronouns: She/Her Gender: Female Age: 50 Activist for LGBTQ+ rights</string>
+
+    <string name="BeverlyInfo1">Beverly Palesa Ditsie was born in 1970 in Soweto, South Africa. From the age of 10, she acted in movies as an actress and voice actor. She grew up in her grandmother’s home and always felt like she was surrounded by love there. Her grandmother was a rock to her, a pillar of the community as she watched her struggle  but pursue. She also valued her grandmother’s husband and her mother a lot.
+        Ditsie’s call to activism was when she became a student council representative in her high school. She always thought that there was an “overpowering” masculinity that surrounded the system. She was frustrated and spent a lot of time with queer boys, starting with them their first meeting of Glow [the Gay and Lesbian Organisation of the Witwatersrand]. There she met Simon Nkoli who she later directed the movie Simon and I about. He was an older brother figure to her who helped raise voices for the LQBTQA+ community. Glow was deeply rooted in intersectionality. In NGO spaces, Ditsie began to make sure all voices were included and pointed out deep exclusion in communities.
+    </string>
+
+    <string name="BeverlyInfo2">Glow helped wth the formation of the National Coalition for Gay and Lesbian Equality (NCGLE) which ensured that rights based on gender and sexuality were included in South Africa’s new constitution at the time. Ditsie spoke at the 1995 United Nations Conference on Women in Bejing, being the first person, an African lesbian woman to talk, about LGBTQA+ rights at a UN Convention. She spoke about how discrimination based on sexual orientation was a violation of basic human rights and it was neccessary to address that before talking about any other concerns of women. Ditsie struggled with her mental health through her activism, living through apartheid, and the imposter syndrome she experienced because of her gender.
+        Ditsie continued making films to bring attention to people in the LGBTQA+ community and people with HIV/AIDs. Her film Simon and I became very popular and displayed a clear message about what she fought for, freedom. Today she continues her activism to inspire and help others. In 2019, she was a recipient of an honorary degree from Claremont Graduate University in California, United States for her activism and fight to bring justice to people in society.
+    </string>
+
+    <string name="BeverlyReferences">https://sandtonchronicle.co.za/lnn/299767/celebrating-bev-ditsie-for-her-role-in-making-lgbti-rights-a-reality
+    https://lovemattersafrica.com/sexual-diversity/beverly-palesa-ditsie-a-pioneer-for-african-intersectionality
+    https://www.wmm.com/filmmaker/Beverley+Palesa+Ditsie/
+    https://www.sahistory.org.za/dated-event/beverly-palesa-ditsie-first-out-lesbian-woman-address-united-nations-about-lgbt-rights
+    https://www.theguardian.com/society/2020/aug/20/beverley-ditsie-the-south-african-woman-who-helped-liberate-lesbians-everywhere
+    https://www.newframe.com/beverley-ditsie-comes-full-circle/</string>
+
+    //Malala Yousafzai  Strings
+
+    <string name="MalalaTitle">Malala Yousafzai</string>
+    <string name="MalalaBio"> Pronouns: She/Her Gender: Female Age: 23 Activist for Education</string>
+
+    <string name="MalalaInfo1">Malala Yousafzai was born July 12, 1997 in Mingora, Swat valley, Pakistan. She was the daughter of a social activist and an educator. Her father settled and took care of the school she went to, Khushal Girls High School and College. Her father always encouraged her to become educated and follow his path. However, the Swat Valley was invaded in 2007 by the TTP, e Tehrik-e-Taliban Pakistan, who wanted to get rid of any chances for women to play an active role in society and become educated. Yousafzai and her family were forced to flee.
+    When she was 11 years old, Yousafzai’s father took her to a press club in Peshawar where she gave her first speech named, “How Dare the Taliban Take Away My Basic Right to Education?”. It became popular all throughout Pakistan and The British Broadcasting Corporation (BBC) approached Yousafzai’s father for someone to write blog posts for them about their experience living under TTP rule.  Yousafzai started writing in Urdu, later translated to English, under the name of  Gul Makai. She wrote 35 entires.
+    </string>
+
+    <string name="MalalaInfo2">In 2009, Yousafzai  was interviewed for Capital Talk, a Pakistani talk show. Although the TPP was started allowing girls to attend school again, on the condition they wear burkas, violence started again. The New York Times reporter Adam Ellick made a short film with Malala about her school shutting down. Malala became more famous and received Pakistan’s first National Youth Peace Prize. In late 2012, Malala was shot coming home from school by a gunman of the TTP. She survived and her story led to the UN special envoy for global education, Gordon Brown, making a petition to put all children back in school by 2015. This led to the legalization of Pakistan\'s first Right to Education bill. Malala later co-authored the book I Am Malala: The Girl Who Stood Up for Education and Was Shot by the Taliban (2013) with Christina Lamb and became the youngest person to win the Nobel Peace Prize.
+    Malala maintained attending school in England and started her own girls school in Lebanon for refugees from the Syrian War using funding from the Malala Fund. In 2020, she finished her Philosophy, Politics and Economics degrees at Oxford. She still continues on her fight for equality and education for everyone today.
+    </string>
+
+    <string name="MalalaReferences">https://www.nbcnews.com/news/world/malala-yousafzai-graduates-college-8-years-after-taliban-gunned-her-n1231525
+        https://www.britannica.com/biography/Malala-Yousafzai</string>
+
+    //Melanie Campbell Strings
+
+    <string name="MelanieTitle">Melanie Campbell</string>
+    <string name="MelanieBio"> Pronouns: She/Her Gender: Female  Anti-Racism and Equal Rights Activist</string>
+
+    <string name="MelanieInfo1">Melanie Campbell was born in Mims, Fla. on the Allantic coast as the youngest of six children. Her parents led the local chapter of the NAACP (National Association for the Advancement of Colored People) organization. They were active in their role and Melanie remembers one night, where was sleeping on the floor, close to her mother and siblings, while her father and a few other men were outside getting ready to defend the town from an attack by the Klu Klux Klan that still existed in the 1950s in Florida.
+    Melanie enrolled and graduated from Clark Atlanta University, after she had followed her brothers and sisters, and after graduation she got a job in the corporate world. Despite this, Campbell began missing the activism and the movement and started working for Maynard Jackson, Atlanta’s mayor at the time and a high-profile Black political leader. She ran the mayor\'s office for youth services and hired Stacey Abrams, a student from Spelman College, who asked Jackson about if he really understood the feelings of younger people. Campbell began working hard towards the rise of youth voices.
+    </string>
+
+    <string name="MelanieInfo2">Campbell  moved to Washington by 1995 and started working at the National Coalition on Black Civic Participation and in 2000 became the executive director and in 2011 the president and CEO. She spoke about how her life mission was to make sure Black women were not invisible. She was recognized as one of Washington D.C.\'s Top Forty Under Forty Emerging Leaders in 2000. She also convened Black Women’s Roundtable which is a non-partisan organization that is, according to Washington Post, “one of the largest networks of women focused on using civic engagement to improve the lives of Black women, their families and their communities — improving access to health care, ending systemic racism, reforming the criminal justice system, lifting people out of poverty.”
+    Campbell’s other accomplishments include convening the Voices of the Electorate National Election Reform Task Force and being a main trainer in 1996 for the West African Women\'s Colloquium in Ghana, West Africa. Currently, she advocates for bringing leadership opportunities for the next generation and bringing equality and fairness, especially for Black girls and women. She has been a features writer at the National Urban League’s State of Black America and has received the “Sustainer of the Flame Freedom Flame Award” by The Bridge Crossing Jubilee.
+    </string>
+
+    <string name="MelanieReferences">https://www.washingtonpost.com/politics/this-is-how-democracy-crumbles-melanie-campbell-on-the-fight-to-defend-black-votes/2020/11/02/6d2a4884-1d0a-11eb-b532-05c751cd5dc2_story.html
+    https://www.ncbcp.org/who/bios/mcampbell/
+    https://iop.harvard.edu/fellows/melanie-campbell</string>
+
+    //Chad Griffin Strings
+
+    <string name="ChadTitle">Chad Griffin</string>
+    <string name="ChadBio"> Pronouns: He/Him Gender: Male  LGTBQ+ Rights Activist</string>
+
+    <string name="ChadInfo1">Chad Griffin was born on July 16, 1973 in Arkansas. He went to school in  Southern Baptist Church and was often bullied and teased for being gay. He was confused about his sexuality by this, admitting to Washington post he did not know he was gay. Growing up, he had a deep passion for international affairs and politics and had one job as a page at the state Capitol.
+    He attended Ouachita Baptist University and volunteered for the 1992 presidential campaign of Bill Clinton, dropping out at 19 to become the youngest member of presidential staff. He was at the White House for two years before he started attending Georgetown University\'s School of Foreign Service. Just before he graduated in 1997  he received an offer for a State Department job which he declined when he got an offer from Rob Reiner who was an actor, director, and political activist who he had met in the White House a few years before. He and Reiner established the  I Am Your Child Foundation, a charitable foundation which helped parents and caregivers understand child development better.
+    </string>
+
+    <string name="ChadInfo2">Griffin started  his own consulting firm in 1998 and was hired by Reiner to pass Proposition 10 which would put a tax on tobacco products and give the profits to the effects it left on children. He worked on a number of other propositions such as Proposition 71 in 2004 and Proposition 8 in 2008. He was a strong opponent of Propostion 8, which held that only marriage between man and a woman were valid in California, and as an open homosexual, he was deeply upset by the loss. He and Reiner took a different approach the the situation, going to the US Supereme Court and arguing that that marriage is a fundamental right and if same-sex couples were denied it, it would violate the U.S. Constitution\'s guarantee of equal protection. On February 7, 2012, Proposition 8 was ruled unconstitutional.
+    Griffin, in 2013, was 16th on Out magazine\'s "Power 50" list of the 50-most powerful LGBT individuals in the United States. Today, Griffin is still a strong activist for LGBTQ+ rights. In 2018, he stepped down as the president of the Human Rights Campaign which he has directed for the past years. He also founded the American Foundation for Equal Rights. Griffin was also a producer for the documentary Outrage which highlighted political figures who had worked against LGBT rights and their allegations and claims against homosexuality.
+    </string>
+
+    <string name="ChadReferences">https://peoplepill.com/people/chad-griffin/
+    https://apnews.com/article/b872e8f19255470fbb504ef1040df2bf
+    https://civilrights.org/2019/04/29/hrcs-chad-griffin-to-receive-chairpersons-award-at-civil-rights-dinner/
+    http://www.glbtqarchive.com/ssh/griffin_chad_S.pdf</string>
+
+    //Jose Antonio Vargas Strings
+
+    <string name="JoseTitle">Jose Antonio Vargas</string>
+    <string name="JoseBio"> Pronouns: He/Him Gender: Male Advocating for immigrants and the Latinx community</string>
+
+    <string name="JoseInfo1">Jose Antonio Vargas was born on February 3, 1981 in Antipolo in the Philippines. He was smuggled into the United States at a young age. At the age of 16 when Vargas was going to the DMV to get his license, the clerk informed him it was fake. Vargas went back home and questioned his grandparents who were naturalized American citizens. His grandfather admitted to him that his documents were purchased and fake. From then, Vargas felt like he had to prove his American identity.
+    Vargas began watching movies to learn about the culture and aspects of life in America. Hec graduated from Mountain View High School in 2000 and graduated from San Francisco State University in 2004. He was later named Alumnus of the year in 2012. He created multiple works that entail the journey of his life; a New York Times Magazine essay, “My Life as an Undocumented Immigrant”, a Time cover story in 2012, “Not Legal Not Leaving”, and a 2013 film, Documented. Following these works, Vargas wrote a memoir, “Dear America: Notes of an Undocumented Citizen”.
+    </string>
+
+    <string name="JoseInfo2">Vargas\’ book follows his journey as a kid who was taken to the US as a 12 year old, his first experiences in America, and his coming out as gay to classmates and grandparents. Vargas often speaks about how as a Filipino, he did not fit in anywhere. When people referred to undocumented immigrants, they usually pointed towards the Latinex community. He noticed irregularities between how people treated illegal immigrants and more.
+    In 2015, Vargas\’s documentary, Documented, 2015 NAACP Image Award nomination for Outstanding Documentary. MTV also aired his Emmy Nominated Special, White People, which detailed what it was like to be a young whie child in an America that was changning due to immigration and more. He received the  Freedom to Write Award from PEN Center USA and degrees from Emerson College, Colby College, and the John Jay College of Criminal Justice. He, today, works on an adovisory board for  TheDream.US, which provides scholarships to immigrant students who are undocumented.
+    </string>
 
 
+    <string name="JoseReferences">https://www.theatlantic.com/entertainment/archive/2018/10/dear-america-jose-antonio-vargas-memoir-review/573013/
+    https://openborders.info/jose-antonio-vargas-life-story/
+    https://joseantoniovargas.com/about/
+    </string>
 
+
+    //Jamey Jesperson Strings
+
+    <string name="JameyTitle">Jamey Jesperson</string>
+    <string name="JameyBio"> Pronouns: He/Him Gender: Male  LGTBQ+ Rights Activist</string>
+
+    <string name="JameyInfo1">Jamey Jesperson was born in California in 1994 to a family of Mormons. Jamey grew up with the idea that they could only be one of two genders, male or female. They were very feminine growing up, playing with toys that people believed only girls played with and hanging out with girls their age. Older men at their church were upset with Jesperson for doing so.
+    Jesperson came out as gay in high school and came out as gender non-conforming at the age of 21. They received a lot of gossip as a result of coming out in a large Mormon community but fortunately, at the time, Jesperson was dating someone in a similar situation who helped them. Jesperson\’s parents were supportive of their identity and were always open. Jesperson however got a lot of disgust from the church, with people who started to ignore them and warning their children to stay away from Jesperson.
+    </string>
+
+    <string name="JameyInfo2">Jesperson started attending college at The New School in New York City. Jesperson was still following the Mormon faith because from young they had learned that prayer was the only way to deal with emotions such as anger, hate, and loneliness. One day, at church, Jesperson realized they did not want to associate with the church anymore. Many people in Jesperson\’s family were angered by their decision to leave and many of them distanced themself from Jesperson. Despite this, after Jesperson wrote an essay about the Mormon Church\’s anti- LGBTQ+ politics when the Mormon Church separated themselves from Boy Scouts after they started accepting girls, many of their family members supported them.
+    Jesperson today is an LGBTQ+ activist who helps make sure that LGBTQ+ youth feel supported and comfortable. They are the Education Associate at GLSEN, which is an organization that works to bring LGBTQ+ students and children with resources they may need and teaches educators how to provide support. Jamey hopes to see youth comfortably identifying outside of the gender binary of male/female or boy/girl. They wish to spread awareness about how society and politics has pushed a rigid gender norm for youth and how it is influencing them.
+    </string>
+
+    <string name="JameyReferences">https://www.gaystarnews.com/article/meet-jamey-jesperson-the-nonbinary-activist-who-left-the-mormon-church/
+    https://www.nbcnews.com/feature/nbc-out/boy-or-girl-parents-raising-theybies-let-kids-decide-n891836
+    https://freedomforallamericans.org/nonbinary-education-activist-we-have-to-embrace-everyones-authenticity/
+    </string>
+
+    //Laverne Cox Strings
+
+    <string name="LaverneTitle">Laverne Cox</string>
+    <string name="LaverneBio"> Pronouns: She/Her Gender: Female  Trans Representation and Rights Activist</string>
+
+    <string name="LaverneInfo1">Laverne Cox was born on May 29, 1972 in Mobile, Alabama with a twin brother. She was bullied as a child, being called a sissy and the f-word. She did not act the way people assumed a person assigned male at gender would act and many disliked her for it. She was chased after school and beat up. Cox had a suicide attempt at age 11.
+    One day, in third grade, Cox\’s teacher told her mother that her son was one day going to be wearing a dress in New Orleans. At the time, Cox did not know the difference between boys and girls, she just assumed she would turn into a girl after puberty. That was the moment she realized she was transgender.
+    </string>
+
+    <string name="LaverneInfo2">Cox attended the Alabama School of Fine Arts in Birmingham and studied writing and dance there. She switched to Indiana University Bloomington and then Marymount Manhattan College in New York City when she began to study acting. She is known for her role as Sophia Burset, who is, according to Biography.com, “ an imprisoned trans woman who fights for appropriate hormone treatments and has a highly strained relationship with her son while also receiving love and acceptance from her wife”. In 2008, she was also featured in an episode of Law and Order: SVU and the TV show TRANSform Me (2010).
+    Cox was the first trans person to be nominated an Emmy and appear on the cover of Times magazine. As a transgender activst, she has her own panel on the Hufington post and has written an essay on gender identidy and expression named, “Everybody\’s Trans: Gender Oppression Hurts All of Us”. In 2018, Cox became the first transgender woman to appear on the cover of Cosmopoliton, the South Africa edition. She is also the executive producer of Netflix documentary, “Disclosure” which reveals the challenges the trangender community faced over the years, the violence they faced, and movies and other productions that have allowed them to enter the industry.
+    </string>
+
+    <string name="LaverneReferences">https://www.nbcnews.com/feature/nbc-out/laverne-cox-details-transphobic-attack-it-s-not-safe-world-n1249334
+    https://www.biography.com/actor/laverne-cox
+    https://ccrjustice.org/home/blog/2019/08/02/evening-activism-laverne-cox
+    https://www.oprahmag.com/entertainment/tv-movies/a28987199/laverne-cox-facts/
+    </string>
 
 </resources>
