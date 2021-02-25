@@ -20,10 +20,18 @@
     <string name="buttonEarthquake">Earthquake</string>
 
     <string name="CPRtext">CPR</string>
-<string name="navigation_drawer_close">Close</string>
+    <string name="navigation_drawer_close">Close</string>
     <string name="navigation_drawer_open">Open</string>
     <string name="title_activity_maps">Map</string>
-<string name="open_game">Open Game</string>
+    <string name="open_game">Open Game</string>
+    <string name="Date">Day</string>
+    <string name="ToCalendar">ToCalendar</string>
+    <string name="February_8_2021">Meeting at park. Blank meeting at the library</string>
+    <string name="February_9_2021">Meeting for the Alemda Country Green Club at 392 Brown Avenue
+                                   Plant a tree at the park! Meeting at 9201 Park</string>
+    <string name="EventsLabel">Events For the Day</string>
+    <string name="DFBtn">DialogFlowButton</string>
+    <string name="MainText">Hello! Our AI ChatBot is a chatbot built with DialogFlow using Knowledge Bases. Ask it any questions you have about diversity including questions about race, the LBGTQ+ community, diability rights, education rights, and more. We do not claim the right to any information given by the Chatbot, we have either taken it directly from our sources or paraphrased it. For more information, see a list of our sources on the sources tab in the hamburger.</string>
 
 
 
