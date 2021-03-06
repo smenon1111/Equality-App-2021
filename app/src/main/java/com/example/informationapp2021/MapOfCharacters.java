@@ -1,6 +1,5 @@
 package com.example.informationapp2021;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -107,63 +106,63 @@ public class MapOfCharacters extends Fragment implements OnMarkerClickListener, 
         sanAntonio = googleMap.addMarker(new MarkerOptions()
                 .position(SANANTONIO)
                 .title("Simran Jeet Singh")
-                .snippet("San Antonio, TX" + "Activist advocating for religious equality in America")
-                .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_RED)));
+                .snippet("San Antonio, TX" + "Activist advocating for religious equality in America"));
+//                .icon(BitmapDescriptorFactory.fromResource(R.drawable.simran_jeet_singh)));
 
         sanFrancisco = googleMap.addMarker(new MarkerOptions()
                 .position(SANFRANCISCO)
                 .title("Alice Wong")
-                .snippet("San Francisco, CA" + "Activist for the rights of disabled people")
-                .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_RED)));
+                .snippet("San Francisco, CA" + "Activist for the rights of disabled people"));
+//                .icon(BitmapDescriptorFactory.fromResource(R.drawable.alice_wong)));
 
         losAngeles = googleMap.addMarker(new MarkerOptions()
                 .position(LOSANGELES)
                 .title("Thandiwe Abdullah")
-                .snippet("Los Angeles, CA" + " Anti-Racism Activist")
-                .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_RED)));
+                .snippet("Los Angeles, CA" + " Anti-Racism Activist"));
+//                .icon(BitmapDescriptorFactory.fromResource(R.drawable.thandiwe_abdullah)));
 
         Soweto = googleMap.addMarker(new MarkerOptions()
                 .position(SOWETO)
                 .title("Beverly Palesa Ditsie")
                 .snippet("Soweto, South Africa" + " LGBTQ+ Activist")
                 .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_RED)));
+//                .icon(BitmapDescriptorFactory.fromResource(R.drawable.beverly_palesa_ditsie)));
 
         Mingora = googleMap.addMarker(new MarkerOptions()
                 .position(MINGORA)
                 .title("Malala Yousafzai")
-                .snippet("Mingora Swat Valley, Pakistan" + " Activist for Education")
-                .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_RED)));
+                .snippet("Mingora Swat Valley, Pakistan" + " Activist for Education"));
+//                .icon(BitmapDescriptorFactory.fromResource(R.drawable.malala_yousafzai)));
 
         Mims = googleMap.addMarker(new MarkerOptions()
                 .position(MIMS)
                 .title("Melanie Campbell")
-                .snippet("Mims, FL" + " Anti-Racism & Equal Rights Activist")
-                .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_RED)));
+                .snippet("Mims, FL" + " Anti-Racism & Equal Rights Activist"));
+//                .icon(BitmapDescriptorFactory.fromResource(R.drawable.melanie_campbell)));
 
         Hope = googleMap.addMarker(new MarkerOptions()
                 .position(HOPE)
                 .title("Chad Griffin")
-                .snippet("Hope, AK" + "LGTBQ+ Rights Activist")
-                .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_RED)));
+                .snippet("Hope, AK" + "LGTBQ+ Rights Activist"));
+//                .icon(BitmapDescriptorFactory.fromResource(R.drawable.chad_griffin)));
 
         Antipolo = googleMap.addMarker(new MarkerOptions()
                 .position(ANTIPOLO)
                 .title("Jose Antonio Vargas")
-                .snippet("Antipolo, Phillipines" + " Advocating for immigrants and the Latinx community")
-                .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_RED)));
+                .snippet("Antipolo, Phillipines" + " Advocating for immigrants and the Latinx community"));
+//                .icon(BitmapDescriptorFactory.fromResource(R.drawable.jose_antonio_vargas)));
 
         Sacramento = googleMap.addMarker(new MarkerOptions()
                 .position(SACRAMENTO)
                 .title("Jamey Jesperson")
-                .snippet("Sacramento, CA" + " LGBTQ+ Activist")
-                .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_RED)));
+                .snippet("Sacramento, CA" + " LGBTQ+ Activist"));
+//                .icon(BitmapDescriptorFactory.fromResource(R.drawable.jamey_jesperson)));
 
         Mobile = googleMap.addMarker(new MarkerOptions()
                 .position(MOBILE)
                 .title("Laverne Cox")
-                .snippet("Mobile, AL" + " Trans Representation and Rights Activist")
-                .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_RED)));
-
+                .snippet("Mobile, AL" + " Trans Representation and Rights Activist"));
+//                .icon(BitmapDescriptorFactory.fromResource(R.drawable.laverne_cox)));
     }
 
 

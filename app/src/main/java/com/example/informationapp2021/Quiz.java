@@ -642,27 +642,21 @@ public class Quiz extends Fragment {
 
    public void openRewardPage(){
        Reward nextFrag = new Reward();
-       Bundle bundlePageName = new Bundle();
-       Bundle bundleMyQuestion = new Bundle();
-       Bundle bundleMyScore = new Bundle();
-       Bundle bundleMyAccuracy = new Bundle();
+       Bundle bundleQuizInfo = new Bundle();
        
-       bundlePageName.putString("Name", pageName);
-       bundleMyQuestion.putStringArray("Questions", questions);
-       bundleMyScore.putInt("Score",myScore);
-       bundleMyAccuracy.putIntArray("Accuracy",correct_incorrect);
-       
-       nextFrag.setArguments(bundlePageName);
-       nextFrag.setArguments(bundleMyQuestion);
-       nextFrag.setArguments(bundleMyScore);
-       nextFrag.setArguments(bundleMyAccuracy);
+       bundleQuizInfo.putString("Name", pageName);
+       bundleQuizInfo.putStringArray("Questions", questions);
+       bundleQuizInfo.putInt("Score",myScore);
+       bundleQuizInfo.putIntArray("Accuracy",correct_incorrect);
+
+       nextFrag.setArguments(bundleQuizInfo);
 
        getActivity().getSupportFragmentManager().beginTransaction()
                .replace(((ViewGroup) getView().getParent()).getId(), nextFrag)
                .addToBackStack(null)
                .commit();
    }
-    Bundle bundle = new Bundle();
+
 
     public String getMyPageName() {
         Bundle bundle = this.getArguments();

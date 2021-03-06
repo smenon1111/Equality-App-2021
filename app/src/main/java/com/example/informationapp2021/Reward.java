@@ -19,14 +19,13 @@ public class Reward extends Fragment {
     static String pageNameReward;
     static String[] myQuestionsReward = new String[5];
     static int[] myAccuracyReward = new int[5];
-
-
+    Bundle bundle = this.getArguments();
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        getMyPageName();
-        getMyScore();
+        getMyQuizInfo();
+
         View rewardView = inflater.inflate(R.layout.reward, container, false);
         TextView Answer1 = rewardView.findViewById(R.id.Answer1);
         TextView Answer2 = rewardView.findViewById(R.id.Answer2);
@@ -120,33 +119,29 @@ public class Reward extends Fragment {
                 .commit();
     }
 
-    public String getMyPageName() {
-        Bundle bundle = this.getArguments();
-        String myPageName = bundle.getString("Name", pageNameReward );
+    public String getMyQuizInfo() {
+        String myPageName = getArguments().getString("Name");
+        String[] myQuestions = getArguments().getStringArray("Questions");
+        int myScore = getArguments().getInt("Score");
+        int[] myAccuracy = getArguments().getIntArray("Accuracy");
+        myScoreReward = myScore;
         pageNameReward = myPageName;
+        myQuestionsReward = myQuestions;
+        myAccuracyReward = myAccuracy;
         return myPageName;
     }
-/*
-    public String[] getMyQuestions() {
-        Bundle bundleMyQuestion = this.getArguments();
-        String[] myQuestions = bundleMyQuestion.getStringArray( "Questions", myQuestionsReward);
-        myQuestionsReward = myQuestions;
-        return myQuestions;
-    }*/
-    public int getMyScore() {
-        Bundle bundle = this.getArguments();
-        int myScore = bundle.getInt("Score",myScoreReward);
-        myScoreReward = myScore;
-        return myScore;
-    }
 
-   /* public int[] getMyAccuracy() {
+
+    /*public int[] getMyAccuracy() {
         Bundle bundle = this.getArguments();
-        int[] myAccuracy = bundle.getIntArray("Accuracy",myAccuracyReward);
+        int[] myAccuracy = new int[myAccuracyReward.length];
+        for(int i = 0; i<myAccuracy.length; i++){
+            myAccuracy = bundle.getIntArray(""+myAccuracyReward[i]);
+        }
         myAccuracyReward = myAccuracy;
         return myAccuracy;
-    }
-*/
+    }*/
+
    /* public static Intent makeIntent(Context context, String[] myQuestion, int myScoreReward, String myPageName, int[] myAccuracy ) {
         mainActivityContext = context;
         myQuestionsReward = myQuestion;
