@@ -1,23 +1,27 @@
 package com.example.informationapp2021;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 
-import androidx.fragment.app.FragmentActivity;
+import androidx.fragment.app.Fragment;
 
-public class ChadGriffin extends FragmentActivity {
+
+
+public class ChadGriffin extends Fragment {
 
     private int ButtonClicks;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.chadgriffin);
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        View chadgriffinView = inflater.inflate(R.layout.chadgriffin, container, false);
 
-        final Button nextButton = (Button) findViewById(R.id.NextButton);
-        final TextView ChadInfo = (TextView) findViewById(R.id.ChadInfo);
+        final Button nextButton = (Button) chadgriffinView.findViewById(R.id.NextButton);
+        final TextView AliceInfo = (TextView) chadgriffinView.findViewById(R.id.AliceInfo);
 
         ButtonClicks = 0;
         //Switching Info to the next block when clicking the next button
@@ -26,13 +30,13 @@ public class ChadGriffin extends FragmentActivity {
             @Override
             public void onClick(View v) {
                 if (ButtonClicks == 0) {
-                    ChadInfo.setText(R.string.ChadInfo2);
+                    AliceInfo.setText(R.string.ChadInfo2);
                     nextButton.setText(R.string.TakeQuiz);
                     ButtonClicks = 1;
 
 
                 }else if(ButtonClicks == 1) {
-                    OpenQuizPage();
+                    openQuizPage();
 
                 }
 
@@ -42,13 +46,19 @@ public class ChadGriffin extends FragmentActivity {
             }
         });
 
+        return chadgriffinView;
     }
 
-    //TODO: Create Quiz Page and replace the, ChadGriffin.Class with Quiz Page Class
-    public void OpenQuizPage() {
 
-        startActivity(new Intent(ChadGriffin.this, ChadGriffin.class));
 
+    public void openQuizPage() {
+
+        ChadGriffin nextFrag= new ChadGriffin();
+        getActivity().getSupportFragmentManager().beginTransaction()
+                .replace(((ViewGroup)getView().getParent()).getId(), nextFrag)
+                .addToBackStack(null)
+                .commit();
     }
 
 }
+

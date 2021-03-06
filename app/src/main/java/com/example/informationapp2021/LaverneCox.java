@@ -1,23 +1,27 @@
 package com.example.informationapp2021;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 
-import androidx.fragment.app.FragmentActivity;
+import androidx.fragment.app.Fragment;
 
-public class LaverneCox extends FragmentActivity {
+
+
+public class LaverneCox extends Fragment {
 
     private int ButtonClicks;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.lavernecox);
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        View lavernecoxView = inflater.inflate(R.layout.lavernecox, container, false);
 
-        final Button nextButton = (Button) findViewById(R.id.NextButton);
-        final TextView LaverneInfo = (TextView) findViewById(R.id.LaverneInfo);
+        final Button nextButton = (Button) lavernecoxView.findViewById(R.id.NextButton);
+        final TextView LavernecoxInfo = (TextView) lavernecoxView.findViewById(R.id.LaverneInfo);
 
         ButtonClicks = 0;
         //Switching Info to the next block when clicking the next button
@@ -26,13 +30,13 @@ public class LaverneCox extends FragmentActivity {
             @Override
             public void onClick(View v) {
                 if (ButtonClicks == 0) {
-                    LaverneInfo.setText(R.string.LaverneInfo2);
+                    LavernecoxInfo.setText(R.string.LaverneInfo2);
                     nextButton.setText(R.string.TakeQuiz);
                     ButtonClicks = 1;
 
 
                 }else if(ButtonClicks == 1) {
-                    OpenQuizPage();
+                    openQuizPage();
 
                 }
 
@@ -42,13 +46,17 @@ public class LaverneCox extends FragmentActivity {
             }
         });
 
+        return lavernecoxView;
     }
 
-    //TODO: Create Quiz Page and replace the, LaverneCox.Class with Quiz Page Class
-    public void OpenQuizPage() {
 
-        startActivity(new Intent(LaverneCox.this, LaverneCox.class));
 
+    public void openQuizPage() {
+        LaverneCox nextFrag= new LaverneCox();
+        getActivity().getSupportFragmentManager().beginTransaction()
+                .replace(((ViewGroup)getView().getParent()).getId(), nextFrag)
+                .addToBackStack(null)
+                .commit();
     }
 
 }

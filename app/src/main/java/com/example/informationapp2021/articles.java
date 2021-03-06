@@ -3,25 +3,28 @@ package com.example.informationapp2021;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
-
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 
-public class articles extends AppCompatActivity {
+
+public class articles extends Fragment {
 
     Button articleButton1, articleButton2, articleButton3, articleButton4;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.articles);
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        View articlesView = inflater.inflate(R.layout.articles, container, false);
 
 
-        articleButton1 = findViewById(R.id.articleButton1);
-        articleButton2 = findViewById(R.id.articleButton2);
-        articleButton3 = findViewById(R.id.articleButton3);
-        articleButton4 = findViewById(R.id.articleButton4);
+        articleButton1 = articlesView.findViewById(R.id.articleButton1);
+        articleButton2 = articlesView.findViewById(R.id.articleButton2);
+        articleButton3 = articlesView.findViewById(R.id.articleButton3);
+        articleButton4 = articlesView.findViewById(R.id.articleButton4);
 
 
 
@@ -56,5 +59,8 @@ public class articles extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        return articlesView;
+
     }
 }

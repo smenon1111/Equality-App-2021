@@ -5,18 +5,21 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 import android.content.Intent;
+import androidx.fragment.app.Fragment;
 
 
 
-import androidx.appcompat.app.AppCompatActivity;
 
-public class View_Profile extends AppCompatActivity {
+
+public class View_Profile extends Fragment {
 
     SQLiteOpenHelper openHelper;
     SQLiteDatabase db;
@@ -25,32 +28,32 @@ public class View_Profile extends AppCompatActivity {
     Cursor results;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.profile);
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        View profileView = inflater.inflate(R.layout.profile, container, false);
 
-        openHelper = new DataBaseHelper(this);
+        openHelper = new DataBaseHelper(getContext());
         viewProfile();
 
-        name = (EditText) findViewById(R.id.name);
-        username = (EditText) findViewById(R.id.username);
-        password = (EditText) findViewById(R.id.password);
-        email = (EditText) findViewById(R.id.email);
-        prns = (EditText) findViewById(R.id.prns);
-        age = (EditText) findViewById(R.id.age);
-        about = (EditText) findViewById(R.id.about);
+        name = (EditText) profileView.findViewById(R.id.name);
+        username = (EditText) profileView.findViewById(R.id.username);
+        password = (EditText) profileView.findViewById(R.id.password);
+        email = (EditText) profileView.findViewById(R.id.email);
+        prns = (EditText) profileView.findViewById(R.id.prns);
+        age = (EditText) profileView.findViewById(R.id.age);
+        about = (EditText) profileView.findViewById(R.id.about);
 
-        Button saveButton = findViewById(R.id.register);
+        Button saveButton = profileView.findViewById(R.id.register);
 
         saveButton.setOnClickListener (new View.OnClickListener() {
             public void onClick(View view) {
-                openHelper = new DataBaseHelper(getApplicationContext());
+                openHelper = new DataBaseHelper(getActivity());
                 db = openHelper.getWritableDatabase();
                 long UpdateID = updateData(name.getText().toString(), username.getText().toString(), password.getText().toString(), email.getText().toString(),prns.getText().toString(), age.getText().toString(), about.getText().toString());
                 if (UpdateID <= 0)
-                    Toast.makeText(getApplicationContext(), "Save was ...Unsuccessful", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getActivity(), "Save was ...Unsuccessful", Toast.LENGTH_LONG).show();
                 else
-                    Toast.makeText(getApplicationContext(), "Emergency Plan Saved", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getActivity(), "Emergency Plan Saved", Toast.LENGTH_LONG).show();
             }
         });
 
@@ -71,6 +74,7 @@ public class View_Profile extends AppCompatActivity {
 //                startActivity(Intent.createChooser(it,"Choose Mail App"));
 //            }
 //        });
+    return profileView;
 
     }
     public long updateData(String name, String username, String password, String email, String prns, String age, String about) {
@@ -94,13 +98,13 @@ public class View_Profile extends AppCompatActivity {
     public void viewProfile(){
 
 
-        name = (EditText) findViewById(R.id.name);
-        username = (EditText) findViewById(R.id.username);
-        password = (EditText) findViewById(R.id.password);
-        email = (EditText) findViewById(R.id.email);
-        prns = (EditText) findViewById(R.id.prns);
-        age = (EditText) findViewById(R.id.age);
-        about = (EditText) findViewById(R.id.about);
+        name = (EditText) getActivity().findViewById(R.id.name);
+        username = (EditText) getActivity().findViewById(R.id.username);
+        password = (EditText) getActivity().findViewById(R.id.password);
+        email = (EditText) getActivity().findViewById(R.id.email);
+        prns = (EditText) getActivity().findViewById(R.id.prns);
+        age = (EditText) getActivity().findViewById(R.id.age);
+        about = (EditText) getActivity().findViewById(R.id.about);
         results = GetProfiles();
 
         if (results.moveToLast()){
@@ -115,7 +119,7 @@ public class View_Profile extends AppCompatActivity {
     }
 
 //    public void viewEmail(){
-//        final TextView eTo = findViewById(R.id.nameID);
+//        final TextView eTo = profileView.findViewById(R.id.nameID);
 //        results = GetProfiles();
 //        if (results.moveToLast()){
 //            eTo.setText(results.getString(5));

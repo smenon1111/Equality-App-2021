@@ -5,12 +5,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.LayoutInflater;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.CalendarView;
 import android.widget.TextView;
 import android.view.View;
+import androidx.fragment.app.Fragment;
 
-public class Calendar extends AppCompatActivity {
+public class Calendar extends Fragment {
 
 
     private  static final String TAG = "CalendarActivity";
@@ -22,12 +25,12 @@ public class Calendar extends AppCompatActivity {
     private TextView mTextView;
 
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.calendar);
-        thedate = (TextView) findViewById(R.id.date1);
-        mTextView = (TextView) findViewById(R.id.textView2);
-        mCalendarView = (CalendarView) findViewById(R.id.calendarView);
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        View calendarView = inflater.inflate(R.layout.calendar, container, false);
+        thedate = (TextView) calendarView.findViewById(R.id.date1);
+        mTextView = (TextView) calendarView.findViewById(R.id.textView2);
+        mCalendarView = (CalendarView) calendarView.findViewById(R.id.calendarView);
         mCalendarView.setOnDateChangeListener(new CalendarView.OnDateChangeListener() {
 
             @Override
@@ -37,12 +40,12 @@ public class Calendar extends AppCompatActivity {
                 String day = "" + dayOfMonth;
                 Log.d(TAG, "onSelectedDayChange: dd/mm/yyyy:" + date);
 
-                Intent text = getIntent();
+                Intent text = (getActivity()).getIntent();
                 text.putExtra("date",date);
                 text.putExtra("dayOfMonth",day);
                 startActivity(text);
 
-                Intent calendarView = getIntent();
+                Intent calendarView = (getActivity()).getIntent();
                 String date1 = calendarView.getStringExtra("date");
                 String dayOfMonth1 = calendarView.getStringExtra("dayOfMonth");
                 if (date1 !=null) {
@@ -75,4 +78,5 @@ public class Calendar extends AppCompatActivity {
 
             }
         });
+    return calendarView;
     }}

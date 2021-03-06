@@ -1,23 +1,26 @@
 package com.example.informationapp2021;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 
-import androidx.fragment.app.FragmentActivity;
+import androidx.fragment.app.Fragment;
 
-public class ThandiweAbdullah extends FragmentActivity {
+public class ThandiweAbdullah extends Fragment {
 
     private int ButtonClicks;
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.thandiweabdullah);
 
-        final Button nextButton = (Button) findViewById(R.id.NextButton);
-        final TextView ThandiweInfo = (TextView) findViewById(R.id.ThandiweInfo);
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        View thandiweView = inflater.inflate(R.layout.thandiweabdullah, container, false);
+
+        final Button nextButton = (Button) thandiweView.findViewById(R.id.NextButton);
+        final TextView ThandiweInfo = (TextView) thandiweView.findViewById(R.id.ThandiweInfo);
 
         ButtonClicks = 0;
         //Switching Info to the next block when clicking the next button
@@ -32,7 +35,7 @@ public class ThandiweAbdullah extends FragmentActivity {
 
 
                 }else if(ButtonClicks == 1) {
-                    OpenQuizPage();
+                    openQuizPage();
 
                 }
 
@@ -41,13 +44,18 @@ public class ThandiweAbdullah extends FragmentActivity {
 
             }
         });
-
+        return thandiweView;
     }
 
-    //TODO: Create Quiz Page and replace the, ThandiweAbdullah.Class with Quiz Page Class
-    public void OpenQuizPage() {
-
-        startActivity(new Intent(ThandiweAbdullah.this, ThandiweAbdullah.class));
+    public void openQuizPage() {
+        Quiz nextFrag = new Quiz();
+        Bundle bundle = new Bundle();
+        bundle.putString("Name", "ThandiweAbdullah");
+        nextFrag.setArguments(bundle);
+        getActivity().getSupportFragmentManager().beginTransaction()
+                .replace(((ViewGroup) getView().getParent()).getId(), nextFrag)
+                .addToBackStack(null)
+                .commit();
 
     }
 

@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/linearLayout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#DFFCC8">
 
     <TextView
         android:id="@+id/JoseTitle"
@@ -66,5 +67,7 @@
         app:layout_constraintBottom_toTopOf="@id/JoseReferences"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/JoseInfo" />
+        app:layout_constraintTop_toBottomOf="@+id/JoseInfo"
+        android:background="#CCFF90"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

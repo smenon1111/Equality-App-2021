@@ -1,29 +1,27 @@
 package com.example.informationapp2021;
 import android.os.Bundle;
 import android.content.Intent;
-import android.net.Uri;
-import android.os.Bundle;
+import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.MediaController;
 import android.widget.TextView;
-import android.widget.Toast;
-import android.widget.VideoView;
+import androidx.fragment.app.Fragment;
 
-import androidx.fragment.app.FragmentActivity;
 
-public class SimranJeetSingh extends FragmentActivity {
+public class SimranJeetSingh extends Fragment {
 
     private int ButtonClicks;
 
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.simranjeetsingh);
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        View simranjeetView = inflater.inflate(R.layout.simranjeetsingh, container, false);
 
-         final Button nextButton = (Button) findViewById(R.id.NextButton);
-         final TextView SimranInfo = (TextView) findViewById(R.id.SimranInfo);
+        final Button nextButton = (Button) simranjeetView.findViewById(R.id.NextButton);
+         final TextView SimranInfo = (TextView) simranjeetView.findViewById(R.id.SimranInfo);
 
          ButtonClicks = 0;
         //Switching Info to the next block when clicking the next button
@@ -38,7 +36,7 @@ public class SimranJeetSingh extends FragmentActivity {
 
 
                 }else if(ButtonClicks == 1) {
-                    OpenQuizPage();
+                    openQuizPage();
 
                 }
 
@@ -47,14 +45,22 @@ public class SimranJeetSingh extends FragmentActivity {
 
             }
         });
-
+        return simranjeetView;
     }
 
-    //TODO: Create Quiz Page and replace the, AliceWong.Class with Quiz Page Class
 
-    public void OpenQuizPage() {
 
-        startActivity(new Intent(SimranJeetSingh.this, AliceWong.class));
+    public void openQuizPage() {
 
+        Quiz nextFrag= new Quiz();
+        Bundle bundle = new Bundle();
+        bundle.putString("Name", "SimranJeetSingh");
+        nextFrag.setArguments(bundle);
+        getActivity().getSupportFragmentManager().beginTransaction()
+                .replace(((ViewGroup)getView().getParent()).getId(), nextFrag)
+                .addToBackStack(null)
+                .commit();
     }
+
+
 }

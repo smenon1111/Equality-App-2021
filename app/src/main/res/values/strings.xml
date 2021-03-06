@@ -18,6 +18,15 @@
     <string name="signUp">Sign Up</string>
     <integer name="myScore">0</integer>
     <string name="buttonEarthquake">Earthquake</string>
+    <string name="ReTakeQuiz">Retake Quiz</string>
+    <string name="Blank"></string>
+    <string name="articlesTitle">Informational Articles</string>
+    <string name="article1">Harmful Psychological Effects of Racial Stereotyping</string>
+    <string name="article2">LGBTQ Definitions Every Good Ally Should Know</string>
+    <string name="article3">Interacting with People with Disabilities</string>
+    <string name="article4">The Dos and Don\'ts of Cultural Appropriation</string>
+
+
 
     <string name="CPRtext">CPR</string>
     <string name="navigation_drawer_close">Close</string>
@@ -43,60 +52,149 @@
         Singh went to camps around America during the years that were connected with Sikhi but he didn’t feel truly (tied) until he started learning about the recent history of his people. He learned he was named by his parents after a famous political activist at the time. From these places came his inspiration to help his community. From his emotional connections came his spiritual connections to the world.
 
 </string>
-
     <string name="SimranInfo2"> After 9/11, Singh realized that identity includes how other people view you as well as how you view yourself. He saw himself being grouped into places while his community was turning invisible, trying to explain their story. 9/11 showed him the pain and ignorance people show towards certain religions and faiths. He felt he had the responsibility and privilege, that others didn’t have, to change that.
 
     Today, Simran Jeet Singh is a writer, a professor at Columbia University, and a Senior Religion Fellow for the Sikh Coalition, and a Truman National Security Fellow for the Truman National Security Project. He has multiple degrees from Harvard and Columbia University and has a podcast called Spirited where he talks about leaders and activists. He has also written a book called Fauja Singh Keeps Going about the oldest person who was believed to run a marathon. He lives with his two children and his wife.
 
 </string>
-
     <string name="SimranReferences">http://www.wearesikhs.org/simran_jeet_singh
 https://theconversation.com/profiles/simran-jeet-singh-486698#:~:text=Born%20and%20raised%20in%20San,at%20Weill%20Cornell%20Medical%20College.
 </string>
+
+
+    //Simran Jeet Singh Quiz
+
+    <string name="Q1Simran">1. Where was Singh born where there were not many Sikh families at the time?</string>
+    <string name="Q1_A1Simran">Antipolo, Philippines</string>
+    <string name="Q1_A2Simran">Sacramento, California</string>
+    <string name="Q1_A3Simran">Mingora, Swat valley, Pakistan</string>
+    <string name="Q1_A4Simran">San Antonio, Texas</string>
+
+    <string name="Q2Simran">2. When did Simran Jeet Singh begin feeling truly tied to the culture of his people?</string>
+    <string name="Q2_A1Simran">When he started going to Gurdwaras at a young age</string>
+    <string name="Q2_A2Simran">When he began learning about the recent history of his people</string>
+    <string name="Q2_A3Simran">When 9/11 occurred</string>
+    <string name="Q2_A4Simran">When he performed religious practices with his family</string>
+
+    <string name="Q3Simran">3. Who was Simran Jeet Singh named after?</string>
+    <string name="Q3_A1Simran">A famous singer at the time</string>
+    <string name="Q3_A2Simran">A famous drum player at the time</string>
+    <string name="Q3_A3Simran">A famous political activist at the time</string>
+    <string name="Q3_A4Simran"> A famous painter at the time</string>
+
+    <string name="Q4Simran">4. What did Singh see after 9/11?</string>
+    <string name="Q4_A1Simran">He saw himself being grouped into places while his community was turning invisible</string>
+    <string name="Q4_A2Simran">He saw himself being more ignorant towards people of other races</string>
+    <string name="Q4_A3Simran">He saw large amounts of others grouping themselves into certain religious categories</string>
+    <string name="Q4_A4Simran">He saw that all races and religions were treated equally</string>
+
+    <string name="Q5Simran">5. What is Simran Jeet Singh’s podcast “Spirited” about?</string>
+    <string name="Q5_A1Simran">His favorite books about painting</string>
+    <string name="Q5_A2Simran">Leaders and activists</string>
+    <string name="Q5_A3Simran">Political parties in America</string>
+    <string name="Q5_A4Simran">His favorite foods</string>
+
 
     //Alice Wong Strings
 
     <string name="AliceTitle">Alice Wong</string>
     <string name="AliceBio"> Pronouns: She/Her Gender: Female Age: 46 Activist for the rights of disabled people </string>
-
     <string name="AliceInfo1">Alice Wong was born in Indianapolis, Indiana on March 24, 1974, with Spinal Muscular Atrophy (SMA). As a young girl, she always felt lonely being a wheel-chair user. It was a three-hour drive from her home to buy lunch and groceries as Chinese-Americans living in Indiana. She found the distance made her appreciate the food more. She also experienced bullying at schools. Her classmates would push her and hit her because she was weak and her teachers did not make enough accommodations for people with disabilities.
         Wong became a sociologist and learned about different groups and what they meant. From there, she started thinking about disabilities as less of just a biological difference but also how it affected people mentally. She found she had a lot of anger due to her disability which she started channeling into writing and research. She experienced microaggressions from others towards people with disabilities such as when she was denied a drama course because she would not be able to be “physical enough”.
     </string>
-
     <string name="AliceInfo2"> In early 2014, she started developing the Disability Visibility Project after she attended a StoryCorps event in San Francisco for animated portions on NPR’s Morning Edition. She found it left a lasting impression on her and reached out to someone to ask if they were interested in creating a project with a disability community-specific partnership. The project was launched in July 2014 to help document the experiences of people with disabilities.
         Wong has also written an essay published in Amerasia Journal, “Musings from an Angry Asian American Disabled Girl”, where she wrote about her experiences growing up. She strives to connect young women and girls with disabilities to empower them.
     </string>
-
     <string name="AliceReferences">https://letterstothrive.tumblr.com/post/55608302401/hey-angry-girl  https://www.easterseals.com/thrive/who-we-are/alice-wong.html  https://disabilityvisibilityproject.com/2015/12/12/dvp-interview-alice-wong-and-ellen-wu/</string>
+
+
+    //Alice Wong Quiz
+
+    <string name="Q1Alice">1. What condition was Alice Wong born with?</string>
+    <string name="Q1_A1Alice">Autism Spectrum Disorder</string>
+    <string name="Q1_A2Alice">Spinal Muscular Atrophy</string>
+    <string name="Q1_A3Alice">Kernicterus</string>
+    <string name="Q1_A4Alice">Myotonic dystrophy</string>
+
+    <string name="Q2Alice">2. How did becoming a sociologist influence Wong\’s thinking?</string>
+    <string name="Q2_A1Alice">She started thinking about disabilities as not only a biological difference but also how they affected people mentally</string>
+    <string name="Q2_A2Alice">She started thinking about how race influenced the way people thought of disabilities</string>
+    <string name="Q2_A3Alice">She started thinking about the way that the food people ate influenced their disabilities</string>
+    <string name="Q2_A4Alice">She started thinking about disabilities as not only a biological difference but also thinking about how they affected people politically</string>
+
+    <string name="Q3Alice">3. In which experience did Wong feel a micro-aggression towards people with disabilities?</string>
+    <string name="Q3_A1Alice">When her teacher told her she could not play in the soccer game because she was not strong enough</string>
+    <string name="Q3_A2Alice">When her best friend told her they couldn\’t be friends because she wasn\’t smart enough</string>
+    <string name="Q3_A3Alice">When her sister told her that she could not go shopping with her because she wasn\’t pretty enough</string>
+    <string name="Q3_A4Alice">When she was denied a drama course because they said she would not be able to be physical enough</string>
+
+    <string name="Q4Alice">4. What is the Disability Visibility Project?</string>
+    <string name="Q4_A1Alice">A project Alice Wong developed to help people see again</string>
+    <string name="Q4_A2Alice">A project Wong\’s sister developed to connect people with disabilities to connect them to people in senior centers</string>
+    <string name="Q4_A3Alice">A project Alice Wong developed to allow people to learn about the stories of people with disabilities</string>
+    <string name="Q4_A4Alice">A project Alice Wong developed for student’s to raise awareness about climate change</string>
+
+    <string name="Q5Alice">5. What is Alice Wong\’s essay in Amerasia Journal, “Musings from an Angry Asian American Disabled Girl” about?</string>
+    <string name="Q5_A1Alice">Her experiences as a disabled Asian American growing up</string>
+    <string name="Q5_A2Alice">Her story about someone knocking over her basket in a grocery store</string>
+    <string name="Q5_A3Alice">Her story about creating her own school</string>
+    <string name="Q5_A4Alice">Her experiences growing up in a busy city</string>
+
 
     //Thandiwe Abdullah Strings
 
     <string name="ThandiweTitle">Thandiwe Abdullah</string>
     <string name="ThandiweBio"> Pronouns: She/Her Gender: Female Age: 17 Activist for anti-racism and equality movements</string>
-
     <string name="ThandiweInfo1">Thandiwe Abdullah was born in the Crenshaw District Los Angeles California in 2003. She was born to an activist family and started attending Black Lives Matter meetings at the young age of 10. Along with this, she was raised by many strong African American women in her community. Her mom was a professor of Pan African Studies at CSULA and she later (became) a co-founder of the LA chapter of Black Lives Matter. The founders of the Black Lives Matter Movement, Patrisse Kahn Cullors, Opal Tometti, and Alicia Garza, taught her to expand her thinking. She learned about pronouns, gender fluidity, and more about African American culture. However, Abdullah realized that she and her siblings were the only children being raised by the movement despite its goal to encourage a family community.
         She felt the effects of colorism, being called prettier because she was “lighter-skinned” and realized that lighter skin girls were more heard. In school, she felt as if she was fitting into the “angry Black girl mold” that society perpetuated. People around her wanted her to stop but she would not stop her activism and calling people out on their racism.
     </string>
-
     <string name="ThandiweInfo2"> She felt she did not fit into the women’s rights movement, that it was just white women who talked about microaggressions and the wage gap. However, she noticed that African American women get paid 21% less than an average white woman. She wanted to bring to light the privilege that some people have that others do not and to make sure movements reflect all people they stand for.
         Today, Abdullah says she works for all her sisters and people of color. She is an activist in the Black Lives Matter movement and a co-founder of Black Lives Matter Youth Vanguard which is a program to help Black youth, specifically in the LA area. She is greatly dedicated to her activism and changing the world to make sure no one has to worry about affording basic human needs.
     </string>
-
     <string name="ThandiweReferences">https://www.seventeen.com/life/a34717855/thandiwe-abdullah-black-lives-matter-voices-of-the-year-2020/</string>
+
+    //Thandiwe Abdullah Quiz Strings
+
+    <string name="Q1Thandiwe">1. At what age did Abdullah begin attending Black Lives Matter meetings?</string>
+    <string name="Q1_A1Thandiwe">20</string>
+    <string name="Q1_A2Thandiwe">17</string>
+    <string name="Q1_A3Thandiwe">6</string>
+    <string name="Q1_A4Thandiwe">10</string>
+
+    <string name="Q2Thandiwe">2. What did she learn from the founders of the Black Lives Matter Movement (Patrisse Kahn Cullors, Opal Tometti, and Alicia Garza)?</string>
+    <string name="Q2_A1Thandiwe">Pronouns, gender fluidity, and African American culture</string>
+    <string name="Q2_A2Thandiwe">How to read and speak English</string>
+    <string name="Q2_A3Thandiwe">How to recognize when someone has a disability</string>
+    <string name="Q2_A4Thandiwe">Asian American culture and the differences in languages around the globe</string>
+
+    <string name="Q3Thandiwe">3. Which mold did Abdullah say she felt like she was being put into at school?</string>
+    <string name="Q3_A1Thandiwe">“angry Black girl”</string>
+    <string name="Q3_A2Thandiwe">“smart Asian boy”</string>
+    <string name="Q3_A3Thandiwe">“unintelligent Black girl”	</string>
+    <string name="Q3_A4Thandiwe">“cheerful American boy”</string>
+
+    <string name="Q4Thandiwe">4. What did Abdullah want to bring to light after learning about after learning that an African American woman gets paid 21% less than an average white woman despite feeling like the majority of the women\'s rights movement?</string>
+    <string name="Q4_A1Thandiwe">The money that others have that they can give to immigrants</string>
+    <string name="Q4_A2Thandiwe">The privilege that others have that they should not use because it is not fair to others</string>
+    <string name="Q4_A3Thandiwe">The education that some people have that others do not that they should use to teach seniors.</string>
+    <string name="Q4_A4Thandiwe">The privilege that some people have that others do not and to make sure movements reflect all people they stand for</string>
+
+    <string name="Q5Thandiwe">5. What is the Black Lives Matter Youth Vanguard?</string>
+    <string name="Q5_A1Thandiwe">A program to help Asian</string>
+    <string name="Q5_A2Thandiwe">A program to help Black youth</string>
+    <string name="Q5_A3Thandiwe">A program to help disabled youth</string>
+    <string name="Q5_A4Thandiwe">A program to help immigrants</string>
 
     //Beverly Palesa Ditsie Strings
 
     <string name="BeverlyTitle">Beverly Palesa Ditsie</string>
     <string name="BeverlyBio"> Pronouns: She/Her Gender: Female Age: 50 Activist for LGBTQ+ rights</string>
-
     <string name="BeverlyInfo1">Beverly Palesa Ditsie was born in 1970 in Soweto, South Africa. From the age of 10, she acted in movies as an actress and voice actor. She grew up in her grandmother’s home and always felt like she was surrounded by love there. Her grandmother was a rock to her, a pillar of the community as she watched her struggle  but pursue. She also valued her grandmother’s husband and her mother a lot.
         Ditsie’s call to activism was when she became a student council representative in her high school. She always thought that there was an “overpowering” masculinity that surrounded the system. She was frustrated and spent a lot of time with queer boys, starting with them their first meeting of Glow [the Gay and Lesbian Organisation of the Witwatersrand]. There she met Simon Nkoli who she later directed the movie Simon and I about. He was an older brother figure to her who helped raise voices for the LQBTQA+ community. Glow was deeply rooted in intersectionality. In NGO spaces, Ditsie began to make sure all voices were included and pointed out deep exclusion in communities.
     </string>
-
     <string name="BeverlyInfo2">Glow helped wth the formation of the National Coalition for Gay and Lesbian Equality (NCGLE) which ensured that rights based on gender and sexuality were included in South Africa’s new constitution at the time. Ditsie spoke at the 1995 United Nations Conference on Women in Bejing, being the first person, an African lesbian woman to talk, about LGBTQA+ rights at a UN Convention. She spoke about how discrimination based on sexual orientation was a violation of basic human rights and it was neccessary to address that before talking about any other concerns of women. Ditsie struggled with her mental health through her activism, living through apartheid, and the imposter syndrome she experienced because of her gender.
         Ditsie continued making films to bring attention to people in the LGBTQA+ community and people with HIV/AIDs. Her film Simon and I became very popular and displayed a clear message about what she fought for, freedom. Today she continues her activism to inspire and help others. In 2019, she was a recipient of an honorary degree from Claremont Graduate University in California, United States for her activism and fight to bring justice to people in society.
     </string>
-
     <string name="BeverlyReferences">https://sandtonchronicle.co.za/lnn/299767/celebrating-bev-ditsie-for-her-role-in-making-lgbti-rights-a-reality
     https://lovemattersafrica.com/sexual-diversity/beverly-palesa-ditsie-a-pioneer-for-african-intersectionality
     https://www.wmm.com/filmmaker/Beverley+Palesa+Ditsie/
@@ -104,21 +202,80 @@ https://theconversation.com/profiles/simran-jeet-singh-486698#:~:text=Born%20and
     https://www.theguardian.com/society/2020/aug/20/beverley-ditsie-the-south-african-woman-who-helped-liberate-lesbians-everywhere
     https://www.newframe.com/beverley-ditsie-comes-full-circle/</string>
 
+    <string name="Q1Beverly">1. What was Ditsie\’s call to activism?</string>
+    <string name="Q1_A1Beverly">When her best friend became an activist for Disability rights</string>
+    <string name="Q1_A2Beverly">When she attended one of her school’s GLOW club meetings and felt she had a responsibility to start her own club</string>
+    <string name="Q1_A3Beverly">When she became a student council representative in her high school because she thought that there was “overpowering” masculinity that surrounded the system</string>
+    <string name="Q1_A4Beverly">When her grandmother died and she felt she could never be like her</string>
+
+    <string name="Q2Beverly">2. Who was a mentor to Ditsie that guided her in her fight for LGBTQ+ rights?</string>
+    <string name="Q2_A1Beverly">Laverne Cox</string>
+    <string name="Q2_A2Beverly">Simon Nkoli</string>
+    <string name="Q2_A3Beverly">Bruce Wayne</string>
+    <string name="Q2_A4Beverly">Anne Hathaway</string>
+
+    <string name="Q3Beverly">3. What is the National Coalition for Gay and Lesbian Equality (NCGLE)?</string>
+    <string name="Q3_A1Beverly">An organization that brought light to LGBTQ+ issues in senior centers</string>
+    <string name="Q3_A2Beverly">An organization that ensured that rights based on gender and sexuality were included in South Africa’s new constitution at the time</string>
+    <string name="Q3_A3Beverly">An organization that ensured rights based on disabilities were included in South Africa’s new constitution at the time</string>
+    <string name="Q3_A4Beverly">An organization that brought light to issues based on the lack of education about diversity in South Africa\’s schools</string>
+
+    <string name="Q4Beverly">4. Ditsie was the first person, an African lesbian woman to talk, about LGBTQA+ rights at a UN Convention. What specifically did she speak about?</string>
+    <string name="Q4_A1Beverly">She spoke about how discrimination based on sexual orientation was a violation of basic human rights and it was necessary to address that before talking about any other concerns of women</string>
+    <string name="Q4_A2Beverly">She spoke about the lack of female artists in the music industry</string>
+    <string name="Q4_A3Beverly">She spoke about how discrimination based on the ability level was a violation of human rights</string>
+    <string name="Q4_A4Beverly">She spoke about how her friends who immigrated to Africa and felt alone</string>
+
+    <string name="Q5Beverly">5. What was Ditsie\’s Film “Simon and I” about?</string>
+    <string name="Q5_A1Beverly">Ditsie\’s father Simon, an education activist who passed away due to old age</string>
+    <string name="Q5_A2Beverly">Ditsie\’s friend Simon, a disability rights activist who passed away due to their condition</string>
+    <string name="Q5_A3Beverly">Ditsie\’s brother Simon, a religious equality activist who passed away due to AIDS</string>
+    <string name="Q5_A4Beverly">Ditsie\’s mentor Simon, a gay right’s activist who passed away due to AIDS</string>
+
+
     //Malala Yousafzai  Strings
 
     <string name="MalalaTitle">Malala Yousafzai</string>
     <string name="MalalaBio"> Pronouns: She/Her Gender: Female Age: 23 Activist for Education</string>
-
     <string name="MalalaInfo1">Malala Yousafzai was born July 12, 1997 in Mingora, Swat valley, Pakistan. She was the daughter of a social activist and an educator. Her father settled and took care of the school she went to, Khushal Girls High School and College. Her father always encouraged her to become educated and follow his path. However, the Swat Valley was invaded in 2007 by the TTP, e Tehrik-e-Taliban Pakistan, who wanted to get rid of any chances for women to play an active role in society and become educated. Yousafzai and her family were forced to flee.
     When she was 11 years old, Yousafzai’s father took her to a press club in Peshawar where she gave her first speech named, “How Dare the Taliban Take Away My Basic Right to Education?”. It became popular all throughout Pakistan and The British Broadcasting Corporation (BBC) approached Yousafzai’s father for someone to write blog posts for them about their experience living under TTP rule.  Yousafzai started writing in Urdu, later translated to English, under the name of  Gul Makai. She wrote 35 entires.
     </string>
-
     <string name="MalalaInfo2">In 2009, Yousafzai  was interviewed for Capital Talk, a Pakistani talk show. Although the TPP was started allowing girls to attend school again, on the condition they wear burkas, violence started again. The New York Times reporter Adam Ellick made a short film with Malala about her school shutting down. Malala became more famous and received Pakistan’s first National Youth Peace Prize. In late 2012, Malala was shot coming home from school by a gunman of the TTP. She survived and her story led to the UN special envoy for global education, Gordon Brown, making a petition to put all children back in school by 2015. This led to the legalization of Pakistan\'s first Right to Education bill. Malala later co-authored the book I Am Malala: The Girl Who Stood Up for Education and Was Shot by the Taliban (2013) with Christina Lamb and became the youngest person to win the Nobel Peace Prize.
     Malala maintained attending school in England and started her own girls school in Lebanon for refugees from the Syrian War using funding from the Malala Fund. In 2020, she finished her Philosophy, Politics and Economics degrees at Oxford. She still continues on her fight for equality and education for everyone today.
     </string>
-
     <string name="MalalaReferences">https://www.nbcnews.com/news/world/malala-yousafzai-graduates-college-8-years-after-taliban-gunned-her-n1231525
         https://www.britannica.com/biography/Malala-Yousafzai</string>
+
+    <string name="Q1Malala">1. What did Yousafzai’s father always encourage her to do?</string>
+    <string name="Q1_A1Malala">Follow in his footsteps to become educated and teach</string>
+    <string name="Q1_A2Malala">Follow in his footstep to become an artist and spread messages through music</string>
+    <string name="Q1_A3Malala">Follow in her friend\’s footsteps to become a doctor</string>
+    <string name="Q1_A4Malala">Follow in her uncle\’s footsteps to become an archeologist</string>
+
+    <string name="Q2Malala">2. When she was 11 years old, Yousafzai’s father took her to a press club in Peshawar. She gave a speech that reached the BBC and became very popular throughout the world. What was the name of the speech?</string>
+    <string name="Q2_A1Malala">“How Dare the Taliban Take Away My Family?”</string>
+    <string name="Q2_A2Malala">“Who am I and why do I do what I do?”</string>
+    <string name="Q2_A3Malala">“Who are the Taliban and Why Are They Here?”</string>
+    <string name="Q2_A4Malala">“How Dare the Taliban Take Away My Basic Right to Education?”</string>
+
+    <string name="Q3Malala">3. The New York Times reporter Adam Ellick made a short film with Malala about what?</string>
+    <string name="Q3_A1Malala">Her family being taken away by the Tehrik-e-Taliban Pakistan</string>
+    <string name="Q3_A2Malala">Her public library being shut down by the Tehrik-e-Taliban Pakistan</string>
+    <string name="Q3_A3Malala">Her school being shut down by the Tehrik-e-Taliban Pakistan</string>
+    <string name="Q3_A4Malala">Her best friends moving to another country</string>
+
+    <string name="Q4Malala">4. What happened in late 2012 when Malala was coming home from school?</string>
+    <string name="Q4_A1Malala">She was shot by a gunman from the Tehrik-e-Taliban Pakistan</string>
+    <string name="Q4_A2Malala">She befriended a gunman from the Tehrik-e-Taliban Pakistan</string>
+    <string name="Q4_A3Malala">She found a dog in the wild to take home</string>
+    <string name="Q4_A4Malala">She found money to create her own movie</string>
+
+    <string name="Q5Malala">5. For which of these did Malala use money from the Malala Fund to support?</string>
+    <string name="Q5_A1Malala">Her own senior center in New York from veterans from WII</string>
+    <string name="Q5_A2Malala">Her own library in Texas for everyone to use</string>
+    <string name="Q5_A3Malala">Her own girl\’s school in Lebanon for refugees from the Syrian War </string>
+    <string name="Q5_A4Malala">Her own girl\’s school in Pakistan for those who have schools shut down by the Taliban</string>
+
 
     //Melanie Campbell Strings
 
@@ -136,6 +293,7 @@ https://theconversation.com/profiles/simran-jeet-singh-486698#:~:text=Born%20and
     <string name="MelanieReferences">https://www.washingtonpost.com/politics/this-is-how-democracy-crumbles-melanie-campbell-on-the-fight-to-defend-black-votes/2020/11/02/6d2a4884-1d0a-11eb-b532-05c751cd5dc2_story.html
     https://www.ncbcp.org/who/bios/mcampbell/
     https://iop.harvard.edu/fellows/melanie-campbell</string>
+
 
     //Chad Griffin Strings
 

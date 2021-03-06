@@ -2,27 +2,34 @@ package com.example.informationapp2021;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.service.autofill.Sanitizer;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import com.google.android.gms.maps.MapView;
+
+
 
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
-import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.maps.GoogleMap.OnMarkerClickListener;
 import com.google.android.gms.maps.model.LatLngBounds;
+import com.google.android.gms.maps.MapsInitializer;
 
 
-import androidx.fragment.app.FragmentActivity;
+import androidx.fragment.app.Fragment;
 
 
-public class MapOfCharacters extends FragmentActivity implements OnMapReadyCallback, OnMarkerClickListener {
+public class MapOfCharacters extends Fragment implements OnMarkerClickListener, OnMapReadyCallback {
 
-    private GoogleMap mMap;
+    private GoogleMap mGoogleMap;
+    private MapView mMapView;
+    private View mView;
     private Marker sanAntonio;
     private Marker sanFrancisco;
     private Marker losAngeles;
@@ -47,145 +54,191 @@ public class MapOfCharacters extends FragmentActivity implements OnMapReadyCallb
     private static final LatLng MOBILE = new LatLng(30.6954, -88.0399);
 
 
-
-
-
-
-
-
-   /* @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.mapofcharacters);
-        // Obtain the SupportMapFragment and get notified when the map is ready to be used.
-
-
-    }*/
+    @Override
+    public void onCreate(Bundle savedInstanceState){super.onCreate(savedInstanceState);}
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.mapofcharacters);
-        // Obtain the SupportMapFragment and get notified when the map is ready to be used.
-        SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
-                .findFragmentById(R.id.map);
-        mapFragment.getMapAsync(this);
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
+        mView = inflater.inflate(R.layout.mapofcharacters, container, false);
+        return mView;
+    }
 
+    @Override
+    public void onViewCreated ( View view, Bundle savedInstanceState){
+        super.onViewCreated(view, savedInstanceState);
+
+        mMapView = (MapView)mView.findViewById(R.id.map);
+        if (mMapView != null){
+            mMapView.onCreate(null);
+            mMapView.onResume();
+            mMapView.getMapAsync(this);
+        }
     }
 
 
-
     @Override
-    public void onMapReady(GoogleMap googleMap) {
-        mMap = googleMap;
-        mMap.setOnMarkerClickListener(this);
+    public void onMapReady (GoogleMap googleMap){
+        MapsInitializer.initialize(getContext());
+        mGoogleMap = googleMap;
+        mGoogleMap.setOnMarkerClickListener(this);
+        mGoogleMap.setOnMapLoadedCallback(new GoogleMap.OnMapLoadedCallback() {
 
-        LatLngBounds bounds = new LatLngBounds.Builder()
-                //Including only the cities in the U.S. on the starting map
-                .include(SANANTONIO)
-                .include(SANFRANCISCO)
-                .include(LOSANGELES)
-                .include(MIMS)
-                .include(HOPE)
-                .include(SACRAMENTO)
-                .include(MOBILE)
-                .build();
-        mMap.moveCamera(CameraUpdateFactory.newLatLngBounds(bounds, 100));
+            @Override
+            public void onMapLoaded() {
 
-        sanAntonio = mMap.addMarker(new MarkerOptions()
+                LatLngBounds bounds = new LatLngBounds.Builder()
+                        //Including only the cities in the U.S. on the starting map
+                        .include(SANANTONIO)
+                        .include(SANFRANCISCO)
+                        .include(LOSANGELES)
+                        .include(MIMS)
+                        .include(HOPE)
+                        .include(SACRAMENTO)
+                        .include(MOBILE)
+                        .build();
+
+                 mGoogleMap.moveCamera(CameraUpdateFactory.newLatLngBounds(bounds,100));
+
+
+            }
+        });
+
+
+        sanAntonio = googleMap.addMarker(new MarkerOptions()
                 .position(SANANTONIO)
                 .title("Simran Jeet Singh")
                 .snippet("San Antonio, TX" + "Activist advocating for religious equality in America")
                 .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_RED)));
 
-        sanFrancisco = mMap.addMarker(new MarkerOptions()
+        sanFrancisco = googleMap.addMarker(new MarkerOptions()
                 .position(SANFRANCISCO)
                 .title("Alice Wong")
                 .snippet("San Francisco, CA" + "Activist for the rights of disabled people")
                 .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_RED)));
 
-        losAngeles = mMap.addMarker(new MarkerOptions()
+        losAngeles = googleMap.addMarker(new MarkerOptions()
                 .position(LOSANGELES)
                 .title("Thandiwe Abdullah")
                 .snippet("Los Angeles, CA" + " Anti-Racism Activist")
                 .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_RED)));
 
-        Soweto = mMap.addMarker(new MarkerOptions()
+        Soweto = googleMap.addMarker(new MarkerOptions()
                 .position(SOWETO)
                 .title("Beverly Palesa Ditsie")
                 .snippet("Soweto, South Africa" + " LGBTQ+ Activist")
                 .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_RED)));
 
-        Mingora = mMap.addMarker(new MarkerOptions()
+        Mingora = googleMap.addMarker(new MarkerOptions()
                 .position(MINGORA)
                 .title("Malala Yousafzai")
                 .snippet("Mingora Swat Valley, Pakistan" + " Activist for Education")
                 .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_RED)));
 
-        Mims = mMap.addMarker(new MarkerOptions()
+        Mims = googleMap.addMarker(new MarkerOptions()
                 .position(MIMS)
                 .title("Melanie Campbell")
                 .snippet("Mims, FL" + " Anti-Racism & Equal Rights Activist")
                 .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_RED)));
 
-        Hope = mMap.addMarker(new MarkerOptions()
+        Hope = googleMap.addMarker(new MarkerOptions()
                 .position(HOPE)
                 .title("Chad Griffin")
                 .snippet("Hope, AK" + "LGTBQ+ Rights Activist")
                 .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_RED)));
 
-        Antipolo = mMap.addMarker(new MarkerOptions()
+        Antipolo = googleMap.addMarker(new MarkerOptions()
                 .position(ANTIPOLO)
                 .title("Jose Antonio Vargas")
                 .snippet("Antipolo, Phillipines" + " Advocating for immigrants and the Latinx community")
                 .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_RED)));
 
-        Sacramento = mMap.addMarker(new MarkerOptions()
+        Sacramento = googleMap.addMarker(new MarkerOptions()
                 .position(SACRAMENTO)
                 .title("Jamey Jesperson")
                 .snippet("Sacramento, CA" + " LGBTQ+ Activist")
                 .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_RED)));
 
-        Mobile = mMap.addMarker(new MarkerOptions()
+        Mobile = googleMap.addMarker(new MarkerOptions()
                 .position(MOBILE)
                 .title("Laverne Cox")
                 .snippet("Mobile, AL" + " Trans Representation and Rights Activist")
                 .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_RED)));
 
-
-
     }
 
-    public boolean onMarkerClick(final Marker marker) {
+
+
+        public boolean onMarkerClick(final Marker marker) {
         if (marker.equals(sanAntonio)) {
-            startActivity(new Intent(MapOfCharacters.this, SimranJeetSingh.class));
+            SimranJeetSingh nextFrag= new SimranJeetSingh();
+            getActivity().getSupportFragmentManager().beginTransaction()
+                    .replace(((ViewGroup)getView().getParent()).getId(), nextFrag)
+                    .addToBackStack(null)
+                    .commit();
 
         }else if (marker.equals(sanFrancisco)){
-            startActivity(new Intent(MapOfCharacters.this, AliceWong.class));
+            AliceWong nextFrag= new AliceWong();
+            getActivity().getSupportFragmentManager().beginTransaction()
+                    .replace(((ViewGroup)getView().getParent()).getId(), nextFrag)
+                    .addToBackStack(null)
+                    .commit();
+
 
         }else if (marker.equals(losAngeles)) {
-            startActivity(new Intent(MapOfCharacters.this, ThandiweAbdullah.class));
+            ThandiweAbdullah nextFrag= new ThandiweAbdullah();
+            getActivity().getSupportFragmentManager().beginTransaction()
+                    .replace(((ViewGroup)getView().getParent()).getId(), nextFrag)
+                    .addToBackStack(null)
+                    .commit();
 
         }else if (marker.equals(Soweto)) {
-            startActivity(new Intent(MapOfCharacters.this, BeverlyPalesaDitsie.class));
+            BeverlyPalesaDitsie nextFrag= new BeverlyPalesaDitsie();
+            getActivity().getSupportFragmentManager().beginTransaction()
+                    .replace(((ViewGroup)getView().getParent()).getId(), nextFrag)
+                    .addToBackStack(null)
+                    .commit();
 
         }else if (marker.equals(Mingora)) {
-            startActivity(new Intent(MapOfCharacters.this, MalalaYousafzai.class));
+            MalalaYousafzai nextFrag= new MalalaYousafzai();
+            getActivity().getSupportFragmentManager().beginTransaction()
+                    .replace(((ViewGroup)getView().getParent()).getId(), nextFrag)
+                    .addToBackStack(null)
+                    .commit();
 
         }else if (marker.equals(Mims)) {
-            startActivity(new Intent(MapOfCharacters.this, MelanieCampbell.class));
+            MelanieCampbell nextFrag= new MelanieCampbell();
+            getActivity().getSupportFragmentManager().beginTransaction()
+                    .replace(((ViewGroup)getView().getParent()).getId(), nextFrag)
+                    .addToBackStack(null)
+                    .commit();
 
         }else if (marker.equals(Hope)) {
-            startActivity(new Intent(MapOfCharacters.this, ChadGriffin.class));
+            ChadGriffin nextFrag= new ChadGriffin();
+            getActivity().getSupportFragmentManager().beginTransaction()
+                    .replace(((ViewGroup)getView().getParent()).getId(), nextFrag)
+                    .addToBackStack(null)
+                    .commit();
 
         }else if (marker.equals(Antipolo)) {
-            startActivity(new Intent(MapOfCharacters.this, JoseAntonioVargas.class));
+            JoseAntonioVargas nextFrag= new JoseAntonioVargas();
+            getActivity().getSupportFragmentManager().beginTransaction()
+                    .replace(((ViewGroup)getView().getParent()).getId(), nextFrag)
+                    .addToBackStack(null)
+                    .commit();
 
         }else if (marker.equals(Sacramento)) {
-            startActivity(new Intent(MapOfCharacters.this, JameyJesperson.class));
+            JameyJesperson nextFrag= new JameyJesperson();
+            getActivity().getSupportFragmentManager().beginTransaction()
+                    .replace(((ViewGroup)getView().getParent()).getId(), nextFrag)
+                    .addToBackStack(null)
+                    .commit();
 
         }else if (marker.equals(Mobile)) {
-            startActivity(new Intent(MapOfCharacters.this, LaverneCox.class));
+            LaverneCox nextFrag= new LaverneCox();
+            getActivity().getSupportFragmentManager().beginTransaction()
+                    .replace(((ViewGroup)getView().getParent()).getId(), nextFrag)
+                    .addToBackStack(null)
+                    .commit();
 
         }
     return false;

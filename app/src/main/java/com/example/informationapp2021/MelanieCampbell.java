@@ -1,23 +1,27 @@
 package com.example.informationapp2021;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 
-import androidx.fragment.app.FragmentActivity;
+import androidx.fragment.app.Fragment;
 
-public class MelanieCampbell extends FragmentActivity {
+
+
+public class MelanieCampbell extends Fragment {
 
     private int ButtonClicks;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.melaniecampbell);
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        View melanieView = inflater.inflate(R.layout.melaniecampbell, container, false);
 
-        final Button nextButton = (Button) findViewById(R.id.NextButton);
-        final TextView MelanieInfo = (TextView) findViewById(R.id.MelanieInfo);
+        final Button nextButton = (Button) melanieView.findViewById(R.id.NextButton);
+        final TextView melanieInfo = (TextView) melanieView.findViewById(R.id.MelanieInfo);
 
         ButtonClicks = 0;
         //Switching Info to the next block when clicking the next button
@@ -26,13 +30,13 @@ public class MelanieCampbell extends FragmentActivity {
             @Override
             public void onClick(View v) {
                 if (ButtonClicks == 0) {
-                    MelanieInfo.setText(R.string.MelanieInfo2);
+                    melanieInfo.setText(R.string.MelanieInfo2);
                     nextButton.setText(R.string.TakeQuiz);
                     ButtonClicks = 1;
 
 
                 }else if(ButtonClicks == 1) {
-                    OpenQuizPage();
+                    openQuizPage();
 
                 }
 
@@ -42,13 +46,18 @@ public class MelanieCampbell extends FragmentActivity {
             }
         });
 
+        return melanieView;
     }
 
-    //TODO: Create Quiz Page and replace the, MelanieCampbell.Class with Quiz Page Class
-    public void OpenQuizPage() {
 
-        startActivity(new Intent(MelanieCampbell.this, MelanieCampbell.class));
 
+    public void openQuizPage() {
+
+        MelanieCampbell nextFrag= new MelanieCampbell();
+        getActivity().getSupportFragmentManager().beginTransaction()
+                .replace(((ViewGroup)getView().getParent()).getId(), nextFrag)
+                .addToBackStack(null)
+                .commit();
     }
 
 }

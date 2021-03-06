@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/linearLayout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#DFFCC8">
 
     <TextView
         android:id="@+id/MalalaTitle"
@@ -62,6 +63,8 @@
         android:id="@+id/NextButton"
         android:layout_width="213dp"
         android:layout_height="39dp"
+        android:background="#CCFF90"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
         android:text="@string/NextButton"
         app:layout_constraintBottom_toTopOf="@id/MalalaReferences"
         app:layout_constraintEnd_toEndOf="parent"

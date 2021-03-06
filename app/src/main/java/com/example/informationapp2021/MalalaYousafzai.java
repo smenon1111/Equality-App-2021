@@ -1,23 +1,27 @@
 package com.example.informationapp2021;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 
-import androidx.fragment.app.FragmentActivity;
+import androidx.fragment.app.Fragment;
 
-public class MalalaYousafzai extends FragmentActivity {
+
+
+public class MalalaYousafzai extends Fragment {
 
     private int ButtonClicks;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.malalayousafzai);
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        View malalayousafzaiView = inflater.inflate(R.layout.malalayousafzai, container, false);
 
-        final Button nextButton = (Button) findViewById(R.id.NextButton);
-        final TextView MalalaInfo = (TextView) findViewById(R.id.MalalaInfo);
+        final Button nextButton = (Button) malalayousafzaiView.findViewById(R.id.NextButton);
+        final TextView MalalaInfo = (TextView) malalayousafzaiView.findViewById(R.id.MalalaInfo);
 
         ButtonClicks = 0;
         //Switching Info to the next block when clicking the next button
@@ -32,7 +36,7 @@ public class MalalaYousafzai extends FragmentActivity {
 
 
                 }else if(ButtonClicks == 1) {
-                    OpenQuizPage();
+                    openQuizPage();
 
                 }
 
@@ -42,13 +46,18 @@ public class MalalaYousafzai extends FragmentActivity {
             }
         });
 
+        return malalayousafzaiView;
     }
 
-    //TODO: Create Quiz Page and replace the, MalalaYousafiz.Class with Quiz Page Class
-    public void OpenQuizPage() {
 
-        startActivity(new Intent(MalalaYousafzai.this, MalalaYousafzai.class));
 
+    public void openQuizPage() {
+
+        MalalaYousafzai nextFrag= new MalalaYousafzai();
+        getActivity().getSupportFragmentManager().beginTransaction()
+                .replace(((ViewGroup)getView().getParent()).getId(), nextFrag)
+                .addToBackStack(null)
+                .commit();
     }
 
 }

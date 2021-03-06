@@ -24,10 +24,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Home"
+        <activity android:name=".MapOfCharacters"
             android:label="Diversity Run"/>
         <activity android:name=".View_Profile" />
-        <activity android:name=".MapOfCharacters" />
 
         <activity android:name=".User_Registration"
             tools:ignore="Instantiatable" />
@@ -44,6 +43,8 @@
         <activity android:name=".Calendar"/>
         <activity android:name=".DialogFlow"/>
         <activity android:name=".articles"/>
+        <activity android:name=".Quiz" />
+        <activity android:name=".Reward" />
     </application>
 
 </manifest>

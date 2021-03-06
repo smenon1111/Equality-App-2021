@@ -13,6 +13,7 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
+
 public class Hamburger extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
     private DrawerLayout drawer;
     //Hamburger
@@ -35,7 +36,7 @@ public class Hamburger extends AppCompatActivity implements NavigationView.OnNav
 
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                    new Home()).commit();
+                    new MapOfCharacters()).commit();
             navigationView.setCheckedItem(R.id.nav_home);
         }
     }
@@ -45,7 +46,7 @@ public class Hamburger extends AppCompatActivity implements NavigationView.OnNav
         switch (item.getItemId()) {
             case R.id.nav_home:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                        new Home()).commit();
+                        new MapOfCharacters()).commit();
                 break;
             case R.id.nav_therealprofile:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
