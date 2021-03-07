@@ -8,7 +8,7 @@
 
     <application
         android:allowBackup="true"
-        android:label="Information App 2021"
+        android:label="Unify"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
@@ -16,8 +16,8 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
         <activity
-            android:name=".Hamburger"
-            android:label="Information App 2021"
+            android:name=".MainActivity"
+            android:label="Unify"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -25,26 +25,28 @@
             </intent-filter>
         </activity>
         <activity android:name=".MapOfCharacters"
-            android:label="Diversity Run"/>
-        <activity android:name=".View_Profile" />
+            android:label="Unify"
+            tools:ignore="Instantiatable" />
+        <activity android:name="TheRealProfile"
+            tools:ignore="Instantiatable" />
 
         <activity android:name=".User_Registration"
             tools:ignore="Instantiatable" />
-        <activity android:name=".SimranJeetSingh"/>
-        <activity android:name=".AliceWong"/>
-        <activity android:name=".BeverlyPalesaDitsie"/>
-        <activity android:name=".ChadGriffin"/>
-        <activity android:name=".JameyJesperson"/>
-        <activity android:name=".JoseAntonioVargas"/>
-        <activity android:name=".LaverneCox"/>
-        <activity android:name=".MalalaYousafzai"/>
-        <activity android:name=".MelanieCampbell"/>
-        <activity android:name=".ThandiweAbdullah"/>
-        <activity android:name=".Calendar"/>
-        <activity android:name=".DialogFlow"/>
-        <activity android:name=".articles"/>
-        <activity android:name=".Quiz" />
-        <activity android:name=".Reward" />
+<!--        <activity android:name=".SimranJeetSingh"-->
+<!--        <activity android:name=".AliceWong"-->
+<!--        <activity android:name=".BeverlyPalesaDitsie"/>-->
+<!--        <activity android:name=".ChadGriffin"/>-->
+<!--        <activity android:name=".JameyJesperson"/>-->
+<!--        <activity android:name=".JoseAntonioVargas"/>-->
+<!--        <activity android:name=".LaverneCox"/>-->
+<!--        <activity android:name=".MalalaYousafzai"/>-->
+<!--        <activity android:name=".MelanieCampbell"/>-->
+<!--        <activity android:name=".ThandiweAbdullah"/>-->
+<!--        <activity android:name=".Calendar"/>-->
+<!--        <activity android:name=".DialogFlow"/>-->
+<!--        <activity android:name=".articles"/>-->
+<!--        <activity android:name=".Quiz" />-->
+<!--        <activity android:name=".Reward" />-->
     </application>
 
 </manifest>

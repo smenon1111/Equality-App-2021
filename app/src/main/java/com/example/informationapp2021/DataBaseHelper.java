@@ -8,7 +8,7 @@ import android.util.Log;
 
 public class DataBaseHelper extends SQLiteOpenHelper {
     SQLiteDatabase db;
-    public static final String DATABASE_NAME="appusers.db";
+    public static final String DATABASE_NAME="users.db";
     private static final int DATABASE_VERSION = 3;
     public static final String TABLE_NAME="T_Register";
     public static final String COL_1="ID";
@@ -19,6 +19,7 @@ public class DataBaseHelper extends SQLiteOpenHelper {
     public static final String COL_6="Pronouns";
     public static final String COL_7="Age";
     public static final String COL_8="About";
+    public static final String COL_9="Coins";
     public DataBaseHelper(Context context)
     {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
@@ -36,7 +37,8 @@ public class DataBaseHelper extends SQLiteOpenHelper {
                 COL_5 + " TEXT, " +
                 COL_6 + " TEXT, " +
                 COL_7 + " TEXT, " +
-                COL_8 + " TEXT " + ")";
+                COL_8 + " TEXT, " +
+                COL_9 + " TEXT DEFAULT '0'" + ")";
 
         Log.i("Insert", "create table");
         try {

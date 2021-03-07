@@ -19,7 +19,14 @@ public class TheRealProfile extends Fragment {
     SQLiteOpenHelper openHelper;
     SQLiteDatabase db;
     public static final String TABLE_NAME="T_Register";
-    EditText name, username, password, email, prns, age, about;
+    TextView name;
+    TextView username;
+    TextView password;
+    TextView email;
+    TextView prns;
+    TextView age;
+    TextView about;
+    TextView coins;
     Cursor results;
 
     @Override
@@ -46,6 +53,7 @@ public class TheRealProfile extends Fragment {
                         + "\nPronouns: " + results.getString(5)
                         + "\nAge: " + results.getString(6)
                         + "\nBio: " + results.getString(7)
+                        + "\nCoins: " + results.getString(8)
                 );
 
                 textView.setText(stringBuilder);

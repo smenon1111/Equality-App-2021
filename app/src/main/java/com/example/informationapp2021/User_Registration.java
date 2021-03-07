@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 import androidx.fragment.app.Fragment;
 
@@ -17,7 +18,13 @@ public class User_Registration extends Fragment {
 
     SQLiteOpenHelper openHelper;
     SQLiteDatabase db;
-    EditText name, username, password, email, prns, age, about;
+    EditText name;
+    EditText username;
+    EditText password;
+    EditText email;
+    EditText prns;
+    EditText age;
+    EditText about;
 
     @Override
 
@@ -38,7 +45,10 @@ public class User_Registration extends Fragment {
             public void onClick(View view) {
                 openHelper = new DataBaseHelper(getActivity().getApplicationContext());
                 db = openHelper.getWritableDatabase();
-                long InsertID = insertdata(name.getText().toString(), username.getText().toString(), password.getText().toString(), email.getText().toString(), prns.getText().toString(), age.getText().toString(), about.getText().toString());
+                long InsertID = insertdata(name.getText().toString(), username.getText().toString(),
+                                        password.getText().toString(), email.getText().toString(),
+                                        prns.getText().toString(), age.getText().toString(),
+                                        about.getText().toString());
                 if (InsertID <= 0)
                     Toast.makeText(getActivity().getApplicationContext(), "Registration was unsuccessful", Toast.LENGTH_LONG).show();
                 else
@@ -48,7 +58,7 @@ public class User_Registration extends Fragment {
 
         return profileView;
     }
-    public long insertdata(String name, String username, String password, String email, String prns, String age, String about ) {
+    public long insertdata(String name, String username, String password, String email, String prns, String age, String about) {
         ContentValues contentValues = new ContentValues();
         contentValues.put(DataBaseHelper.COL_2, name);
         contentValues.put(DataBaseHelper.COL_3, username);
@@ -57,8 +67,6 @@ public class User_Registration extends Fragment {
         contentValues.put(DataBaseHelper.COL_6, prns);
         contentValues.put(DataBaseHelper.COL_7, age);
         contentValues.put(DataBaseHelper.COL_8, about);
-
-
 
         long id = db.insert(DataBaseHelper.TABLE_NAME, null, contentValues);
 
