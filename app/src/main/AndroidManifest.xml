@@ -47,6 +47,9 @@
 <!--        <activity android:name=".articles"/>-->
 <!--        <activity android:name=".Quiz" />-->
 <!--        <activity android:name=".Reward" />-->
+        <!--<activity android:name=".Res_SC"></activity> />-->
+        <!--   <activity android:name=".Res_LGBTQ"></activity>/>-->
+        <!--  <activity android:name=".Res_Alliances"></activity> />-->
     </application>
 
 </manifest>

@@ -378,4 +378,68 @@ https://theconversation.com/profiles/simran-jeet-singh-486698#:~:text=Born%20and
     <string name="EventsLabel">Events For the Day</string>
     <string name="DFBtn">DialogFlowButton</string>
     <string name="MainText">Hello! Our AI ChatBot is a chatbot built with DialogFlow using Knowledge Bases. Ask it any questions you have about diversity including questions about race, the LBGTQ+ community, diability rights, education rights, and more. We do not claim the right to any information given by the Chatbot, we have either taken it directly from our sources or paraphrased it. For more information, see a list of our sources on the sources tab in the hamburger.</string>
+
+    //Resources
+    <string name="Intro">Resources</string>
+    <string name="SuicideCrisis">Suicide And Crisis</string>
+    <string name="LYouth">LGBTQ+ Youth</string>
+    <string name="DisorderAlliances">Alliances for Disorders</string>
+    <string name="call">Call:</string>
+    <string name="next">Next</string>
+    <string name="back">Back</string>
+
+    Suicide Crisis
+    <string name="ASFP"><a href="https://afsp.org/">The American Foundation for Suicide Prevention</a></string>
+    <string name="ASFPd">Provides referrals to support groups and mental health professionals, resources on loss, and suicide prevention information </string>
+    <string name="ASFPc">888-333-2377</string>
+    <string name="NDVH"><a href="https://www.thehotline.org/">The National Domestic Violence Hotline</a></string>
+    <string name="NDVHd">Provides 24/7 crisis intervention, safety planning and information on domestic violence</string>
+    <string name="NDVHc">800-799-7233</string>
+    <string name="SPL"><a href="https://suicidepreventionlifeline.org/">The Suicide Prevention Lifeline</a></string>
+    <string name="SPLd">Connects callers to trained crisis counselors</string>
+    <string name="SPLc">800-273-8255</string>
+
+    LGBTQ+
+    <string name="TTP"><a href="https://www.thetrevorproject.org/">The Trevor Project</a></string>
+    <string name="TTPd">The Trevor Project is the leading national organization providing crisis intervention and suicide prevention services to lesbian, gay, bisexual, transgender and questioning (LGBTQ) young people.</string>
+    <string name="TTPc">866-488-7386</string>
+    <string name="SCO"><a href="https://sco.org/#family-therapy-intervention-pilot-for-lgbtq-youth">SCO Family Therapy Intervention Program</a></string>
+    <string name="SCOd">Provides free, short-term family counseling services to support parents and young people in working through challenges that might arise related to coming out.</string>
+    <string name="SCOc">516-671-1253</string>
+    <string name="TPP"><a href="https://www.mykidisgay.com/">The Parents Project</a></string>
+    <string name="TPPd">The Parents Project is a first-of-its-kind digital presence, inclusive of videos, advice, and resources, dedicated exclusively toward helping parents understand their LGBTQ kids.</string>
+    <string name="LGBTQmoreinfo"><a href="https://gaycenter.org/resources/#youth">https://gaycenter.org/resources/#youth</a></string>
+    <string name="formore">For more information, visit:</string>
+
+    Alliances for Disorders
+    <string name="CHADD"><a href="https://chadd.org/">Children and Adults with Attention-Deficit/Hyperactivity Disorder(CHADD)</a></string>
+    <string name="CHADDd">Provides information and referrals on ADHD, including local support groups </string>
+    <string name="CHADDc">800-233-4050</string>
+    <string name="DBSA"><a href="https://www.dbsalliance.org/">Depression and Bipolar Support Alliance (DBSA)</a></string>
+    <string name="DBSAd">Provides information on bipolar disorder and depression, offers in-person and online support groups and forums</string>
+    <string name="DBSAc">800-826-3632</string>
+    <string name="IOF"><a href="https://iocdf.org/">International OCD Foundation</a></string>
+    <string name="IOFd">Provides information on OCD and treatment referrals</string>
+    <string name="IOFc">617-973-5801</string>
+    <string name="NCEED"><a href="https://www.nceedus.org/">National Center of Excellence for Eating Disorders (NCEED)</a></string>
+    <string name="NCEEDd">Provides up-to-date, reliable and evidence-based information about eating disorders</string>
+    <string name="NCEEDc">800-931-2237</string>
+    <string name="SARDAA"><a href="https://sardaa.org/">Schizophrenia and Related Disorders Alliance of America (SARDAA)</a></string>
+    <string name="SARDAAd">Offers Schizophrenia Anonymous self-help groups and toll-free teleconferences</string>
+    <string name="SARDAAc">240-423-9432</string>
+    <string name="SI"><a href="https://www.sidran.org/">Sidran Institute </a></string>
+    <string name="SId">Helps people understand, manage and treat trauma and dissociation; maintains a helpline for information and referrals</string>
+    <string name="SIc">410-825-8888</string>
+    <string name="TARA"><a href="https://www.tara4bpd.org/">Treatment and Research Advancements for Borderline Personality Disorder</a></string>
+    <string name="TARAd">Offers a referral center for information, support, education and treatment options for BPD</string>
+    <string name="TARAc">888-482-7227</string>
+
+    RequestForm
+    <string name="sendArt">Request For Writing Article</string>
+    <string name="req_articleidea">Submit your article topic here</string>
+    <string name="req_send">Send</string>
+    <string name="req_name">Name</string>
+    <string name="req_phone">Phone Number</string>
+    <string name="req_address">Address</string>
+    <string name="contenthint">I want to submit a piece about ... due to my expriences or research in...</string>
 </resources>
