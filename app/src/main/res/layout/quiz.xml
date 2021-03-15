@@ -32,22 +32,20 @@
     <Button
         android:id="@+id/firstbutton"
         android:layout_width="352dp"
-        android:layout_height="75dp"
+        android:layout_height="90dp"
         android:background="#FF8A80"
         android:text="@string/Q1_A1Simran"
         android:textColor="@color/colorAccent"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/secondbutton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.576"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.353" />
+        app:layout_constraintTop_toBottomOf="@id/question" />
 
     <TextView
         android:id="@+id/question"
         android:layout_width="352dp"
-        android:layout_height="50dp"
+        android:layout_height="70dp"
         android:text="@string/Q1Simran"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textSize="18sp"
@@ -62,45 +60,40 @@
     <Button
         android:id="@+id/secondbutton"
         android:layout_width="352dp"
-        android:layout_height="75dp"
+        android:layout_height="90dp"
         android:background="#FF8A80"
         android:text="@string/Q1_A2Simran"
         android:textColor="@color/colorAccent"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.576"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.556" />
+        app:layout_constraintTop_toBottomOf="@id/firstbutton"
+        app:layout_constraintBottom_toTopOf="@id/thirdbutton"
+        />
 
     <Button
         android:id="@+id/thirdbutton"
         android:layout_width="352dp"
-        android:layout_height="75dp"
+        android:layout_height="90dp"
         android:background="#FF8A80"
         android:text="@string/Q1_A3Simran"
         android:textColor="@color/colorAccent"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.576"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.737" />
+        app:layout_constraintTop_toBottomOf="@id/secondbutton"
+        app:layout_constraintBottom_toTopOf="@id/fourthbutton" />
 
     <Button
         android:id="@+id/fourthbutton"
         android:layout_width="352dp"
-        android:layout_height="75dp"
+        android:layout_height="90dp"
         android:background="#FF8A80"
         android:text="@string/Q1_A4Simran"
         android:textColor="@color/colorAccent"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.576"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.908" />
+        app:layout_constraintTop_toBottomOf="@id/thirdbutton"
+        app:layout_constraintBottom_toBottomOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
