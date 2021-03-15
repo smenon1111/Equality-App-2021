@@ -37,6 +37,19 @@
     <string name="NextButton">NEXT</string>
     <string name="TakeQuiz">TAKE QUIZ</string>
 
+    <string name="PurchaseButton">Purchase</string>
+    <string name="character1Cost">100 coins</string>
+    <string name="character2Cost">200 coins</string>
+    <string name="character3Cost">300 coins</string>
+    <string name="character4Cost">400 coins</string>
+    <string name="character5Cost">500 coins</string>
+    <string name="characterPurchased">This character has been purchased!</string>
+    <string name="shopTitle">Character Shop</string>
+
+    <string name="openRequestForm">Submit an article request</string>
+
+
+
 
 
     //Simran Jeet Singh Strings

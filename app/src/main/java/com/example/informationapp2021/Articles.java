@@ -11,7 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
 
-public class articles extends Fragment {
+public class Articles extends Fragment {
 
     Button articleButton1, articleButton2, articleButton3, articleButton4;
 
@@ -25,7 +25,7 @@ public class articles extends Fragment {
         articleButton2 = articlesView.findViewById(R.id.articleButton2);
         articleButton3 = articlesView.findViewById(R.id.articleButton3);
         articleButton4 = articlesView.findViewById(R.id.articleButton4);
-
+        Button openRequestFormButton = articlesView.findViewById(R.id.openRequestFormButton);
 
 
         articleButton1.setOnClickListener(new View.OnClickListener() {
@@ -57,6 +57,18 @@ public class articles extends Fragment {
             public void onClick(View view) {
                 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.theatlantic.com/entertainment/archive/2015/10/the-dos-and-donts-of-cultural-appropriation/411292/"));
                 startActivity(intent);
+            }
+        });
+
+        openRequestFormButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //TODO: Change this to link to REQUEST FORM PAGE
+                RequestForm nextFrag= new RequestForm();
+                getActivity().getSupportFragmentManager().beginTransaction()
+                        .replace(((ViewGroup)getView().getParent()).getId(), nextFrag)
+                        .addToBackStack(null)
+                        .commit();
             }
         });
 

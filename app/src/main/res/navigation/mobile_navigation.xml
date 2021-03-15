@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/nav_resources"
-        android:name="com.example.informationapp2021.Shop"
+        android:name="com.example.informationapp2021.Res_MainActivity"
         android:label="Resources"
         tools:layout="@layout/shop" />
 
@@ -56,7 +56,7 @@
 
     <fragment
         android:id="@+id/bottom_articles"
-        android:name="com.example.informationapp2021.articles"
+        android:name="com.example.informationapp2021.Articles"
         android:label="Articles"
         tools:layout="@layout/articles" />
 

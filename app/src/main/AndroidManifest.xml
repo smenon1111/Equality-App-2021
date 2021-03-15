@@ -2,7 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.informationapp2021">
-
     <uses-permission android:name="android.permission.SEND_SMS"/>
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
@@ -32,7 +31,7 @@
 
         <activity android:name=".User_Registration"
             tools:ignore="Instantiatable" />
-        <activity android:name=".SimranJeetSingh"/>
+      <!--  <activity android:name=".SimranJeetSingh"/>
         <activity android:name=".AliceWong"/>
         <activity android:name=".BeverlyPalesaDitsie"/>
         <activity android:name=".ChadGriffin"/>
@@ -46,7 +45,7 @@
         <activity android:name=".DialogFlow"/>
         <activity android:name=".articles"/>
         <activity android:name=".Quiz" />
-        <activity android:name=".Reward" />
+        <activity android:name=".Reward" />-->
         </application>
 
 </manifest>
