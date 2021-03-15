@@ -19,7 +19,7 @@
     <integer name="myScore">0</integer>
     <string name="buttonEarthquake">Earthquake</string>
     <string name="ReTakeQuiz">Retake Quiz</string>
-    <string name="Blank"></string>
+    <string name="Blank">Blank</string>
     <string name="articlesTitle">Informational Articles</string>
     <string name="article1">Harmful Psychological Effects of Racial Stereotyping</string>
     <string name="article2">LGBTQ Definitions Every Good Ally Should Know</string>
@@ -455,4 +455,40 @@ https://theconversation.com/profiles/simran-jeet-singh-486698#:~:text=Born%20and
     <string name="req_phone">Phone Number</string>
     <string name="req_address">Address</string>
     <string name="contenthint">I want to submit a piece about ... due to my expriences or research in...</string>
+
+    Calendar Strings
+    <string name="Month_1_2021">Zoom meeting for Fremont LGBTQ Alliance club (Link)</string>
+    <string name="Month_2_2021">Can Collection at Chase at 29010 Shoresbary Drive</string>
+    <string name="Month_3_2021">Clean Lake Elizabeth from 8 to 9 AM
+                                Farmer\'s market 9 to 10 AM at 299 Brown Avenue</string>
+    <string name="Month_4_2021">No events scheduled for today.</string>
+    <string name="Month_5_2021">Marie Ann Fundraiser 5 to 6 PM at Oasis Park</string>
+    <string name="Month_6_2021">Drive in Movie: Toy Story 4 to 8 PM at 2910 San Jose Park</string>
+    <string name="Month_7_2021">Meditate! by Meditation101 4 to 5 PM (link)</string>
+    <string name="Month_8_2021">Meeting at park. Blank meeting at the library</string>
+    <string name="Month_9_2021">Meeting for the Alameda Country Green Club at 392 Brown Avenue
+                                   Plant a tree at the park! Meeting at 9201 Park</string>
+    <string name="Month_10_2021">San Jose Music Collective Club Meeting 8 to 10 AM (Link)</string>
+    <string name="Month_11_2021">No events scheduled for today.</string>
+    <string name="Month_12_2021">Online Community by YogaGo 3 to 4 PM (Link)
+                                 Do you want to be Happy? Webinar by Torry Grey 8 to 10 PM (Link)</string>
+    <string name="Month_13_2021">Holiday Inclusion Celebration! by Fremont Events 4 to 5 PM (More information: link.com)</string>
+    <string name="Month_14_2021">Community Get-Together by Alameda Country Library (Zoom Link: link)</string>
+    <string name="Month_15_2021">Parenting in the New Age Seminar by Mommy and Me 7 to 8 AM (More information: link.com) </string>
+    <string name="Month_16_2021">Diversity Inclusion Panel @ UCBerekely 1 to 2 PM (Link)</string>
+    <string name="Month_17_2021">Senior Event @ Saratoga Senior Community Center 9 to 10 AM</string>
+    <string name="Month_18_2021">Multicultural Cooking Class 3 to 6 PM (Link)</string>
+    <string name="Month_19_2021">Diversity Awareness in the Workplace Seminar 2 to 3 PM (Link)</string>
+    <string name="Month_20_2021">Black Lives Matter Meeting 6 to 7 PM</string>
+    <string name="Month_21_2021">Learning How to be Disability Friendly 5 to 7 PM </string>
+    <string name="Month_22_2021">How To Create A Disability Friendly Event Space 2 to 3 PM</string>
+    <string name="Month_23_2021">Education Right Around the World Conference 1 to 7 PM</string>
+    <string name="Month_24_2021">Religious Rights in the Classroom Discussion 4 to 5 PM</string>
+    <string name="Month_25_2021">Famous Advocates Who Fought for Rights! 2 to 5 PM</string>
+    <string name="Month_26_2021">Why We Do What We Do by DREDF 10 to 11 AM</string>
+    <string name="Month_27_2021">Ways to Combat Your Internal Biases Webinar 8 to 11 AM</string>
+    <string name="Month_28_2021">Unpacking White Feminism Lecture by Rachel Cargle</string>
+    <string name="Month_29_2021">Forming Alliances in Your Community by Speaker 4 to 8 PM</string>
+    <string name="Month_30_2021">Creating a Healthy Environment for LGBTQ+ Students Lecture 6 to 7:30 PM</string>
+    <string name="Month_31_2021">Expressing Love For All Club 2 to 3 PM</string>
 </resources>
