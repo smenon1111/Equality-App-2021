@@ -63,16 +63,13 @@
     <string name="SimranInfo1">Simran Jeet Singh was born on July 25, 1984, in San Antonio, Texas. Growing up, there were not a lot of Sikh families where he lived and his parents felt it was important to stay connected to their culture. Singh started learning Punjabi from a young age and also consistently did kirtan and ardas (religious practices) , as there were no Gurdwaras (Sikh places of worship) where he lived. His community was small and they met on Friday nights but Singh also had friends who weren’t Sikh. He felt like he was living in two different worlds.
 
         Singh went to camps around America during the years that were connected with Sikhi but he didn’t feel truly (tied) until he started learning about the recent history of his people. He learned he was named by his parents after a famous political activist at the time. From these places came his inspiration to help his community. From his emotional connections came his spiritual connections to the world.
-
-</string>
+    </string>
     <string name="SimranInfo2"> After 9/11, Singh realized that identity includes how other people view you as well as how you view yourself. He saw himself being grouped into places while his community was turning invisible, trying to explain their story. 9/11 showed him the pain and ignorance people show towards certain religions and faiths. He felt he had the responsibility and privilege, that others didn’t have, to change that.
 
     Today, Simran Jeet Singh is a writer, a professor at Columbia University, and a Senior Religion Fellow for the Sikh Coalition, and a Truman National Security Fellow for the Truman National Security Project. He has multiple degrees from Harvard and Columbia University and has a podcast called Spirited where he talks about leaders and activists. He has also written a book called Fauja Singh Keeps Going about the oldest person who was believed to run a marathon. He lives with his two children and his wife.
-
-</string>
+    </string>
     <string name="SimranReferences">http://www.wearesikhs.org/simran_jeet_singh
-https://theconversation.com/profiles/simran-jeet-singh-486698#:~:text=Born%20and%20raised%20in%20San,at%20Weill%20Cornell%20Medical%20College.
-</string>
+    https://theconversation.com/profiles/simran-jeet-singh-486698#:~:text=Born%20and%20raised%20in%20San,at%20Weill%20Cornell%20Medical%20College.</string>
 
 
     //Simran Jeet Singh Quiz
@@ -307,6 +304,35 @@ https://theconversation.com/profiles/simran-jeet-singh-486698#:~:text=Born%20and
     https://www.ncbcp.org/who/bios/mcampbell/
     https://iop.harvard.edu/fellows/melanie-campbell</string>
 
+    <string name="Q1Melanie">1. When Campbell was growing up in Mims, Florida, her parents led the local chapter of what organization?</string>
+    <string name="Q1_A1Melanie">To make sure everyone was well educated about climate change</string>
+    <string name="Q1_A2Melanie">To ensure that all people could talk about their favorite subjects in school</string>
+    <string name="Q1_A3Melanie">To make sure Black women were not invisible</string>
+    <string name="Q1_A4Melanie">To abolish the health care system</string>
+
+    <string name="Q2Melanie">2. What event did Campbell say she remembered where she was sleeping on the floor, close to her brother, sister, and mother while something else was happening?</string>
+    <string name="Q2_A1Melanie">Her grandfather going to the grocery store alone because everyone was too tired</string>
+    <string name="Q2_A2Melanie">Her father and others ready to defend the town from an attack by the Klu Klux Klan</string>
+    <string name="Q2_A3Melanie">Her grandmother was in the hospital after a heart attack</string>
+    <string name="Q2_A4Melanie">Her best friend was moving away to another country</string>
+
+    <string name="Q3Melanie">3.  Who did Campbell hire after starting to work for Atlanta\’s Mayor, Maynard Jackson, at the time?</string>
+    <string name="Q3_A1Melanie">Joe Jackson because he was a mentor to Campbell and taught her much about politics</string>
+    <string name="Q3_A2Melanie">Alexandra Jackson because she was Maynard Jackson\’s daughter</string>
+    <string name="Q3_A3Melanie">Michael Jackson because he was famous and well known at the time</string>
+    <string name="Q3_A4Melanie">Stacey Abrams because she questioned if Jackson really understood and acknowledged the feelings of younger people</string>
+
+    <string name="Q4Melanie">4. What did Campbell say one of her main life goals was when she became the president and CEO of the National Coalition on Black Civic Participation?</string>
+    <string name="Q4_A1Melanie">To make sure everyone was well educated about climate change</string>
+    <string name="Q4_A2Melanie">To ensure that all people could talk about their favorite subjects in school</string>
+    <string name="Q4_A3Melanie">To make sure Black women were not invisible</string>
+    <string name="Q4_A4Melanie">To abolish the health care system</string>
+
+    <string name="Q5Melanie">5. Campbell convened the Black Women’s Roundtable which is a non-partisan organization which is which of the following?</string>
+    <string name="Q5_A1Melanie">A network of women to improve the lives of Black women, their families, and communities </string>
+    <string name="Q5_A2Melanie">A network of women to spread their favorite books and speak about them</string>
+    <string name="Q5_A3Melanie">A weekly meeting in which women discuss career paths and education for seniors</string>
+    <string name="Q5_A4Melanie">A weekly meeting in which young Black girls discuss their experiences in life</string>
 
     //Chad Griffin Strings
 
@@ -325,6 +351,37 @@ https://theconversation.com/profiles/simran-jeet-singh-486698#:~:text=Born%20and
     https://apnews.com/article/b872e8f19255470fbb504ef1040df2bf
     https://civilrights.org/2019/04/29/hrcs-chad-griffin-to-receive-chairpersons-award-at-civil-rights-dinner/
     http://www.glbtqarchive.com/ssh/griffin_chad_S.pdf</string>
+
+    <string name="Q1Chad">1. Growing up, Griffin had a deep passion for which subjects?</string>
+    <string name="Q1_A1Chad">Math and Science</string>
+    <string name="Q1_A2Chad">International affairs and politics</string>
+    <string name="Q1_A3Chad">International business and finance</string>
+    <string name="Q1_A4Chad">Computer Science and Data Analysis</string>
+
+    <string name="Q2Chad">How many years did Griffin serve in the White House after volunteering in a political campaign at age 19 and under which president?</string>
+    <string name="Q2_A1Chad">3 years; Hillary Clinton</string>
+    <string name="Q2_A2Chad">2 years; Bill Clinton</string>
+    <string name="Q2_A3Chad">5 years; Barack Obama</string>
+    <string name="Q2_A4Chad">1 year; Donald Trump</string>
+
+    <string name="Q3Chad">Griffin was a strong opponent of Proposition 8 in 2008 because of his own identity as a gay man. What did Proposition 8 state?</string>
+    <string name="Q3_A1Chad">“Eliminates Right of Same-Sex Couples to Marry”</string>
+    <string name="Q3_A2Chad">“Eliminates Right of Same-Sex Couples to Appear in Public”</string>
+    <string name="Q3_A3Chad">“Right of Same-Sex Couples to Marry”</string>
+    <string name="Q3_A4Chad">“Right of Same-Sex Couples to Get Married in a Different Country”</string>
+
+    <string name="Q4Chad">Which campaign did Griffin step down that he had been leading over the past few years?</string>
+    <string name="Q4_A1Chad">The National Association for the Advancement of Colored People</string>
+    <string name="Q4_A2Chad">Human Rights Campaign</string>
+    <string name="Q4_A3Chad">United Nations Free and Equal</string>
+    <string name="Q4_A4Chad">Green America</string>
+
+    <string name="Q5Chad">What is the documentary “Outrage”, which Griffin was one of the producers of, about?</string>
+    <string name="Q5_A1Chad">Popular authors who wrote about LQBTQ+ during their time</string>
+    <string name="Q5_A2Chad">Popular singers who were also part of the LGBTQ+ community and spoke up for their rights</string>
+    <string name="Q5_A3Chad">Political figures who had worked against LGBTQ+ rights and their allegations and claims against homosexuality</string>
+    <string name="Q5_A4Chad">Political figures who worked for LGBTQ+ rights</string>
+
 
     //Jose Antonio Vargas Strings
 
@@ -345,6 +402,35 @@ https://theconversation.com/profiles/simran-jeet-singh-486698#:~:text=Born%20and
     https://joseantoniovargas.com/about/
     </string>
 
+    <string name="Q1Jose">1. What happened to Vargas at a young age?</string>
+    <string name="Q1_A1Jose">He had a sister who was taken away because her papers were fake</string>
+    <string name="Q1_A2Jose">His parents died in a car crash</string>
+    <string name="Q1_A3Jose">He was smuggled into the United States </string>
+    <string name="Q1_A4Jose">His grandmother died of cancer</string>
+
+    <string name="Q2Jose">2. How did Vargas begin to learn about American culture after his grandfather admitted to him that his papers were purchased and fake and he felt he needed to fit in?</string>
+    <string name="Q2_A1Jose">Watch Hollywood movies</string>
+    <string name="Q2_A2Jose">Read all the American literature he could</string>
+    <string name="Q2_A3Jose">Thoroughly try to learn every aspect of the English language</string>
+    <string name="Q2_A4Jose">Spend time with gangs to learn American slang and culture</string>
+
+    <string name="Q3Jose">3. Which one of these is not a work that Vargas created to show the story of his life?</string>
+    <string name="Q3_A1Jose">The New York Times Magazine essay, “My Life as an Undocumented Immigrant”</string>
+    <string name="Q3_A2Jose">The essay, “Musings from an Angry Asian American Boy” </string>
+    <string name="Q3_A3Jose">A 2021 Time cover story, “Not Legal Not Leaving”</string>
+    <string name="Q3_A4Jose">A 2013 film, “Documented”</string>
+
+    <string name="Q4Jose">4. In Vargas/’s memoir, “Dear America: Notes of an Undocumented Citizen”, he talks about what?</string>
+    <string name="Q4_A1Jose">His journey of learning how to speak French and the challenges he faced due to his original language</string>
+    <string name="Q4_A2Jose">His journey of entering the US as a 12-year-old boy and his experiences of growing up as an undocumented immigrant</string>
+    <string name="Q4_A3Jose">His friend/’s journey of growing up as an undocumented citizen and how he helped his friend</string>
+    <string name="Q4_A4Jose">The story of his parents/’ journey into Spain as undocumented immigrants and how they overcame their challenges</string>
+
+    <string name="Q5Jose">5. MTV has aired Vargas/’s Emmy Nominated Special, “White People” which is about what?</string>
+    <string name="Q5_A1Jose">What it is like to be a young white child in an America that was changing due to immigration policies and other ones as well</string>
+    <string name="Q5_A2Jose">What it is like to be a young Latinx child in an America that was changing due to immigration policies and other ones as well</string>
+    <string name="Q5_A3Jose">The policies being passed in Congress that discriminated against Black people are their culture</string>
+    <string name="Q5_A4Jose">The fight Vargas faced against the government as he advocated for free health rights for all</string>
 
     //Jamey Jesperson Strings
 

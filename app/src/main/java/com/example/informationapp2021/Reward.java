@@ -131,23 +131,4 @@ public class Reward extends Fragment {
         return myPageName;
     }
 
-
-    /*public int[] getMyAccuracy() {
-        Bundle bundle = this.getArguments();
-        int[] myAccuracy = new int[myAccuracyReward.length];
-        for(int i = 0; i<myAccuracy.length; i++){
-            myAccuracy = bundle.getIntArray(""+myAccuracyReward[i]);
-        }
-        myAccuracyReward = myAccuracy;
-        return myAccuracy;
-    }*/
-
-   /* public static Intent makeIntent(Context context, String[] myQuestion, int myScoreReward, String myPageName, int[] myAccuracy ) {
-        mainActivityContext = context;
-        myQuestionsReward = myQuestion;
-        myScore = myScoreReward;
-        myPageNameReward = myPageName;
-        myAccuracyReward = myAccuracy;
-        return new Intent(context, Reward.class);
-    }*/
 }

@@ -52,9 +52,12 @@ public class JameyJesperson extends Fragment {
 
 
     public void openQuizPage() {
-        JameyJesperson nextFrag= new JameyJesperson();
+        Quiz nextFrag = new Quiz();
+        Bundle bundle = new Bundle();
+        bundle.putString("Name", "JameyJesperson");
+        nextFrag.setArguments(bundle);
         getActivity().getSupportFragmentManager().beginTransaction()
-                .replace(((ViewGroup)getView().getParent()).getId(), nextFrag)
+                .replace(((ViewGroup) getView().getParent()).getId(), nextFrag)
                 .addToBackStack(null)
                 .commit();
     }

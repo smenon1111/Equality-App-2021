@@ -53,9 +53,12 @@ public class ChadGriffin extends Fragment {
 
     public void openQuizPage() {
 
-        ChadGriffin nextFrag= new ChadGriffin();
+        Quiz nextFrag = new Quiz();
+        Bundle bundle = new Bundle();
+        bundle.putString("Name", "ChadGriffin");
+        nextFrag.setArguments(bundle);
         getActivity().getSupportFragmentManager().beginTransaction()
-                .replace(((ViewGroup)getView().getParent()).getId(), nextFrag)
+                .replace(((ViewGroup) getView().getParent()).getId(), nextFrag)
                 .addToBackStack(null)
                 .commit();
     }
