@@ -1,6 +1,8 @@
 package com.example.informationapp2021;
 
+import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
@@ -20,6 +22,7 @@ public class DataBaseHelper extends SQLiteOpenHelper {
     public static final String COL_7="Age";
     public static final String COL_8="About";
     public static final String COL_9="Coins";
+
     public DataBaseHelper(Context context)
     {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
@@ -55,4 +58,21 @@ public class DataBaseHelper extends SQLiteOpenHelper {
         onCreate(db);
     }
 
+    public static Cursor GetUserData(SQLiteDatabase db) {
+        String query = "Select * from " + TABLE_NAME;
+
+        Cursor results = db.rawQuery(query, null);
+
+        return results;
+    }
+
+    public static long updateCoins(SQLiteDatabase db, String username, String coins) {
+        ContentValues contentValues = new ContentValues();
+        contentValues.put(DataBaseHelper.COL_3, username);
+        contentValues.put(DataBaseHelper.COL_9, coins);
+        String[] selectionArgs = { String.valueOf(username) };
+        long id = db.update(DataBaseHelper.TABLE_NAME,contentValues,DataBaseHelper.COL_3 +" = ? ",selectionArgs);
+        return id;
+
+    }
 }

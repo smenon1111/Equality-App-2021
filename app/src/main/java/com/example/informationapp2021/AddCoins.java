@@ -35,7 +35,9 @@ public class AddCoins extends Fragment {
 
         TextView textView = profileView.findViewById(R.id.getusername);
 
-        results = GetUserData();
+        openHelper = new DataBaseHelper(getActivity().getApplicationContext());
+        db = openHelper.getWritableDatabase();
+        results = DataBaseHelper.GetUserData(db);
 
         if (results.getCount() <= 0)
         {
@@ -63,7 +65,7 @@ public class AddCoins extends Fragment {
                 String currCoins = results.getString(8);
                 int coinsCount = Integer.parseInt(currCoins) + 100000;
 
-                long AddCoinsID = updateCoins(results.getString(2), String.valueOf(coinsCount));
+                long AddCoinsID = DataBaseHelper.updateCoins(db, results.getString(2), String.valueOf(coinsCount));
 
                 if (AddCoinsID <= 0)
                     Toast.makeText(getActivity().getApplicationContext(), "Add coins was unsuccessful", Toast.LENGTH_LONG).show();
@@ -73,26 +75,6 @@ public class AddCoins extends Fragment {
         });
 
         return profileView;
-    }
-
-    public Cursor GetUserData() {
-        openHelper = new DataBaseHelper(getActivity().getApplicationContext());
-        db = openHelper.getReadableDatabase();
-        String query = "Select * from " + TABLE_NAME;
-
-        Cursor results = db.rawQuery(query, null);
-
-        return results;
-    }
-
-    public long updateCoins(String username, String coins) {
-        ContentValues contentValues = new ContentValues();
-        contentValues.put(DataBaseHelper.COL_3, username);
-        contentValues.put(DataBaseHelper.COL_9, coins);
-        String[] selectionArgs = { String.valueOf(username) };
-        long id = db.update(DataBaseHelper.TABLE_NAME,contentValues,DataBaseHelper.COL_3 +" = ? ",selectionArgs);
-        return id;
-
     }
 
 }

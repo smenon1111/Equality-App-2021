@@ -58,7 +58,7 @@ public class Reward extends Fragment {
         Correct_Incorrect4.setImageResource(myAccuracyReward[3]);
         Correct_Incorrect5.setImageResource(myAccuracyReward[4]);
 
-        Toast PointsRecieved = Toast.makeText(getActivity(),"Congrats! You earned 10 coins!", Toast.LENGTH_LONG);
+        Toast PointsReceived = Toast.makeText(getActivity(),"Congrats! You earned 10 coins!", Toast.LENGTH_LONG);
 
 
         if (myScoreReward == 0){
@@ -79,7 +79,7 @@ public class Reward extends Fragment {
         }else if (myScoreReward == 50){
             GoodJob.setText("Congratulations!");
             MyPointTotal.setText("+10 coins!");
-            PointsRecieved.show();
+            PointsReceived.show();
         }
 
         homeButton.setOnClickListener(new View.OnClickListener() {
