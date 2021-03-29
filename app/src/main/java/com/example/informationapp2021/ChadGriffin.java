@@ -21,7 +21,7 @@ public class ChadGriffin extends Fragment {
         View chadgriffinView = inflater.inflate(R.layout.chadgriffin, container, false);
 
         final Button nextButton = (Button) chadgriffinView.findViewById(R.id.NextButton);
-        final TextView AliceInfo = (TextView) chadgriffinView.findViewById(R.id.AliceInfo);
+        final TextView ChadInfo = (TextView) chadgriffinView.findViewById(R.id.ChadInfo);
 
         ButtonClicks = 0;
         //Switching Info to the next block when clicking the next button
@@ -30,7 +30,7 @@ public class ChadGriffin extends Fragment {
             @Override
             public void onClick(View v) {
                 if (ButtonClicks == 0) {
-                    AliceInfo.setText(R.string.ChadInfo2);
+                    ChadInfo.setText(R.string.ChadInfo2);
                     nextButton.setText(R.string.TakeQuiz);
                     ButtonClicks = 1;
 

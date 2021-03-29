@@ -524,6 +524,7 @@ public class Quiz extends Fragment {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[3] = "4." + mSecondButton.getText().toString();
+                        correct_incorrect[3] = R.drawable.red_mark;
                         openRewardPage();
                     } else if (mQuizIndex == 5) {
                         //Correct Answer
@@ -570,7 +571,6 @@ public class Quiz extends Fragment {
                         mQuizIndex = 6;
                         questions[4] = "5." + mThirdButton.getText().toString();
                         correct_incorrect[4] = R.drawable.red_mark;
-                        myScore = myScore + 10;
                         openRewardPage();
                     }
 
@@ -628,7 +628,7 @@ public class Quiz extends Fragment {
 
                 }
             });
-        }else if(pageName.equals("BeverlyPalesaDitsie")) {
+        }else if(pageName == "BeverlyPalesaDitsie") {
 
             mQuestion.setText(R.string.Q1Beverly);
             mFirstButton.setText(R.string.Q1_A1Beverly);
@@ -820,7 +820,7 @@ public class Quiz extends Fragment {
 
                 }
             });
-        }else if(pageName.equals("MalalaYousafzai")) {
+        }else if(pageName == "MalalaYousafzai") {
 
             mQuestion.setText(R.string.Q1Malala);
             mFirstButton.setText(R.string.Q1_A1Malala);
@@ -982,8 +982,8 @@ public class Quiz extends Fragment {
 
                     } else if (mQuizIndex == 2) {
                         //Correct Answer
-                        questions[0] = "2." + mFourthButton.getText().toString();
-                        correct_incorrect[0] = R.drawable.check_mark;
+                        questions[1] = "2." + mFourthButton.getText().toString();
+                        correct_incorrect[1] = R.drawable.check_mark;
                         mQuestion.setText(R.string.Q3Malala);
                         mFirstButton.setText(R.string.Q3_A1Malala);
                         mSecondButton.setText(R.string.Q3_A2Malala);
@@ -1014,7 +1014,7 @@ public class Quiz extends Fragment {
 
                 }
             });
-        }else if(pageName.equals("MelanieCampbell")) {
+        }else if(pageName == "MelanieCampbell") {
 
             mQuestion.setText(R.string.Q1Melanie);
             mFirstButton.setText(R.string.Q1_A1Melanie);
@@ -1289,8 +1289,8 @@ public class Quiz extends Fragment {
                         myScore = myScore + 10;
                     } else if (mQuizIndex == 2) {
                         //Correct Answer
-                        questions[0] = "2." + mSecondButton.getText().toString();
-                        correct_incorrect[0] = R.drawable.check_mark;
+                        questions[1] = "2." + mSecondButton.getText().toString();
+                        correct_incorrect[1] = R.drawable.check_mark;
                         mQuestion.setText(R.string.Q3Chad);
                         mFirstButton.setText(R.string.Q3_A1Chad);
                         mSecondButton.setText(R.string.Q3_A2Chad);
@@ -1298,7 +1298,7 @@ public class Quiz extends Fragment {
                         mFourthButton.setText(R.string.Q3_A4Chad);
                         Toast CorrectAnswer = Toast.makeText(getContext(), "Correct Answer!", Toast.LENGTH_LONG);
                         CorrectAnswer.show();
-                        mQuizIndex = 2;
+                        mQuizIndex = 3;
                         myScore = myScore + 10;
                     } else if (mQuizIndex == 3) {
                         //Wrong Answer
@@ -1409,7 +1409,7 @@ public class Quiz extends Fragment {
 
                 }
             });
-        }else if(pageName.equals("JoseAntonioVargas")) {
+        }else if(pageName == ("JoseAntonioVargas")) {
 
             mQuestion.setText(R.string.Q1Jose);
             mFirstButton.setText(R.string.Q1_A1Jose);
@@ -1430,8 +1430,8 @@ public class Quiz extends Fragment {
                         openRewardPage();
                     } else if (mQuizIndex == 2) {
                         //Correct Answer
-                        questions[0] = "2." + mFirstButton.getText().toString();
-                        correct_incorrect[0] = R.drawable.check_mark;
+                        questions[1] = "2." + mFirstButton.getText().toString();
+                        correct_incorrect[1] = R.drawable.check_mark;
                         mQuestion.setText(R.string.Q3Jose);
                         mFirstButton.setText(R.string.Q3_A1Jose);
                         mSecondButton.setText(R.string.Q3_A2Jose);
@@ -1439,7 +1439,7 @@ public class Quiz extends Fragment {
                         mFourthButton.setText(R.string.Q3_A4Jose);
                         Toast CorrectAnswer = Toast.makeText(getContext(), "Correct Answer!", Toast.LENGTH_LONG);
                         CorrectAnswer.show();
-                        mQuizIndex = 2;
+                        mQuizIndex = 3;
                         myScore = myScore + 10;
                     } else if (mQuizIndex == 3) {
                         //Wrong Answer
@@ -1450,6 +1450,7 @@ public class Quiz extends Fragment {
                     } else if (mQuizIndex == 4) {
                         //Wrong Answer
                         mQuizIndex = 6;
+                        correct_incorrect[3] = R.drawable.red_mark;
                         questions[3] = "4." + mFirstButton.getText().toString();
                         openRewardPage();
                     } else if (mQuizIndex == 5) {
@@ -1542,6 +1543,393 @@ public class Quiz extends Fragment {
                         questions[1] = "2." + mThirdButton.getText().toString();
                         correct_incorrect[1] = R.drawable.red_mark;
                         openRewardPage();
+                    } else if (mQuizIndex == 3) {
+                        //Wrong Answer
+                        mQuizIndex = 6;
+                        questions[2] = "3." + mThirdButton.getText().toString();
+                        correct_incorrect[2] = R.drawable.red_mark;
+                        openRewardPage();
+                    } else if (mQuizIndex == 4) {
+                        //Wrong Answer
+                        mQuizIndex = 6;
+                        questions[3] = "4." + mThirdButton.getText().toString();
+                        correct_incorrect[3] = R.drawable.red_mark;
+                        openRewardPage();
+                    } else if (mQuizIndex == 5) {
+                        //Wrong Answer
+                        mQuizIndex = 6;
+                        questions[4] = "5." + mThirdButton.getText().toString();
+                        correct_incorrect[4] = R.drawable.red_mark;
+                        openRewardPage();
+                    }
+
+
+                }
+            });
+
+            //FOURTH BUTTON
+            mFourthButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    if (mQuizIndex == 1) {
+                        //Wrong Answer
+                        mQuizIndex = 6;
+                        questions[0] = "1." + mFourthButton.getText().toString();
+                        correct_incorrect[0] = R.drawable.red_mark;
+                        openRewardPage();
+
+                    } else if (mQuizIndex == 2) {
+                        //Wrong Answer
+                        mQuizIndex = 6;
+                        questions[1] = "2." + mFourthButton.getText().toString();
+                        correct_incorrect[1] = R.drawable.red_mark;
+                        openRewardPage();
+                    } else if (mQuizIndex == 3) {
+                        //Wrong Answer
+                        mQuizIndex = 6;
+                        questions[2] = "3." + mFourthButton.getText().toString();
+                        correct_incorrect[2] = R.drawable.red_mark;
+                        openRewardPage();
+                    } else if (mQuizIndex == 4) {
+                        //Wrong Answer
+                        mQuizIndex = 6;
+                        questions[3] = "4." + mFourthButton.getText().toString();
+                        correct_incorrect[3] = R.drawable.red_mark;
+                        openRewardPage();
+                    } else if (mQuizIndex == 5) {
+                        //Wrong Answer
+                        mQuizIndex = 6;
+                        questions[4] = "5." + mFourthButton.getText().toString();
+                        correct_incorrect[4] = R.drawable.red_mark;
+                    }
+
+                }
+            });
+        }else if(pageName == "JameyJesperson") {
+
+            mQuestion.setText(R.string.Q1Jamey);
+            mFirstButton.setText(R.string.Q1_A1Jamey);
+            mSecondButton.setText(R.string.Q1_A2Jamey);
+            mThirdButton.setText(R.string.Q1_A3Jamey);
+            mFourthButton.setText(R.string.Q1_A4Jamey);
+            title.setText(R.string.JameyTitle);
+
+            //FIRST BUTTON
+            mFirstButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    if (mQuizIndex == 1) {
+                        //Wrong Answer
+                        mQuizIndex = 6;
+                        questions[0] = "1." + mFirstButton.getText().toString();
+                        correct_incorrect[0] = R.drawable.red_mark;
+                        openRewardPage();
+                    } else if (mQuizIndex == 2) {
+                        //Correct Answer
+                        questions[1] = "2." + mFirstButton.getText().toString();
+                        correct_incorrect[1] = R.drawable.check_mark;
+                        mQuestion.setText(R.string.Q3Jamey);
+                        mFirstButton.setText(R.string.Q3_A1Jamey);
+                        mSecondButton.setText(R.string.Q3_A2Jamey);
+                        mThirdButton.setText(R.string.Q3_A3Jamey);
+                        mFourthButton.setText(R.string.Q3_A4Jamey);
+                        Toast CorrectAnswer = Toast.makeText(getContext(), "Correct Answer!", Toast.LENGTH_LONG);
+                        CorrectAnswer.show();
+                        mQuizIndex = 3;
+                        myScore = myScore + 10;
+                    } else if (mQuizIndex == 3) {
+                        //Wrong Answer
+                        mQuizIndex = 6;
+                        questions[2] = "3." + mFirstButton.getText().toString();
+                        correct_incorrect[2] = R.drawable.red_mark;
+                        openRewardPage();
+                    } else if (mQuizIndex == 4) {
+                        //Wrong Answer
+                        mQuizIndex = 6;
+                        questions[3] = "4." + mFirstButton.getText().toString();
+                        correct_incorrect[3] = R.drawable.red_mark;
+                        openRewardPage();
+                    } else if (mQuizIndex == 5) {
+                        //Wrong Answer
+                        mQuizIndex = 6;
+                        questions[4] = "5." + mFirstButton.getText().toString();
+                        correct_incorrect[4] = R.drawable.red_mark;
+                        openRewardPage();
+
+
+                    }
+
+                }
+            });
+
+            //SECOND BUTTON
+            mSecondButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    if (mQuizIndex == 1) {
+                        //Wrong Answer
+                        mQuizIndex = 6;
+                        questions[0] = "1." + mSecondButton.getText().toString();
+                        correct_incorrect[0] = R.drawable.red_mark;
+                        openRewardPage();
+                    } else if (mQuizIndex == 2) {
+                        //Wrong Answer
+                        mQuizIndex = 6;
+                        questions[1] = "2." + mSecondButton.getText().toString();
+                        correct_incorrect[1] = R.drawable.red_mark;
+                        openRewardPage();
+                    } else if (mQuizIndex == 3) {
+                        //Wrong Answer
+                        mQuizIndex = 6;
+                        questions[2] = "3." + mSecondButton.getText().toString();
+                        correct_incorrect[2] = R.drawable.red_mark;
+                        openRewardPage();
+                    } else if (mQuizIndex == 4) {
+                        //Correct Answer
+                        questions[3] = "4." + mSecondButton.getText().toString();
+                        correct_incorrect[3] = R.drawable.check_mark;
+                        mQuestion.setText(R.string.Q5Jamey);
+                        mFirstButton.setText(R.string.Q5_A1Jamey);
+                        mSecondButton.setText(R.string.Q5_A2Jamey);
+                        mThirdButton.setText(R.string.Q5_A3Jamey);
+                        mFourthButton.setText(R.string.Q5_A4Jamey);
+                        Toast CorrectAnswer = Toast.makeText(getContext(), "Correct Answer!", Toast.LENGTH_LONG);
+                        CorrectAnswer.show();
+                        mQuizIndex = 5;
+                        myScore = myScore + 10;
+                    } else if (mQuizIndex == 5) {
+                        //Wrong Answer
+                        mQuizIndex = 6;
+                        questions[4] = "5." + mSecondButton.getText().toString();
+                        correct_incorrect[4] = R.drawable.red_mark;
+                        openRewardPage();
+
+                    }
+                }
+            });
+
+            //THIRD BUTTON
+            mThirdButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    if (mQuizIndex == 1) {
+                        //Wrong Answer
+                        mQuizIndex = 6;
+                        questions[0] = "1." + mThirdButton.getText().toString();
+                        correct_incorrect[0] = R.drawable.red_mark;
+                        openRewardPage();
+                    } else if (mQuizIndex == 2) {
+                        //Wrong Answer
+                        mQuizIndex = 6;
+                        questions[1] = "2." + mThirdButton.getText().toString();
+                        correct_incorrect[1] = R.drawable.red_mark;
+                        openRewardPage();
+                    } else if (mQuizIndex == 3) {
+                        //Correct Answer
+                        questions[2] = "3." + mThirdButton.getText().toString();
+                        correct_incorrect[2] = R.drawable.check_mark;
+                        mQuestion.setText(R.string.Q4Jamey);
+                        mFirstButton.setText(R.string.Q4_A1Jamey);
+                        mSecondButton.setText(R.string.Q4_A2Jamey);
+                        mThirdButton.setText(R.string.Q4_A3Jamey);
+                        mFourthButton.setText(R.string.Q4_A4Jamey);
+                        Toast CorrectAnswer = Toast.makeText(getContext(), "Correct Answer!", Toast.LENGTH_LONG);
+                        CorrectAnswer.show();
+                        mQuizIndex = 4;
+                        myScore = myScore + 10;
+                    } else if (mQuizIndex == 4) {
+                        //Wrong Answer
+                        mQuizIndex = 6;
+                        questions[3] = "4." + mThirdButton.getText().toString();
+                        correct_incorrect[3] = R.drawable.red_mark;
+                        openRewardPage();
+                    } else if (mQuizIndex == 5) {
+                        //Correct Answer
+                        mQuizIndex = 6;
+                        questions[4] = "5." + mThirdButton.getText().toString();
+                        correct_incorrect[4] = R.drawable.check_mark;
+                        myScore = myScore + 10;
+                        openRewardPage();
+                    }
+
+
+                }
+            });
+
+            //FOURTH BUTTON
+            mFourthButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    if (mQuizIndex == 1) {
+                        //Correct Answer
+                        questions[0] = "1." + mFourthButton.getText().toString();
+                        correct_incorrect[0] = R.drawable.check_mark;
+                        mQuestion.setText(R.string.Q2Jamey);
+                        mFirstButton.setText(R.string.Q2_A1Jamey);
+                        mSecondButton.setText(R.string.Q2_A2Jamey);
+                        mThirdButton.setText(R.string.Q2_A3Jamey);
+                        mFourthButton.setText(R.string.Q2_A4Jamey);
+                        Toast CorrectAnswer = Toast.makeText(getContext(), "Correct Answer!", Toast.LENGTH_LONG);
+                        CorrectAnswer.show();
+                        mQuizIndex = 2;
+                        myScore = myScore + 10;
+                    } else if (mQuizIndex == 2) {
+                        //Wrong Answer
+                        mQuizIndex = 6;
+                        questions[1] = "2." + mFourthButton.getText().toString();
+                        correct_incorrect[1] = R.drawable.red_mark;
+                        openRewardPage();
+                    } else if (mQuizIndex == 3) {
+                        //Wrong Answer
+                        questions[2] = "3." + mFourthButton.getText().toString();
+                        correct_incorrect[2] = R.drawable.red_mark;
+                        openRewardPage();
+                    } else if (mQuizIndex == 4) {
+                        //Wrong Answer
+                        mQuizIndex = 6;
+                        correct_incorrect[3] = R.drawable.red_mark;
+                        questions[3] = "4." + mFourthButton.getText().toString();
+                        openRewardPage();
+                    } else if (mQuizIndex == 5) {
+                        //Wrong Answer
+                        mQuizIndex = 6;
+                        questions[4] = "5." + mFourthButton.getText().toString();
+                        correct_incorrect[4] = R.drawable.red_mark;
+                    }
+
+                }
+            });
+        }else if(pageName == ("LaverneCox")) {
+
+            mQuestion.setText(R.string.Q1Laverne);
+            mFirstButton.setText(R.string.Q1_A1Laverne);
+            mSecondButton.setText(R.string.Q1_A2Laverne);
+            mThirdButton.setText(R.string.Q1_A3Laverne);
+            mFourthButton.setText(R.string.Q1_A4Laverne);
+            title.setText(R.string.LaverneTitle);
+
+            //FIRST BUTTON
+            mFirstButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    if (mQuizIndex == 1) {
+                        //Wrong Answer
+                        mQuizIndex = 6;
+                        questions[0] = "1." + mFirstButton.getText().toString();
+                        correct_incorrect[0] = R.drawable.red_mark;
+                        openRewardPage();
+                    } else if (mQuizIndex == 2) {
+                        //Wrong Answer
+                        mQuizIndex = 6;
+                        questions[1] = "2." + mFirstButton.getText().toString();
+                        correct_incorrect[1] = R.drawable.red_mark;
+                        openRewardPage();
+                    } else if (mQuizIndex == 3) {
+                        //Correct Answer
+                        questions[2] = "3." + mFirstButton.getText().toString();
+                        correct_incorrect[2] = R.drawable.check_mark;
+                        mQuestion.setText(R.string.Q4Laverne);
+                        mFirstButton.setText(R.string.Q4_A1Laverne);
+                        mSecondButton.setText(R.string.Q4_A2Laverne);
+                        mThirdButton.setText(R.string.Q4_A3Laverne);
+                        mFourthButton.setText(R.string.Q4_A4Laverne);
+                        Toast CorrectAnswer = Toast.makeText(getContext(), "Correct Answer!", Toast.LENGTH_LONG);
+                        CorrectAnswer.show();
+                        mQuizIndex = 4;
+                        myScore = myScore + 10;
+                    } else if (mQuizIndex == 4) {
+                        //Correct Answer
+                        questions[3] = "4." + mFirstButton.getText().toString();
+                        correct_incorrect[3] = R.drawable.check_mark;
+                        mQuestion.setText(R.string.Q5Laverne);
+                        mFirstButton.setText(R.string.Q5_A1Laverne);
+                        mSecondButton.setText(R.string.Q5_A2Laverne);
+                        mThirdButton.setText(R.string.Q5_A3Laverne);
+                        mFourthButton.setText(R.string.Q5_A4Laverne);
+                        Toast CorrectAnswer = Toast.makeText(getContext(), "Correct Answer!", Toast.LENGTH_LONG);
+                        CorrectAnswer.show();
+                        mQuizIndex = 5;
+                        myScore = myScore + 10;
+                    } else if (mQuizIndex == 5) {
+                        //Wrong Answer
+                        mQuizIndex = 6;
+                        questions[4] = "5." + mFirstButton.getText().toString();
+                        correct_incorrect[4] = R.drawable.red_mark;
+                        openRewardPage();
+                    }
+
+                }
+            });
+
+            //SECOND BUTTON
+            mSecondButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    if (mQuizIndex == 1) {
+                        //Correct Answer
+                        questions[0] = "1." + mSecondButton.getText().toString();
+                        correct_incorrect[0] = R.drawable.check_mark;
+                        mQuestion.setText(R.string.Q2Laverne);
+                        mFirstButton.setText(R.string.Q2_A1Laverne);
+                        mSecondButton.setText(R.string.Q2_A2Laverne);
+                        mThirdButton.setText(R.string.Q2_A3Laverne);
+                        mFourthButton.setText(R.string.Q2_A4Laverne);
+                        Toast CorrectAnswer = Toast.makeText(getContext(), "Correct Answer!", Toast.LENGTH_LONG);
+                        CorrectAnswer.show();
+                        mQuizIndex = 2;
+                        myScore = myScore + 10;
+                    } else if (mQuizIndex == 2) {
+                        //Wrong Answer
+                        mQuizIndex = 6;
+                        questions[1] = "2." + mSecondButton.getText().toString();
+                        correct_incorrect[1] = R.drawable.red_mark;
+                        openRewardPage();
+                    } else if (mQuizIndex == 3) {
+                        //Wrong Answer
+                        mQuizIndex = 6;
+                        questions[2] = "3." + mSecondButton.getText().toString();
+                        correct_incorrect[2] = R.drawable.red_mark;
+                        openRewardPage();
+                    } else if (mQuizIndex == 4) {
+                        //Wrong Answer
+                        mQuizIndex = 6;
+                        questions[3] = "4." + mSecondButton.getText().toString();
+                        correct_incorrect[3] = R.drawable.red_mark;
+                        openRewardPage();
+                    } else if (mQuizIndex == 5) {
+                        //Correct Answer
+                        mQuizIndex = 6;
+                        questions[4] = "5." + mSecondButton.getText().toString();
+                        correct_incorrect[4] = R.drawable.check_mark;
+                        myScore = myScore + 10;
+                        openRewardPage();
+                    }
+                }
+            });
+
+            //THIRD BUTTON
+            mThirdButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    if (mQuizIndex == 1) {
+                        //Wrong Answer
+                        mQuizIndex = 6;
+                        questions[0] = "1." + mThirdButton.getText().toString();
+                        correct_incorrect[0] = R.drawable.red_mark;
+                        openRewardPage();
+                    } else if (mQuizIndex == 2) {
+                        //Correct Answer
+                        questions[1] = "2." + mThirdButton.getText().toString();
+                        correct_incorrect[1] = R.drawable.check_mark;
+                        mQuestion.setText(R.string.Q3Laverne);
+                        mFirstButton.setText(R.string.Q3_A1Laverne);
+                        mSecondButton.setText(R.string.Q3_A2Laverne);
+                        mThirdButton.setText(R.string.Q3_A3Laverne);
+                        mFourthButton.setText(R.string.Q3_A4Laverne);
+                        Toast CorrectAnswer = Toast.makeText(getContext(), "Correct Answer!", Toast.LENGTH_LONG);
+                        CorrectAnswer.show();
+                        mQuizIndex = 3;
+                        myScore = myScore + 10;
                     } else if (mQuizIndex == 3) {
                         //Wrong Answer
                         mQuizIndex = 6;

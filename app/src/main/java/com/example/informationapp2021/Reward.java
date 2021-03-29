@@ -20,6 +20,7 @@ public class Reward extends Fragment {
     static String[] myQuestionsReward = new String[5];
     static int[] myAccuracyReward = new int[5];
     Bundle bundle = this.getArguments();
+    int QuizCoins = 0;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -80,6 +81,7 @@ public class Reward extends Fragment {
             GoodJob.setText("Congratulations!");
             MyPointTotal.setText("+10 coins!");
             PointsRecieved.show();
+            QuizCoins = QuizCoins + 10;
         }
 
         homeButton.setOnClickListener(new View.OnClickListener() {

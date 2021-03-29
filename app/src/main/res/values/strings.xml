@@ -185,7 +185,7 @@
 
     <string name="Q4Thandiwe">4. What did Abdullah want to bring to light after learning about after learning that an African American woman gets paid 21% less than an average white woman despite feeling like the majority of the women\'s rights movement?</string>
     <string name="Q4_A1Thandiwe">The money that others have that they can give to immigrants</string>
-    <string name="Q4_A2Thandiwe">The privilege that others have that they should not use because it is not fair to others</string>
+    <string name="Q4_A2Thandiwe">The privilege that others have but should not use because it is not fair to others</string>
     <string name="Q4_A3Thandiwe">The education that some people have that others do not that they should use to teach seniors.</string>
     <string name="Q4_A4Thandiwe">The privilege that some people have that others do not and to make sure movements reflect all people they stand for</string>
 
@@ -305,10 +305,10 @@
     https://iop.harvard.edu/fellows/melanie-campbell</string>
 
     <string name="Q1Melanie">1. When Campbell was growing up in Mims, Florida, her parents led the local chapter of what organization?</string>
-    <string name="Q1_A1Melanie">To make sure everyone was well educated about climate change</string>
-    <string name="Q1_A2Melanie">To ensure that all people could talk about their favorite subjects in school</string>
-    <string name="Q1_A3Melanie">To make sure Black women were not invisible</string>
-    <string name="Q1_A4Melanie">To abolish the health care system</string>
+    <string name="Q1_A1Melanie">National Association for the Advancement of Colored People</string>
+    <string name="Q1_A2Melanie">Black Lives Matter</string>
+    <string name="Q1_A3Melanie">Color of Change</string>
+    <string name="Q1_A4Melanie">Live Free USA</string>
 
     <string name="Q2Melanie">2. What event did Campbell say she remembered where she was sleeping on the floor, close to her brother, sister, and mother while something else was happening?</string>
     <string name="Q2_A1Melanie">Her grandfather going to the grocery store alone because everyone was too tired</string>
@@ -435,7 +435,7 @@
     //Jamey Jesperson Strings
 
     <string name="JameyTitle">Jamey Jesperson</string>
-    <string name="JameyBio"> Pronouns: He/Him Gender: Male  LGTBQ+ Rights Activist</string>
+    <string name="JameyBio"> Pronouns: They/Them Gender: Non-Binary  LGTBQ+ Rights Activist</string>
 
     <string name="JameyInfo1">Jamey Jesperson was born in California in 1994 to a family of Mormons. Jamey grew up with the idea that they could only be one of two genders, male or female. They were very feminine growing up, playing with toys that people believed only girls played with and hanging out with girls their age. Older men at their church were upset with Jesperson for doing so.
     Jesperson came out as gay in high school and came out as gender non-conforming at the age of 21. They received a lot of gossip as a result of coming out in a large Mormon community but fortunately, at the time, Jesperson was dating someone in a similar situation who helped them. Jesperson\’s parents were supportive of their identity and were always open. Jesperson however got a lot of disgust from the church, with people who started to ignore them and warning their children to stay away from Jesperson.
@@ -449,6 +449,37 @@
     https://www.nbcnews.com/feature/nbc-out/boy-or-girl-parents-raising-theybies-let-kids-decide-n891836
     https://freedomforallamericans.org/nonbinary-education-activist-we-have-to-embrace-everyones-authenticity/
     </string>
+
+    <string name="Q1Jamey">1. Jesperson was brought up with the idea that ______.</string>
+    <string name="Q1_A1Jamey">They could not be friends with girls</string>
+    <string name="Q1_A2Jamey">They could not associate with people who identified as female</string>
+    <string name="Q1_A3Jamey">They could not play with toys created for males</string>
+    <string name="Q1_A4Jamey">They could only be one of two genders, male or female</string>
+
+    <string name="Q2Jamey">2. What happened after they came out as gay in high school and came out as gender non-forming at the age of 21? </string>
+    <string name="Q2_A1Jamey">They received a lot of gossip as a result of coming out in a large Mormon community. People started to ignore them and tell their children to stay away from Jesperson.</string>
+    <string name="Q2_A2Jamey">Everyone around them was very accepting. A lot of people in the community had an easy time adapting to Jesperson’s beliefs.</string>
+    <string name="Q2_A3Jamey">Their parents were not supportive and did not allow them back in their house.</string>
+    <string name="Q2_A4Jamey">Everything remained the same for them.</string>
+
+    <string name="Q3Jamey">3. Even after coming out Jesperson was still following the Mormon faith because from a young age, they had learned that prayer was the only way to deal with emotions such as anger, hate, and loneliness. What happened one day at Church?</string>
+    <string name="Q3_A1Jamey">Jesperson decided that they wanted to move to Spain</string>
+    <string name="Q3_A2Jamey">Jesperson told everyone to stop talking about them</string>
+    <string name="Q3_A3Jamey">Jesperson realized they did not want to associate with the church anymore</string>
+    <string name="Q3_A4Jamey">Jesperson stood up and gave a speech about what their gender identity meant to them</string>
+
+    <string name="Q4Jamey">4. When the Mormon Church separated themselves from Boy Scouts after they started accepting girls, what did Jesperson write an essay about?</string>
+    <string name="Q4_A1Jamey">The stereotyping of the male and female genders by the Boy Scouts and Girl Scouts organizations</string>
+    <string name="Q4_A2Jamey">The Mormon Church’s anti- LGBTQ+ policies</string>
+    <string name="Q4_A3Jamey">The difference between males and females</string>
+    <string name="Q4_A4Jamey">The contrast in New York churches and California churches</string>
+
+    <string name="Q5Jamey">5. What is one of Jesperson\’s current goals?</string>
+    <string name="Q5_A1Jamey">To create their own foundation to raise funds for homeless LGBTQ+ children</string>
+    <string name="Q5_A2Jamey">To become a doctor to fix the influence of negative stereotypes about the LGBTQ+ community in medicine and patient treatment</string>
+    <string name="Q5_A3Jamey">To spread awareness about how society and politics have pushed a rigid gender norm for youth and how it is influencing them.</string>
+    <string name="Q5_A4Jamey">To join the Girl Scouts organization</string>
+
 
     //Laverne Cox Strings
 
@@ -468,6 +499,37 @@
     https://ccrjustice.org/home/blog/2019/08/02/evening-activism-laverne-cox
     https://www.oprahmag.com/entertainment/tv-movies/a28987199/laverne-cox-facts/
     </string>
+
+    <string name="Q1Laverne">1. Why was Cox bullied at a young age?</string>
+    <string name="Q1_A1Laverne">She had a disability that made it hard for her to learn</string>
+    <string name="Q1_A2Laverne">She did not act the way people assumed a person assigned male at birth would act and many disliked her for it. </string>
+    <string name="Q1_A3Laverne">She followed a religion that her classmates were not educated about</string>
+    <string name="Q1_A4Laverne">She was quiet and did not like to talk a lot</string>
+
+    <string name="Q2Laverne">2. When did Cox realize she was transgender?</string>
+    <string name="Q2_A1Laverne">When she realized she like playing with toys usually associated with the female gender more than toys associated with the male gender</string>
+    <string name="Q2_A2Laverne">When a teacher told her that she was a girl because she looked like one</string>
+    <string name="Q2_A3Laverne">When a teacher told her mother that her son was going to be wearing a dress in New Orleans one day and Cox realized she wouldn\’t just turn into a girl after puberty</string>
+    <string name="Q2_A4Laverne">When her best friend came out as transgender</string>
+
+    <string name="Q3Laverne">3. Cox was the first trans person to _____.</string>
+    <string name="Q3_A1Laverne">Be nominated for an Emmy and appear on the cover of Times magazine</string>
+    <string name="Q3_A2Laverne">Ever come out</string>
+    <string name="Q3_A3Laverne">Share their experience on live television</string>
+    <string name="Q3_A4Laverne">Become a presidential candidate and create their own documentary</string>
+
+    <string name="Q4Laverne">4. What was the name of Cox\’s essay on gender identity and expression?</string>
+    <string name="Q4_A1Laverne">“Everybody\’s Trans: Gender Oppression Hurts All of Us”</string>
+    <string name="Q4_A2Laverne">“My Story: Experiences from a Transgender Woman”</string>
+    <string name="Q4_A3Laverne">“You Can Be Whoever You Want To Be”</string>
+    <string name="Q4_A4Laverne">“Gender Does Not Exist”</string>
+
+    <string name="Q5Laverne">5. Cox\’s documentary “Disclosure” is a documentary that ______.</string>
+    <string name="Q5_A1Laverne">Talks about anti-transgender policies implemented in public school education</string>
+    <string name="Q5_A2Laverne">Reveals the challenges the transgender community faced over the years, the violence they faced, and movies and other productions that have allowed them to enter the industry</string>
+    <string name="Q5_A3Laverne">Reveals that challenges she faced with her family as a trangender girl growing up</string>
+    <string name="Q5_A4Laverne">Discusses her immigration into the United States from China as a young girl</string>
+
 
     <string name="Date">Day</string>
     <string name="ToCalendar">ToCalendar</string>

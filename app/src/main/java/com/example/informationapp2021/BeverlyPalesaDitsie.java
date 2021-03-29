@@ -21,7 +21,7 @@ public class BeverlyPalesaDitsie extends Fragment {
         View beverlypalesaditsieView = inflater.inflate(R.layout.beverlypalesaditsie, container, false);
 
         final Button nextButton = (Button) beverlypalesaditsieView.findViewById(R.id.NextButton);
-        final TextView BeverlyInfo = (TextView) beverlypalesaditsieView.findViewById(R.id.AliceInfo);
+        final TextView BeverlyInfo = (TextView) beverlypalesaditsieView.findViewById(R.id.BeverlyInfo);
 
         ButtonClicks = 0;
         //Switching Info to the next block when clicking the next button
