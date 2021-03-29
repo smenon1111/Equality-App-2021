@@ -35,7 +35,8 @@ public class ChadGriffin extends Fragment {
                     ButtonClicks = 1;
 
 
-                }else if(ButtonClicks == 1) {
+                }
+                else if(ButtonClicks == 1) {
                     openQuizPage();
 
                 }

@@ -20,7 +20,6 @@ public class Reward extends Fragment {
     static String[] myQuestionsReward = new String[5];
     static int[] myAccuracyReward = new int[5];
     Bundle bundle = this.getArguments();
-    int QuizCoins = 0;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -59,7 +58,7 @@ public class Reward extends Fragment {
         Correct_Incorrect4.setImageResource(myAccuracyReward[3]);
         Correct_Incorrect5.setImageResource(myAccuracyReward[4]);
 
-        Toast PointsRecieved = Toast.makeText(getActivity(),"Congrats! You earned 10 coins!", Toast.LENGTH_LONG);
+        Toast PointsReceived = Toast.makeText(getActivity(),"Congrats! You earned 10 coins!", Toast.LENGTH_LONG);
 
 
         if (myScoreReward == 0){
@@ -80,8 +79,7 @@ public class Reward extends Fragment {
         }else if (myScoreReward == 50){
             GoodJob.setText("Congratulations!");
             MyPointTotal.setText("+10 coins!");
-            PointsRecieved.show();
-            QuizCoins = QuizCoins + 10;
+            PointsReceived.show();
         }
 
         homeButton.setOnClickListener(new View.OnClickListener() {

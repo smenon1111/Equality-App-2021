@@ -36,7 +36,9 @@ public class TheRealProfile extends Fragment {
 
         TextView textView = profileView.findViewById(R.id.textView);
 
-        results = GetProfiles();
+        openHelper = new DataBaseHelper(getActivity().getApplicationContext());
+        db = openHelper.getReadableDatabase();
+        results = DataBaseHelper.GetUserData(db);
 
         if (results.getCount() <= 0)
         {
@@ -63,13 +65,5 @@ public class TheRealProfile extends Fragment {
         return profileView;
     }
 
-    public Cursor GetProfiles() {
-        openHelper = new DataBaseHelper(getActivity().getApplicationContext());
-        db = openHelper.getReadableDatabase();
-        String query = "Select * from " + TABLE_NAME;
 
-        Cursor results = db.rawQuery(query, null);
-
-        return results;
-    }
 }
