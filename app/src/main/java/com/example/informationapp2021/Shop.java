@@ -26,22 +26,22 @@ public class Shop extends Fragment {
         final TextView character1Cost = (TextView) shopView.findViewById(R.id.character1Coins);
         final TextView character2Cost = (TextView) shopView.findViewById(R.id.character2Coins);
         final TextView character3Cost = (TextView) shopView.findViewById(R.id.character3Coins);
-        final TextView character4Cost = (TextView) shopView.findViewById(R.id.character4Coins);
-        final TextView character5Cost = (TextView) shopView.findViewById(R.id.character5Coins);
+       /* final TextView character4Cost = (TextView) shopView.findViewById(R.id.character4Coins);
+        final TextView character5Cost = (TextView) shopView.findViewById(R.id.character5Coins);*/
 
         final ImageView Image1 = (ImageView) shopView.findViewById(R.id.character1);
         final ImageView Image2 = (ImageView) shopView.findViewById(R.id.character2);
         final ImageView Image3 = (ImageView) shopView.findViewById(R.id.character3);
-        final ImageView Image4 = (ImageView) shopView.findViewById(R.id.character4);
-        final ImageView Image5 = (ImageView) shopView.findViewById(R.id.character5);
+        /*final ImageView Image4 = (ImageView) shopView.findViewById(R.id.character4);
+        final ImageView Image5 = (ImageView) shopView.findViewById(R.id.character5);*/
 
 
 
         Button purchaseButton1 = (Button) shopView.findViewById(R.id.character1PurchaseButton);
         Button purchaseButton2 = (Button) shopView.findViewById(R.id.character2PurchaseButton);
         Button purchaseButton3 = (Button) shopView.findViewById(R.id.character3PurchaseButton);
-        Button purchaseButton4 = (Button) shopView.findViewById(R.id.character4PurchaseButton);
-        Button purchaseButton5 = (Button) shopView.findViewById(R.id.character5PurchaseButton);
+      /*  Button purchaseButton4 = (Button) shopView.findViewById(R.id.character4PurchaseButton);
+        Button purchaseButton5 = (Button) shopView.findViewById(R.id.character5PurchaseButton);*/
 
         purchaseButton1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -49,7 +49,7 @@ public class Shop extends Fragment {
                 ButtonClicks = 0;
                 if (ButtonClicks == 0) {
                     character1Cost.setText(R.string.characterPurchased);
-                    Image1.setImageResource(R.drawable.character1);
+                    Image1.setImageResource(R.drawable.bear_character);
                     ButtonClicks = 1;
                 }else if (ButtonClicks > 0){
                     makeToast();
@@ -63,7 +63,7 @@ public class Shop extends Fragment {
                 ButtonClicks = 0;
                 if (ButtonClicks == 0) {
                     character2Cost.setText(R.string.characterPurchased);
-                    Image2.setImageResource(R.drawable.character2);
+                    Image2.setImageResource(R.drawable.antelope_character);
                     ButtonClicks = 1;
                 }else if (ButtonClicks > 0){
                     makeToast();
@@ -77,7 +77,7 @@ public class Shop extends Fragment {
                 ButtonClicks = 0;
                 if (ButtonClicks == 0) {
                     character3Cost.setText(R.string.characterPurchased);
-                    Image3.setImageResource(R.drawable.character3);
+                    Image3.setImageResource(R.drawable.frog_character);
                     ButtonClicks = 1;
                 }else if (ButtonClicks > 0){
                     makeToast();
@@ -85,6 +85,7 @@ public class Shop extends Fragment {
             }
         });
 
+/*
         purchaseButton4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -112,6 +113,7 @@ public class Shop extends Fragment {
                 }
             }
         });
+*/
 
 
         return shopView;

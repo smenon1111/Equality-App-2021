@@ -159,6 +159,7 @@ public class Quiz extends Fragment {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[3] = "4." + mSecondButton.getText().toString();
+                        correct_incorrect[3] = R.drawable.red_mark;
                         openRewardPage();
                     } else if (mQuizIndex == 5) {
                         //Correct Answer
@@ -544,6 +545,7 @@ public class Quiz extends Fragment {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[3] = "4." + mSecondButton.getText().toString();
+                        correct_incorrect[3] = R.drawable.red_mark;
                         openRewardPage();
                     } else if (mQuizIndex == 5) {
                         //Correct Answer
@@ -740,6 +742,7 @@ public class Quiz extends Fragment {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[3] = "4." + mSecondButton.getText().toString();
+                        correct_incorrect[3] = R.drawable.red_mark;
                         openRewardPage();
                     } else if (mQuizIndex == 5) {
                         //Wrong Answer
@@ -928,6 +931,7 @@ public class Quiz extends Fragment {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[3] = "4." + mSecondButton.getText().toString();
+                        correct_incorrect[3] = R.drawable.red_mark;
                         openRewardPage();
                     } else if (mQuizIndex == 5) {
                         //Wrong Answer
@@ -1130,6 +1134,7 @@ public class Quiz extends Fragment {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[3] = "4." + mSecondButton.getText().toString();
+                        correct_incorrect[3] = R.drawable.red_mark;
                         openRewardPage();
                     } else if (mQuizIndex == 5) {
                         //Wrong Answer
