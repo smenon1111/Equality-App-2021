@@ -63,6 +63,7 @@ public class AddCoins extends Fragment {
                 openHelper = new DataBaseHelper(getActivity().getApplicationContext());
                 db = openHelper.getWritableDatabase();
                 String currCoins = results.getString(8);
+
                 int coinsCount = Integer.parseInt(currCoins) + 100000;
 
                 long AddCoinsID = DataBaseHelper.updateCoins(db, results.getString(2), String.valueOf(coinsCount));

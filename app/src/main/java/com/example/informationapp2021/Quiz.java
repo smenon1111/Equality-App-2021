@@ -2032,14 +2032,14 @@ public class Quiz extends Fragment {
         bundleQuizInfo.putInt("Score", myScore);
         bundleQuizInfo.putIntArray("Accuracy", correct_incorrect);
 
-        /*int coinsCount = Integer.parseInt(currCoins) + myScore;
+        int coinsCount = Integer.parseInt(currCoins) + myScore;
 
         long AddCoinsID = DataBaseHelper.updateCoins(db, results.getString(2), String.valueOf(coinsCount));
 
         if (AddCoinsID <= 0)
             Toast.makeText(getActivity().getApplicationContext(), "Add coins was unsuccessful", Toast.LENGTH_LONG).show();
         else
-            Toast.makeText(getActivity().getApplicationContext(), "Add coins was successful", Toast.LENGTH_LONG).show();*/
+            Toast.makeText(getActivity().getApplicationContext(), "Add coins was successful", Toast.LENGTH_LONG).show();
 
         nextFrag.setArguments(bundleQuizInfo);
 

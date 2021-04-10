@@ -22,6 +22,7 @@ public class DataBaseHelper extends SQLiteOpenHelper {
     public static final String COL_7="Age";
     public static final String COL_8="About";
     public static final String COL_9="Coins";
+    public static final String COL_10="Purchases";
 
     public DataBaseHelper(Context context)
     {
@@ -41,7 +42,8 @@ public class DataBaseHelper extends SQLiteOpenHelper {
                 COL_6 + " TEXT, " +
                 COL_7 + " TEXT, " +
                 COL_8 + " TEXT, " +
-                COL_9 + " TEXT DEFAULT '0'" + ")";
+                COL_9 + " TEXT DEFAULT '0', " +
+                COL_10 + " TEXT DEFAULT ' ' " + ")";
 
         Log.i("Insert", "create table");
         try {
@@ -75,4 +77,33 @@ public class DataBaseHelper extends SQLiteOpenHelper {
         return id;
 
     }
+
+    public static long updatePurchase(SQLiteDatabase db, String username, String coins, String purchase) {
+        ContentValues contentValues = new ContentValues();
+        contentValues.put(DataBaseHelper.COL_3, username);
+        contentValues.put(DataBaseHelper.COL_9, coins);
+        contentValues.put(DataBaseHelper.COL_10, purchase);
+        String[] selectionArgs = { String.valueOf(username) };
+        long id = db.update(DataBaseHelper.TABLE_NAME,contentValues,DataBaseHelper.COL_3 +" = ? ",selectionArgs);
+        return id;
+
+    }
+
+    public static Cursor GetUserCoins(SQLiteDatabase db) {
+        String query = "Select username, coins from " + TABLE_NAME;
+
+        Cursor results = db.rawQuery(query, null);
+
+        return results;
+    }
+
+    public static Cursor GetUserCharsCoins(SQLiteDatabase db) {
+        String query = "Select username, coins, purchases from " + TABLE_NAME;
+
+        Cursor results = db.rawQuery(query, null);
+
+        return results;
+    }
+
+
 }
