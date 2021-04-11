@@ -18,11 +18,10 @@ public class DataBaseHelper extends SQLiteOpenHelper {
     public static final String COL_3="Username";
     public static final String COL_4="Password";
     public static final String COL_5="Email";
-    public static final String COL_6="Pronouns";
-    public static final String COL_7="Age";
-    public static final String COL_8="About";
-    public static final String COL_9="Coins";
-    public static final String COL_10="Purchases";
+    public static final String COL_6="Pronouns";;
+    public static final String COL_7="About";
+    public static final String COL_8="Coins";
+    public static final String COL_9="Purchases";
 
     public DataBaseHelper(Context context)
     {
@@ -41,9 +40,8 @@ public class DataBaseHelper extends SQLiteOpenHelper {
                 COL_5 + " TEXT, " +
                 COL_6 + " TEXT, " +
                 COL_7 + " TEXT, " +
-                COL_8 + " TEXT, " +
-                COL_9 + " TEXT DEFAULT '0', " +
-                COL_10 + " TEXT DEFAULT ' ' " + ")";
+                COL_8 + " TEXT DEFAULT '0', " +
+                COL_9 + " TEXT DEFAULT ' ' " + ")";
 
         Log.i("Insert", "create table");
         try {
@@ -70,21 +68,21 @@ public class DataBaseHelper extends SQLiteOpenHelper {
 
     public static long updateCoins(SQLiteDatabase db, String username, String coins) {
         ContentValues contentValues = new ContentValues();
-        contentValues.put(DataBaseHelper.COL_3, username);
-        contentValues.put(DataBaseHelper.COL_9, coins);
+        contentValues.put(DataBaseHelper.COL_2, username);
+        contentValues.put(DataBaseHelper.COL_8, coins);
         String[] selectionArgs = { String.valueOf(username) };
-        long id = db.update(DataBaseHelper.TABLE_NAME,contentValues,DataBaseHelper.COL_3 +" = ? ",selectionArgs);
+        long id = db.update(DataBaseHelper.TABLE_NAME,contentValues,DataBaseHelper.COL_2 +" = ? ",selectionArgs);
         return id;
 
     }
 
     public static long updatePurchase(SQLiteDatabase db, String username, String coins, String purchase) {
         ContentValues contentValues = new ContentValues();
-        contentValues.put(DataBaseHelper.COL_3, username);
-        contentValues.put(DataBaseHelper.COL_9, coins);
-        contentValues.put(DataBaseHelper.COL_10, purchase);
+        contentValues.put(DataBaseHelper.COL_2, username);
+        contentValues.put(DataBaseHelper.COL_8, coins);
+        contentValues.put(DataBaseHelper.COL_9, purchase);
         String[] selectionArgs = { String.valueOf(username) };
-        long id = db.update(DataBaseHelper.TABLE_NAME,contentValues,DataBaseHelper.COL_3 +" = ? ",selectionArgs);
+        long id = db.update(DataBaseHelper.TABLE_NAME,contentValues,DataBaseHelper.COL_2 +" = ? ",selectionArgs);
         return id;
 
     }

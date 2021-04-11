@@ -10,16 +10,18 @@
         <TextView
             android:id="@+id/textView"
             android:layout_width="349dp"
+            android:textAlignment="center"
             android:layout_height="488dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
-            android:layout_marginTop="92dp"
+            android:layout_marginTop="132dp"
             android:textSize="22sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            android:gravity="center_horizontal" />
 
         <TextView
             android:id="@+id/textView5"

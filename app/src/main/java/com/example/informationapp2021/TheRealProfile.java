@@ -24,7 +24,6 @@ public class TheRealProfile extends Fragment {
     TextView password;
     TextView email;
     TextView prns;
-    TextView age;
     TextView about;
     TextView coins;
     Cursor results;
@@ -53,7 +52,6 @@ public class TheRealProfile extends Fragment {
                         + "\nUsername: " + results.getString(2)
                         + "\nEmail: " + results.getString(4)
                         + "\nPronouns: " + results.getString(5)
-                        + "\nAge: " + results.getString(6)
                         + "\nBio: " + results.getString(7)
                         + "\nCoins: " + results.getString(8)
                 );

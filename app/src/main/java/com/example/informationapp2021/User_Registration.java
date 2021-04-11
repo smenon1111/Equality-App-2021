@@ -23,7 +23,6 @@ public class User_Registration extends Fragment {
     EditText password;
     EditText email;
     EditText prns;
-    EditText age;
     EditText about;
 
     @Override
@@ -37,7 +36,6 @@ public class User_Registration extends Fragment {
         password = (EditText) profileView.findViewById(R.id.password);
         email = (EditText) profileView.findViewById(R.id.email);
         prns = (EditText) profileView.findViewById(R.id.prns);
-        age = (EditText) profileView.findViewById(R.id.age);
         about = (EditText) profileView.findViewById(R.id.about);
 
         Button btnRegister = (Button) profileView.findViewById(R.id.register);
@@ -47,7 +45,7 @@ public class User_Registration extends Fragment {
                 db = openHelper.getWritableDatabase();
                 long InsertID = insertdata(name.getText().toString(), username.getText().toString(),
                                         password.getText().toString(), email.getText().toString(),
-                                        prns.getText().toString(), age.getText().toString(),
+                                        prns.getText().toString(),
                                         about.getText().toString());
                 if (InsertID <= 0)
                     Toast.makeText(getActivity().getApplicationContext(), "Registration was unsuccessful", Toast.LENGTH_LONG).show();
@@ -58,15 +56,14 @@ public class User_Registration extends Fragment {
 
         return profileView;
     }
-    public long insertdata(String name, String username, String password, String email, String prns, String age, String about) {
+    public long insertdata(String name, String username, String password, String email, String prns, String about) {
         ContentValues contentValues = new ContentValues();
         contentValues.put(DataBaseHelper.COL_2, name);
         contentValues.put(DataBaseHelper.COL_3, username);
         contentValues.put(DataBaseHelper.COL_4, password);
         contentValues.put(DataBaseHelper.COL_5, email);
         contentValues.put(DataBaseHelper.COL_6, prns);
-        contentValues.put(DataBaseHelper.COL_7, age);
-        contentValues.put(DataBaseHelper.COL_8, about);
+        contentValues.put(DataBaseHelper.COL_7, about);
 
         long id = db.insert(DataBaseHelper.TABLE_NAME, null, contentValues);
 

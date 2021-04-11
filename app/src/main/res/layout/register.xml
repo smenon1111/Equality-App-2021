@@ -61,7 +61,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/about"
-        app:layout_constraintVertical_bias="0.315"
+        app:layout_constraintVertical_bias="0.19"
         tools:ignore="OnClick" />
 
     <EditText
@@ -105,18 +105,6 @@
         app:layout_constraintTop_toBottomOf="@+id/email" />
 
     <EditText
-        android:id="@+id/age"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:ems="10"
-        android:hint="Age"
-        android:inputType="phone"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/prns" />
-
-    <EditText
         android:id="@+id/about"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -125,7 +113,7 @@
         android:hint="Bio"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/age" />
+        app:layout_constraintTop_toBottomOf="@+id/prns" />
 
     <TextView
         android:id="@+id/coins"
