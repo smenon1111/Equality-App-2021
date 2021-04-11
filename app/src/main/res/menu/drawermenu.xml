@@ -6,9 +6,9 @@
     <group android:checkableBehavior="single">
 
         <item
-            android:id="@+id/nav_resources"
-            android:icon="@drawable/ic_baseline_check_24"
-            android:title="Resources" />
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_baseline_supervisor_account_24"
+            android:title="Sign Up" />
 
         <item
             android:id="@+id/nav_therealprofile"
@@ -16,18 +16,19 @@
             android:title="Profile" />
 
         <item
-            android:id="@+id/nav_profile"
-            android:icon="@drawable/ic_baseline_supervisor_account_24"
-            android:title="Sign Up" />
-
-        <item
             android:id="@+id/nav_shop"
             android:icon="@drawable/ic_baseline_shopping_cart_24"
             android:title="Shop" />
+
         <item
-            android:id="@+id/nav_addcoins"
-            android:icon="@drawable/ic_baseline_shopping_cart_24"
-            android:title="Add Coins" />
+            android:id="@+id/nav_resources"
+            android:icon="@drawable/ic_baseline_check_24"
+            android:title="Resources" />
+
+<!--        <item-->
+<!--            android:id="@+id/nav_addcoins"-->
+<!--            android:icon="@drawable/ic_baseline_shopping_cart_24"-->
+<!--            android:title="Add Coins" />-->
 
     </group>
 
