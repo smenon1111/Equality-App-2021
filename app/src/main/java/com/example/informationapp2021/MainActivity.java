@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
     private void showStartDialog(){
         new Builder(this)
                 .setTitle("Welcome to Unify!")
-                .setMessage("To get started, sign up and then click on any activist to learn more about them :)")
+                .setMessage("To get started, click on any activist to learn more about them. To take a quiz, be sure to sign up first.")
                 .setPositiveButton("ok", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
