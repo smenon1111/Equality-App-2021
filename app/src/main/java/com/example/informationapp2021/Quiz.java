@@ -95,7 +95,7 @@ public class Quiz extends Fragment {
                         Toast CorrectAnswer = Toast.makeText(getContext(), "Correct Answer!", Toast.LENGTH_LONG);
                         CorrectAnswer.show();
                         mQuizIndex = 5;
-                        myScore = myScore + 10;
+                        myScore = myScore + 1;
                     }
                     else if (mQuizIndex == 5) {
                         //Wrong Answer
@@ -131,7 +131,7 @@ public class Quiz extends Fragment {
                         Toast CorrectAnswer = Toast.makeText(getContext(), "Correct Answer!", Toast.LENGTH_LONG);
                         CorrectAnswer.show();
                         mQuizIndex = 3;
-                        myScore = myScore + 10;
+                        myScore = myScore + 1;
                     }
                     else if (mQuizIndex == 3) {
                         //Wrong Answer
@@ -152,7 +152,7 @@ public class Quiz extends Fragment {
                         mQuizIndex = 6;
                         questions[4] = "5." + mSecondButton.getText().toString();
                         correct_incorrect[4] = R.drawable.check_mark;
-                        myScore = myScore + 10;
+                        myScore = myScore + 1;
                         openRewardPage();
 
                     }
@@ -189,7 +189,7 @@ public class Quiz extends Fragment {
                         Toast CorrectAnswer = Toast.makeText(getContext(), "Correct Answer!", Toast.LENGTH_LONG);
                         CorrectAnswer.show();
                         mQuizIndex = 4;
-                        myScore = myScore + 10;
+                        myScore = myScore + 1;
                     }
                     else if (mQuizIndex == 4) {
                         //Wrong Answer
@@ -226,7 +226,7 @@ public class Quiz extends Fragment {
                         Toast CorrectAnswer = Toast.makeText(getContext(), "Correct Answer!", Toast.LENGTH_LONG);
                         CorrectAnswer.show();
                         mQuizIndex = 2;
-                        myScore = myScore + 10;
+                        myScore = myScore + 1;
                     }
                     else if (mQuizIndex == 2) {
                         //Wrong Answer
@@ -290,7 +290,7 @@ public class Quiz extends Fragment {
                         Toast CorrectAnswer = Toast.makeText(getContext(), "Correct Answer!", Toast.LENGTH_LONG);
                         CorrectAnswer.show();
                         mQuizIndex = 3;
-                        myScore = myScore + 10;
+                        myScore = myScore + 1;
                     }
                     else if (mQuizIndex == 3) {
                         mQuizIndex = 6;
@@ -302,6 +302,7 @@ public class Quiz extends Fragment {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[3] = "4." + mFirstButton.getText().toString();
+                        correct_incorrect[3] = R.drawable.red_mark;
                         openRewardPage();
                     }
                     else if (mQuizIndex == 5) {
@@ -309,7 +310,7 @@ public class Quiz extends Fragment {
                         mQuizIndex = 6;
                         questions[4] = "5." + mFirstButton.getText().toString();
                         correct_incorrect[4] = R.drawable.check_mark;
-                        myScore = myScore + 10;
+                        myScore = myScore + 1;
                         openRewardPage();
 
                     }
@@ -333,8 +334,7 @@ public class Quiz extends Fragment {
                         Toast CorrectAnswer = Toast.makeText(getContext(), "Correct Answer!", Toast.LENGTH_LONG);
                         CorrectAnswer.show();
                         mQuizIndex = 2;
-                        myScore = myScore + 10;
-
+                        myScore = myScore + 1;
                     }
                     else if (mQuizIndex == 2) {
                         //Wrong Answer
@@ -358,11 +358,10 @@ public class Quiz extends Fragment {
                         openRewardPage();
                     }
                     else if (mQuizIndex == 5) {
-                        //Correct Answer
+                        //Wrong Answer
                         mQuizIndex = 6;
                         questions[4] = "5." + mSecondButton.getText().toString();
-                        correct_incorrect[4] = R.drawable.check_mark;
-                        myScore = myScore + 10;
+                        correct_incorrect[4] = R.drawable.red_mark;
                         openRewardPage();
 
                     }
@@ -382,12 +381,14 @@ public class Quiz extends Fragment {
                     }
                     else if (mQuizIndex == 2) {
                         //Wrong Answer
+                        mQuizIndex = 6;
                         questions[1] = "2." + mThirdButton.getText().toString();
                         correct_incorrect[1] = R.drawable.red_mark;
                         openRewardPage();
                     }
                     else if (mQuizIndex == 3) {
                         //Wrong Answer
+                        mQuizIndex = 6;
                         questions[2] = "3." + mThirdButton.getText().toString();
                         correct_incorrect[2] = R.drawable.red_mark;
                         openRewardPage();
@@ -405,12 +406,12 @@ public class Quiz extends Fragment {
                         Toast CorrectAnswer = Toast.makeText(getContext(), "Correct Answer!", Toast.LENGTH_LONG);
                         CorrectAnswer.show();
                         mQuizIndex = 5;
-                        myScore = myScore + 10;
+                        myScore = myScore + 1;
                     }
                     else if (mQuizIndex == 5) {
                         //Wrong Answer
                         mQuizIndex = 6;
-                        questions[4] = "5." + mFirstButton.getText().toString();
+                        questions[4] = "5." + mThirdButton.getText().toString();
                         correct_incorrect[4] = R.drawable.red_mark;
                         openRewardPage();
                     }
@@ -449,7 +450,7 @@ public class Quiz extends Fragment {
                         Toast CorrectAnswer = Toast.makeText(getContext(), "Correct Answer!", Toast.LENGTH_LONG);
                         CorrectAnswer.show();
                         mQuizIndex = 4;
-                        myScore = myScore + 10;
+                        myScore = myScore + 1;
                     }
                     else if (mQuizIndex == 4) {
                         //Wrong Answer
@@ -499,7 +500,7 @@ public class Quiz extends Fragment {
                         Toast CorrectAnswer = Toast.makeText(getContext(), "Correct Answer!", Toast.LENGTH_LONG);
                         CorrectAnswer.show();
                         mQuizIndex = 3;
-                        myScore = myScore + 10;
+                        myScore = myScore + 1;
                     }
                     else if (mQuizIndex == 3) {
                         //Correct Answer
@@ -513,7 +514,7 @@ public class Quiz extends Fragment {
                         Toast CorrectAnswer = Toast.makeText(getContext(), "Correct Answer!", Toast.LENGTH_LONG);
                         CorrectAnswer.show();
                         mQuizIndex = 4;
-                        myScore = myScore + 10;
+                        myScore = myScore + 1;
                     }
                     else if (mQuizIndex == 4) {
                         //Wrong Answer
@@ -528,8 +529,6 @@ public class Quiz extends Fragment {
                         questions[4] = "5." + mFirstButton.getText().toString();
                         correct_incorrect[4] = R.drawable.red_mark;
                         openRewardPage();
-
-
                     }
 
                 }
@@ -572,7 +571,7 @@ public class Quiz extends Fragment {
                         mQuizIndex = 6;
                         questions[4] = "5." + mSecondButton.getText().toString();
                         correct_incorrect[4] = R.drawable.check_mark;
-                        myScore = myScore + 10;
+                        myScore = myScore + 1;
                         openRewardPage();
 
                     }
@@ -639,7 +638,7 @@ public class Quiz extends Fragment {
                         Toast CorrectAnswer = Toast.makeText(getContext(), "Correct Answer!", Toast.LENGTH_LONG);
                         CorrectAnswer.show();
                         mQuizIndex = 2;
-                        myScore = myScore + 10;
+                        myScore = myScore + 1;
                     }
                     else if (mQuizIndex == 2) {
                         //Wrong Answer
@@ -666,7 +665,7 @@ public class Quiz extends Fragment {
                         Toast CorrectAnswer = Toast.makeText(getContext(), "Correct Answer!", Toast.LENGTH_LONG);
                         CorrectAnswer.show();
                         mQuizIndex = 5;
-                        myScore = myScore + 10;
+                        myScore = myScore + 1;
                     }
                     else if (mQuizIndex == 5) {
                         //Wrong Answer
@@ -723,7 +722,7 @@ public class Quiz extends Fragment {
                         Toast CorrectAnswer = Toast.makeText(getContext(), "Correct Answer!", Toast.LENGTH_LONG);
                         CorrectAnswer.show();
                         mQuizIndex = 5;
-                        myScore = myScore + 10;
+                        myScore = myScore + 1;
                     }
                     else if (mQuizIndex == 5) {
                         //Wrong Answer
@@ -758,7 +757,7 @@ public class Quiz extends Fragment {
                         Toast CorrectAnswer = Toast.makeText(getContext(), "Correct Answer!", Toast.LENGTH_LONG);
                         CorrectAnswer.show();
                         mQuizIndex = 3;
-                        myScore = myScore + 10;
+                        myScore = myScore + 1;
                     }
                     else if (mQuizIndex == 3) {
                         //Correct Answer
@@ -772,7 +771,7 @@ public class Quiz extends Fragment {
                         Toast CorrectAnswer = Toast.makeText(getContext(), "Correct Answer!", Toast.LENGTH_LONG);
                         CorrectAnswer.show();
                         mQuizIndex = 4;
-                        myScore = myScore + 10;
+                        myScore = myScore + 1;
                     }
                     else if (mQuizIndex == 4) {
                         //Wrong Answer
@@ -808,7 +807,7 @@ public class Quiz extends Fragment {
                         Toast CorrectAnswer = Toast.makeText(getContext(), "Correct Answer!", Toast.LENGTH_LONG);
                         CorrectAnswer.show();
                         mQuizIndex = 2;
-                        myScore = myScore + 10;
+                        myScore = myScore + 1;
                     }
                     else if (mQuizIndex == 2) {
                         //Wrong Answer
@@ -881,7 +880,7 @@ public class Quiz extends Fragment {
                         mQuizIndex = 6;
                         questions[4] = "5." + mFourthButton.getText().toString();
                         correct_incorrect[4] = R.drawable.check_mark;
-                        myScore = myScore + 10;
+                        myScore = myScore + 1;
                         openRewardPage();
                     }
 
@@ -912,7 +911,7 @@ public class Quiz extends Fragment {
                         Toast CorrectAnswer = Toast.makeText(getContext(), "Correct Answer!", Toast.LENGTH_LONG);
                         CorrectAnswer.show();
                         mQuizIndex = 2;
-                        myScore = myScore + 10;
+                        myScore = myScore + 1;
                     }
                     else if (mQuizIndex == 2) {
                         //Wrong Answer
@@ -940,7 +939,7 @@ public class Quiz extends Fragment {
                         Toast CorrectAnswer = Toast.makeText(getContext(), "Correct Answer!", Toast.LENGTH_LONG);
                         CorrectAnswer.show();
                         mQuizIndex = 5;
-                        myScore = myScore + 10;
+                        myScore = myScore + 1;
                     }
                     else if (mQuizIndex == 5) {
                         //Wrong Answer
@@ -1027,7 +1026,7 @@ public class Quiz extends Fragment {
                         Toast CorrectAnswer = Toast.makeText(getContext(), "Correct Answer!", Toast.LENGTH_LONG);
                         CorrectAnswer.show();
                         mQuizIndex = 4;
-                        myScore = myScore + 10;
+                        myScore = myScore + 1;
                     }
                     else if (mQuizIndex == 4) {
                         //Wrong Answer
@@ -1041,7 +1040,7 @@ public class Quiz extends Fragment {
                         mQuizIndex = 6;
                         questions[4] = "5." + mThirdButton.getText().toString();
                         correct_incorrect[4] = R.drawable.check_mark;
-                        myScore = myScore + 10;
+                        myScore = myScore + 1;
                         openRewardPage();
                     }
 
@@ -1073,7 +1072,7 @@ public class Quiz extends Fragment {
                         Toast CorrectAnswer = Toast.makeText(getContext(), "Correct Answer!", Toast.LENGTH_LONG);
                         CorrectAnswer.show();
                         mQuizIndex = 3;
-                        myScore = myScore + 10;
+                        myScore = myScore + 1;
                     }
                     else if (mQuizIndex == 3) {
                         //Wrong Answer
@@ -1123,7 +1122,7 @@ public class Quiz extends Fragment {
                         Toast CorrectAnswer = Toast.makeText(getContext(), "Correct Answer!", Toast.LENGTH_LONG);
                         CorrectAnswer.show();
                         mQuizIndex = 2;
-                        myScore = myScore + 10;
+                        myScore = myScore + 1;
                     }
                     else if (mQuizIndex == 2) {
                         //Correct Answer
@@ -1137,7 +1136,7 @@ public class Quiz extends Fragment {
                         Toast CorrectAnswer = Toast.makeText(getContext(), "Correct Answer!", Toast.LENGTH_LONG);
                         CorrectAnswer.show();
                         mQuizIndex = 3;
-                        myScore = myScore + 10;
+                        myScore = myScore + 1;
                     }
                     else if (mQuizIndex == 3) {
                         //Wrong
@@ -1158,7 +1157,7 @@ public class Quiz extends Fragment {
                         mQuizIndex = 6;
                         questions[4] = "5." + mFirstButton.getText().toString();
                         correct_incorrect[4] = R.drawable.check_mark;
-                        myScore = myScore + 10;
+                        myScore = myScore + 1;
                         openRewardPage();
 
                     }
@@ -1189,7 +1188,7 @@ public class Quiz extends Fragment {
                         Toast CorrectAnswer = Toast.makeText(getContext(), "Correct Answer!", Toast.LENGTH_LONG);
                         CorrectAnswer.show();
                         mQuizIndex = 3;
-                        myScore = myScore + 10;
+                        myScore = myScore + 1;
                     }
                     else if (mQuizIndex == 3) {
                         //Wrong Answer
@@ -1253,7 +1252,7 @@ public class Quiz extends Fragment {
                         Toast CorrectAnswer = Toast.makeText(getContext(), "Correct Answer!", Toast.LENGTH_LONG);
                         CorrectAnswer.show();
                         mQuizIndex = 5;
-                        myScore = myScore + 10;
+                        myScore = myScore + 1;
                     }
                     else if (mQuizIndex == 5) {
                         //Wrong Answer
@@ -1298,7 +1297,7 @@ public class Quiz extends Fragment {
                         Toast CorrectAnswer = Toast.makeText(getContext(), "Correct Answer!", Toast.LENGTH_LONG);
                         CorrectAnswer.show();
                         mQuizIndex = 4;
-                        myScore = myScore + 10;
+                        myScore = myScore + 1;
                     }
                     else if (mQuizIndex == 4) {
                         //Wrong Answer
@@ -1355,12 +1354,13 @@ public class Quiz extends Fragment {
                         Toast CorrectAnswer = Toast.makeText(getContext(), "Correct Answer!", Toast.LENGTH_LONG);
                         CorrectAnswer.show();
                         mQuizIndex = 4;
-                        myScore = myScore + 10;
+                        myScore = myScore + 1;
                     }
                     else if (mQuizIndex == 4) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[3] = "4." + mFirstButton.getText().toString();
+                        correct_incorrect[3] = R.drawable.red_mark;
                         openRewardPage();
                     }
                     else if (mQuizIndex == 5) {
@@ -1391,7 +1391,7 @@ public class Quiz extends Fragment {
                         Toast CorrectAnswer = Toast.makeText(getContext(), "Correct Answer!", Toast.LENGTH_LONG);
                         CorrectAnswer.show();
                         mQuizIndex = 2;
-                        myScore = myScore + 10;
+                        myScore = myScore + 1;
                     }
                     else if (mQuizIndex == 2) {
                         //Correct Answer
@@ -1405,7 +1405,7 @@ public class Quiz extends Fragment {
                         Toast CorrectAnswer = Toast.makeText(getContext(), "Correct Answer!", Toast.LENGTH_LONG);
                         CorrectAnswer.show();
                         mQuizIndex = 3;
-                        myScore = myScore + 10;
+                        myScore = myScore + 1;
                     }
                     else if (mQuizIndex == 3) {
                         //Wrong Answer
@@ -1426,7 +1426,7 @@ public class Quiz extends Fragment {
                         Toast CorrectAnswer = Toast.makeText(getContext(), "Correct Answer!", Toast.LENGTH_LONG);
                         CorrectAnswer.show();
                         mQuizIndex = 5;
-                        myScore = myScore + 10;
+                        myScore = myScore + 1;
                     }
                     else if (mQuizIndex == 5) {
                         //Wrong Answer
@@ -1476,7 +1476,7 @@ public class Quiz extends Fragment {
                         mQuizIndex = 6;
                         questions[4] = "5." + mThirdButton.getText().toString();
                         correct_incorrect[4] = R.drawable.check_mark;
-                        myScore = myScore + 10;
+                        myScore = myScore + 1;
                         openRewardPage();
                     }
 
@@ -1558,7 +1558,7 @@ public class Quiz extends Fragment {
                         Toast CorrectAnswer = Toast.makeText(getContext(), "Correct Answer!", Toast.LENGTH_LONG);
                         CorrectAnswer.show();
                         mQuizIndex = 3;
-                        myScore = myScore + 10;
+                        myScore = myScore + 1;
                     }
                     else if (mQuizIndex == 3) {
                         //Wrong Answer
@@ -1571,6 +1571,7 @@ public class Quiz extends Fragment {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[3] = "4." + mFirstButton.getText().toString();
+                        correct_incorrect[3] = R.drawable.red_mark;
                         openRewardPage();
                     }
                     else if (mQuizIndex == 5) {
@@ -1578,7 +1579,7 @@ public class Quiz extends Fragment {
                         mQuizIndex = 6;
                         questions[4] = "5." + mFirstButton.getText().toString();
                         correct_incorrect[4] = R.drawable.check_mark;
-                        myScore = myScore + 10;
+                        myScore = myScore + 1;
                         openRewardPage();
                     }
 
@@ -1615,7 +1616,7 @@ public class Quiz extends Fragment {
                         Toast CorrectAnswer = Toast.makeText(getContext(), "Correct Answer!", Toast.LENGTH_LONG);
                         CorrectAnswer.show();
                         mQuizIndex = 4;
-                        myScore = myScore + 10;
+                        myScore = myScore + 1;
                     }
                     else if (mQuizIndex == 4) {
                         //Correct Answer
@@ -1629,7 +1630,7 @@ public class Quiz extends Fragment {
                         Toast CorrectAnswer = Toast.makeText(getContext(), "Correct Answer!", Toast.LENGTH_LONG);
                         CorrectAnswer.show();
                         mQuizIndex = 5;
-                        myScore = myScore + 10;
+                        myScore = myScore + 1;
                     }
                     else if (mQuizIndex == 5) {
                         //Wrong Answer
@@ -1658,7 +1659,7 @@ public class Quiz extends Fragment {
                         Toast CorrectAnswer = Toast.makeText(getContext(), "Correct Answer!", Toast.LENGTH_LONG);
                         CorrectAnswer.show();
                         mQuizIndex = 2;
-                        myScore = myScore + 10;
+                        myScore = myScore + 1;
                     }
                     else if (mQuizIndex == 2) {
                         //Wrong Answer
@@ -1767,7 +1768,7 @@ public class Quiz extends Fragment {
                         Toast CorrectAnswer = Toast.makeText(getContext(), "Correct Answer!", Toast.LENGTH_LONG);
                         CorrectAnswer.show();
                         mQuizIndex = 3;
-                        myScore = myScore + 10;
+                        myScore = myScore + 1;
                     }
                     else if (mQuizIndex == 3) {
                         //Wrong Answer
@@ -1833,7 +1834,7 @@ public class Quiz extends Fragment {
                         Toast CorrectAnswer = Toast.makeText(getContext(), "Correct Answer!", Toast.LENGTH_LONG);
                         CorrectAnswer.show();
                         mQuizIndex = 5;
-                        myScore = myScore + 10;
+                        myScore = myScore + 1;
                     }
                     else if (mQuizIndex == 5) {
                         //Wrong Answer
@@ -1876,7 +1877,7 @@ public class Quiz extends Fragment {
                         Toast CorrectAnswer = Toast.makeText(getContext(), "Correct Answer!", Toast.LENGTH_LONG);
                         CorrectAnswer.show();
                         mQuizIndex = 4;
-                        myScore = myScore + 10;
+                        myScore = myScore + 1;
                     }
                     else if (mQuizIndex == 4) {
                         //Wrong Answer
@@ -1890,7 +1891,7 @@ public class Quiz extends Fragment {
                         mQuizIndex = 6;
                         questions[4] = "5." + mThirdButton.getText().toString();
                         correct_incorrect[4] = R.drawable.check_mark;
-                        myScore = myScore + 10;
+                        myScore = myScore + 1;
                         openRewardPage();
                     }
 
@@ -1914,7 +1915,7 @@ public class Quiz extends Fragment {
                         Toast CorrectAnswer = Toast.makeText(getContext(), "Correct Answer!", Toast.LENGTH_LONG);
                         CorrectAnswer.show();
                         mQuizIndex = 2;
-                        myScore = myScore + 10;
+                        myScore = myScore + 1;
                     }
                     else if (mQuizIndex == 2) {
                         //Wrong Answer
@@ -1984,7 +1985,7 @@ public class Quiz extends Fragment {
                         Toast CorrectAnswer = Toast.makeText(getContext(), "Correct Answer!", Toast.LENGTH_LONG);
                         CorrectAnswer.show();
                         mQuizIndex = 4;
-                        myScore = myScore + 10;
+                        myScore = myScore + 1;
                     }
                     else if (mQuizIndex == 4) {
                         //Correct Answer
@@ -1998,7 +1999,7 @@ public class Quiz extends Fragment {
                         Toast CorrectAnswer = Toast.makeText(getContext(), "Correct Answer!", Toast.LENGTH_LONG);
                         CorrectAnswer.show();
                         mQuizIndex = 5;
-                        myScore = myScore + 10;
+                        myScore = myScore + 1;
                     }
                     else if (mQuizIndex == 5) {
                         //Wrong Answer
@@ -2027,7 +2028,7 @@ public class Quiz extends Fragment {
                         Toast CorrectAnswer = Toast.makeText(getContext(), "Correct Answer!", Toast.LENGTH_LONG);
                         CorrectAnswer.show();
                         mQuizIndex = 2;
-                        myScore = myScore + 10;
+                        myScore = myScore + 1;
                     }
                     else if (mQuizIndex == 2) {
                         //Wrong Answer
@@ -2055,7 +2056,7 @@ public class Quiz extends Fragment {
                         mQuizIndex = 6;
                         questions[4] = "5." + mSecondButton.getText().toString();
                         correct_incorrect[4] = R.drawable.check_mark;
-                        myScore = myScore + 10;
+                        myScore = myScore + 1;
                         openRewardPage();
                     }
                 }
@@ -2084,7 +2085,7 @@ public class Quiz extends Fragment {
                         Toast CorrectAnswer = Toast.makeText(getContext(), "Correct Answer!", Toast.LENGTH_LONG);
                         CorrectAnswer.show();
                         mQuizIndex = 3;
-                        myScore = myScore + 10;
+                        myScore = myScore + 1;
                     }
                     else if (mQuizIndex == 3) {
                         //Wrong Answer
@@ -2128,7 +2129,7 @@ public class Quiz extends Fragment {
                         Toast CorrectAnswer = Toast.makeText(getContext(), "Correct Answer!", Toast.LENGTH_LONG);
                         CorrectAnswer.show();
                         mQuizIndex = 2;
-                        myScore = myScore + 10;
+                        myScore = myScore + 1;
                     }
                     else if (mQuizIndex == 2) {
                         //Wrong Answer

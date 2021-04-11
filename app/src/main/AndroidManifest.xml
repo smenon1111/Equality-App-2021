@@ -8,6 +8,7 @@
     <application
         android:allowBackup="false"
         android:label="Unify"
+        android:icon="@drawable/unify_logo_large"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">

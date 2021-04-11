@@ -88,27 +88,27 @@ public class Reward extends Fragment {
 
         if (myScoreReward == 0){
             GoodJob.setText("Try Harder Next Time");
-            MyPointTotal.setText("You earned 0 coins!");
-        }else if (myScoreReward == 10){
+            MyPointTotal.setText("Retake the Quiz & Get All Questions Correct for 10 coins!");
+        }else if (myScoreReward == 1){
             GoodJob.setText("Try Harder Next Time");
-            MyPointTotal.setText("You earned 10 coins!");
-        }else if (myScoreReward == 20){
+            MyPointTotal.setText("Retake the Quiz & Get All Questions Correct for 10 coins!");
+        }else if (myScoreReward == 2){
             GoodJob.setText("Good Try!");
-            MyPointTotal.setText("You earned 20 coins!");
-        }else if (myScoreReward == 30){
+            MyPointTotal.setText("Retake the Quiz & Get All Questions Correct for 10 coins!");
+        }else if (myScoreReward == 3){
             GoodJob.setText("So Close!");
-            MyPointTotal.setText("You earned 30 coins!");
-        }else if (myScoreReward == 40){
+            MyPointTotal.setText("Retake the Quiz & Get All Questions Correct for 10 coins!");
+        }else if (myScoreReward == 4){
             GoodJob.setText("Almost There!");
-            MyPointTotal.setText("You earned 40 coins!");
-        }else if (myScoreReward == 50){
+            MyPointTotal.setText("Retake the Quiz & Get All Questions Correct for 10 coins!");
+        }else if (myScoreReward == 5){
             GoodJob.setText("Congratulations!");
-            MyPointTotal.setText("You earned 50 coins!");
+            MyPointTotal.setText("You earned 10 coins!");
             PointsReceived.show();
         }
 
-        if(myScoreReward > 0) {
-            int coinsCount = Integer.parseInt(currCoins) + myScoreReward;
+        if(myScoreReward == 5) {
+            int coinsCount = Integer.parseInt(currCoins) + 10;
 
             long UpdateCoinsID = DataBaseHelper.updateCoins(db, results.getString(2), String.valueOf(coinsCount));
 

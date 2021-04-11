@@ -127,7 +127,7 @@ public class Donate extends Fragment {
     public long updateNewCoins(String username, String coins) {
         ContentValues contentValues = new ContentValues();
         contentValues.put(DataBaseHelper.COL_3, username);
-        contentValues.put(DataBaseHelper.COL_9, coins);
+        contentValues.put(DataBaseHelper.COL_8, coins);
         String[] selectionArgs = { String.valueOf(username) };
         long id = db.update(DataBaseHelper.TABLE_NAME,contentValues,DataBaseHelper.COL_3 +" = ? ",selectionArgs);
         return id;
