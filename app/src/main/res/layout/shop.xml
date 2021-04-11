@@ -5,7 +5,7 @@
     android:id="@+id/relativeLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/white">
+    android:background="#cce7cd">
 
 
     <ImageView
@@ -48,7 +48,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/shopTitle"
-        android:textSize="35sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="35dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -93,6 +95,8 @@
         android:layout_width="120dp"
         android:layout_height="50dp"
         android:layout_marginTop="200dp"
+        android:background="#abd7ab"
+        android:textColor="#FFFFFF"
         android:text="@string/PurchaseButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.444"
@@ -105,6 +109,8 @@
         android:layout_height="50dp"
         android:layout_marginTop="396dp"
         android:text="@string/PurchaseButton"
+        android:background="#abd7ab"
+        android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toEndOf="@id/character2"
@@ -117,6 +123,8 @@
         android:text="@string/PurchaseButton"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        android:background="#abd7ab"
+        android:textColor="#FFFFFF"
         app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toEndOf="@id/character3"
         app:layout_constraintTop_toTopOf="parent"
