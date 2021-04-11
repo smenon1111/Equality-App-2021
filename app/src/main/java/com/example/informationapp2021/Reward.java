@@ -2,6 +2,9 @@ package com.example.informationapp2021;
 
 import android.content.Context;
 import android.content.Intent;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteOpenHelper;
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
@@ -19,10 +22,32 @@ public class Reward extends Fragment {
     static String pageNameReward;
     static String[] myQuestionsReward = new String[5];
     static int[] myAccuracyReward = new int[5];
+    SQLiteOpenHelper openHelper;
+    SQLiteDatabase db;
+    public static final String TABLE_NAME = "T_Register";
+    Cursor results;
+    String Username = "";
+    String currCoins = "";
     Bundle bundle = this.getArguments();
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
+        // get the current user and the user's coins from the profile database
+        openHelper = new DataBaseHelper(getActivity().getApplicationContext());
+        db = openHelper.getWritableDatabase();
+
+        results = DataBaseHelper.GetUserData(db);
+        if (results.getCount() <= 0) {
+            // there were no profiles stored in the database
+            Toast.makeText(getActivity().getApplicationContext(), "No data found in the User db", Toast.LENGTH_LONG).show();
+        }
+        else if (results.moveToLast()) {
+            // capture and keep track of username and the current coins with the user
+            Username = results.getString(2);
+            currCoins = results.getString(7);
+        }
 
         getMyQuizInfo();
 
@@ -63,23 +88,34 @@ public class Reward extends Fragment {
 
         if (myScoreReward == 0){
             GoodJob.setText("Try Harder Next Time");
-            MyPointTotal.setText("Get full points to earn 10 coins!");
+            MyPointTotal.setText("You earned 0 coins!");
         }else if (myScoreReward == 10){
             GoodJob.setText("Try Harder Next Time");
-            MyPointTotal.setText("Get full points to earn 10 coins!");
+            MyPointTotal.setText("You earned 10 coins!");
         }else if (myScoreReward == 20){
             GoodJob.setText("Good Try!");
-            MyPointTotal.setText("Get full points to earn 10 coins!");
+            MyPointTotal.setText("You earned 20 coins!");
         }else if (myScoreReward == 30){
             GoodJob.setText("So Close!");
-            MyPointTotal.setText("Get full points to earn 10 coins!");
+            MyPointTotal.setText("You earned 30 coins!");
         }else if (myScoreReward == 40){
             GoodJob.setText("Almost There!");
-            MyPointTotal.setText("Get full points to earn 10 coins!");
+            MyPointTotal.setText("You earned 40 coins!");
         }else if (myScoreReward == 50){
             GoodJob.setText("Congratulations!");
-            MyPointTotal.setText("+10 coins!");
+            MyPointTotal.setText("You earned 50 coins!");
             PointsReceived.show();
+        }
+
+        if(myScoreReward > 0) {
+            int coinsCount = Integer.parseInt(currCoins) + myScoreReward;
+
+            long UpdateCoinsID = DataBaseHelper.updateCoins(db, results.getString(2), String.valueOf(coinsCount));
+
+            if (UpdateCoinsID <= 0)
+                Toast.makeText(getActivity().getApplicationContext(), "Update coins was unsuccessful", Toast.LENGTH_LONG).show();
+            else
+                Toast.makeText(getActivity().getApplicationContext(), "Update coins was successful", Toast.LENGTH_LONG).show();
         }
 
         homeButton.setOnClickListener(new View.OnClickListener() {

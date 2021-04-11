@@ -52,8 +52,8 @@ public class TheRealProfile extends Fragment {
                         + "\nUsername: " + results.getString(2)
                         + "\nEmail: " + results.getString(4)
                         + "\nPronouns: " + results.getString(5)
-                        + "\nBio: " + results.getString(7)
-                        + "\nCoins: " + results.getString(8)
+                        + "\nBio: " + results.getString(6)
+                        + "\nCoins: " + results.getString(7)
                 );
 
                 textView.setText(stringBuilder);

@@ -10,7 +10,7 @@ import android.util.Log;
 
 public class DataBaseHelper extends SQLiteOpenHelper {
     SQLiteDatabase db;
-    public static final String DATABASE_NAME="users.db";
+    public static final String DATABASE_NAME="unify_users.db";
     private static final int DATABASE_VERSION = 3;
     public static final String TABLE_NAME="T_Register";
     public static final String COL_1="ID";
@@ -64,6 +64,21 @@ public class DataBaseHelper extends SQLiteOpenHelper {
         Cursor results = db.rawQuery(query, null);
 
         return results;
+    }
+
+    public static long CreateUser(SQLiteDatabase db, String name, String username, String password, String email, String prns, String about) {
+        ContentValues contentValues = new ContentValues();
+        contentValues.put(DataBaseHelper.COL_2, name);
+        contentValues.put(DataBaseHelper.COL_3, username);
+        contentValues.put(DataBaseHelper.COL_4, password);
+        contentValues.put(DataBaseHelper.COL_5, email);
+        contentValues.put(DataBaseHelper.COL_6, prns);
+        contentValues.put(DataBaseHelper.COL_7, about);
+
+        long id = db.insert(DataBaseHelper.TABLE_NAME, null, contentValues);
+
+        return id;
+
     }
 
     public static long updateCoins(SQLiteDatabase db, String username, String coins) {

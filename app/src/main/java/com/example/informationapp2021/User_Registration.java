@@ -43,7 +43,7 @@ public class User_Registration extends Fragment {
             public void onClick(View view) {
                 openHelper = new DataBaseHelper(getActivity().getApplicationContext());
                 db = openHelper.getWritableDatabase();
-                long InsertID = insertdata(name.getText().toString(), username.getText().toString(),
+                long InsertID = DataBaseHelper.CreateUser(db, name.getText().toString(), username.getText().toString(),
                                         password.getText().toString(), email.getText().toString(),
                                         prns.getText().toString(),
                                         about.getText().toString());
@@ -56,18 +56,5 @@ public class User_Registration extends Fragment {
 
         return profileView;
     }
-    public long insertdata(String name, String username, String password, String email, String prns, String about) {
-        ContentValues contentValues = new ContentValues();
-        contentValues.put(DataBaseHelper.COL_2, name);
-        contentValues.put(DataBaseHelper.COL_3, username);
-        contentValues.put(DataBaseHelper.COL_4, password);
-        contentValues.put(DataBaseHelper.COL_5, email);
-        contentValues.put(DataBaseHelper.COL_6, prns);
-        contentValues.put(DataBaseHelper.COL_7, about);
 
-        long id = db.insert(DataBaseHelper.TABLE_NAME, null, contentValues);
-
-        return id;
-
-    }
 }

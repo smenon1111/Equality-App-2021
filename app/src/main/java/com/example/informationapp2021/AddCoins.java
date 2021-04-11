@@ -50,7 +50,7 @@ public class AddCoins extends Fragment {
             if (results.moveToLast()) {
                 stringBuilder.append("Name: " + results.getString(1)
                         + "\nUsername: " + results.getString(2)
-                        + "\nCoins: " + results.getString(8)
+                        + "\nCoins: " + results.getString(7)
                 );
 
                 textView.setText(stringBuilder);
@@ -62,7 +62,7 @@ public class AddCoins extends Fragment {
             public void onClick(View view) {
                 openHelper = new DataBaseHelper(getActivity().getApplicationContext());
                 db = openHelper.getWritableDatabase();
-                String currCoins = results.getString(8);
+                String currCoins = results.getString(7);
 
                 int coinsCount = Integer.parseInt(currCoins) + 100000;
 

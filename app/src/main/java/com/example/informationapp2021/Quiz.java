@@ -20,12 +20,6 @@ import androidx.fragment.app.Fragment;
 
 
 public class Quiz extends Fragment {
-    SQLiteOpenHelper openHelper;
-    SQLiteDatabase db;
-    public static final String TABLE_NAME = "T_Register";
-    Cursor results;
-    String Username = "";
-    String currCoins = "";
     private TextView mQuestion;
     private Button mFirstButton;
     private Button mSecondButton;
@@ -55,20 +49,6 @@ public class Quiz extends Fragment {
 
         getMyPageName();
 
-        // get the current user and the user's coins from the profile database
-        openHelper = new DataBaseHelper(getActivity().getApplicationContext());
-        db = openHelper.getReadableDatabase();
-
-        results = DataBaseHelper.GetUserData(db);
-        if (results.getCount() <= 0) {
-            // there were no profiles stored in the database
-            Toast.makeText(getActivity().getApplicationContext(), "No data found in the User db", Toast.LENGTH_LONG).show();
-        } else if (results.moveToLast()) {
-            // capture and keep track of username and the current coins with the user
-            Username = results.getString(2);
-            currCoins = results.getString(8);
-        }
-
         if (pageName == "SimranJeetSingh") {
 
             mQuestion.setText(R.string.Q1Simran);
@@ -88,19 +68,22 @@ public class Quiz extends Fragment {
                         questions[0] = "1." + mFirstButton.getText().toString();
                         correct_incorrect[0] = R.drawable.red_mark;
                         openRewardPage();
-                    } else if (mQuizIndex == 2) {
+                    }
+                    else if (mQuizIndex == 2) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[1] = "2." + mFirstButton.getText().toString();
                         correct_incorrect[1] = R.drawable.red_mark;
                         openRewardPage();
-                    } else if (mQuizIndex == 3) {
+                    }
+                    else if (mQuizIndex == 3) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[2] = "3." + mFirstButton.getText().toString();
                         correct_incorrect[2] = R.drawable.red_mark;
                         openRewardPage();
-                    } else if (mQuizIndex == 4) {
+                    }
+                    else if (mQuizIndex == 4) {
                         //Correct Answer
                         questions[3] = "4." + mFirstButton.getText().toString();
                         correct_incorrect[3] = R.drawable.check_mark;
@@ -113,14 +96,13 @@ public class Quiz extends Fragment {
                         CorrectAnswer.show();
                         mQuizIndex = 5;
                         myScore = myScore + 10;
-                    } else if (mQuizIndex == 5) {
+                    }
+                    else if (mQuizIndex == 5) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[4] = "5." + mFirstButton.getText().toString();
                         correct_incorrect[4] = R.drawable.red_mark;
                         openRewardPage();
-
-
                     }
 
                 }
@@ -136,7 +118,8 @@ public class Quiz extends Fragment {
                         questions[0] = "1." + mSecondButton.getText().toString();
                         correct_incorrect[0] = R.drawable.red_mark;
                         openRewardPage();
-                    } else if (mQuizIndex == 2) {
+                    }
+                    else if (mQuizIndex == 2) {
                         //Correct Answer
                         questions[1] = "2." + mSecondButton.getText().toString();
                         correct_incorrect[1] = R.drawable.check_mark;
@@ -149,19 +132,22 @@ public class Quiz extends Fragment {
                         CorrectAnswer.show();
                         mQuizIndex = 3;
                         myScore = myScore + 10;
-                    } else if (mQuizIndex == 3) {
+                    }
+                    else if (mQuizIndex == 3) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[2] = "3." + mSecondButton.getText().toString();
                         correct_incorrect[2] = R.drawable.red_mark;
                         openRewardPage();
-                    } else if (mQuizIndex == 4) {
+                    }
+                    else if (mQuizIndex == 4) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[3] = "4." + mSecondButton.getText().toString();
                         correct_incorrect[3] = R.drawable.red_mark;
                         openRewardPage();
-                    } else if (mQuizIndex == 5) {
+                    }
+                    else if (mQuizIndex == 5) {
                         //Correct Answer
                         mQuizIndex = 6;
                         questions[4] = "5." + mSecondButton.getText().toString();
@@ -183,13 +169,15 @@ public class Quiz extends Fragment {
                         questions[0] = "1." + mThirdButton.getText().toString();
                         correct_incorrect[0] = R.drawable.red_mark;
                         openRewardPage();
-                    } else if (mQuizIndex == 2) {
+                    }
+                    else if (mQuizIndex == 2) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[1] = "2." + mThirdButton.getText().toString();
                         correct_incorrect[1] = R.drawable.red_mark;
                         openRewardPage();
-                    } else if (mQuizIndex == 3) {
+                    }
+                    else if (mQuizIndex == 3) {
                         //Correct Answer
                         questions[2] = "3." + mThirdButton.getText().toString();
                         correct_incorrect[2] = R.drawable.check_mark;
@@ -202,13 +190,15 @@ public class Quiz extends Fragment {
                         CorrectAnswer.show();
                         mQuizIndex = 4;
                         myScore = myScore + 10;
-                    } else if (mQuizIndex == 4) {
+                    }
+                    else if (mQuizIndex == 4) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[3] = "4." + mThirdButton.getText().toString();
                         correct_incorrect[3] = R.drawable.red_mark;
                         openRewardPage();
-                    } else if (mQuizIndex == 5) {
+                    }
+                    else if (mQuizIndex == 5) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[4] = "5." + mThirdButton.getText().toString();
@@ -237,24 +227,28 @@ public class Quiz extends Fragment {
                         CorrectAnswer.show();
                         mQuizIndex = 2;
                         myScore = myScore + 10;
-                    } else if (mQuizIndex == 2) {
+                    }
+                    else if (mQuizIndex == 2) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[1] = "2." + mFourthButton.getText().toString();
                         correct_incorrect[1] = R.drawable.red_mark;
                         openRewardPage();
-                    } else if (mQuizIndex == 3) {
+                    }
+                    else if (mQuizIndex == 3) {
                         //Wrong Answer
                         questions[2] = "3." + mFourthButton.getText().toString();
                         correct_incorrect[2] = R.drawable.red_mark;
                         openRewardPage();
-                    } else if (mQuizIndex == 4) {
+                    }
+                    else if (mQuizIndex == 4) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[3] = "4." + mFourthButton.getText().toString();
                         correct_incorrect[3] = R.drawable.red_mark;
                         openRewardPage();
-                    } else if (mQuizIndex == 5) {
+                    }
+                    else if (mQuizIndex == 5) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[4] = "5." + mFourthButton.getText().toString();
@@ -263,7 +257,8 @@ public class Quiz extends Fragment {
 
                 }
             });
-        } else if (pageName == "AliceWong") {
+        }
+        else if (pageName == "AliceWong") {
 
             mQuestion.setText(R.string.Q1Alice);
             mFirstButton.setText(R.string.Q1_A1Alice);
@@ -282,7 +277,8 @@ public class Quiz extends Fragment {
                         questions[0] = "1." + mFirstButton.getText().toString();
                         correct_incorrect[0] = R.drawable.red_mark;
                         openRewardPage();
-                    } else if (mQuizIndex == 2) {
+                    }
+                    else if (mQuizIndex == 2) {
                         //Correct Answer
                         questions[1] = "2." + mFirstButton.getText().toString();
                         correct_incorrect[1] = R.drawable.check_mark;
@@ -295,17 +291,20 @@ public class Quiz extends Fragment {
                         CorrectAnswer.show();
                         mQuizIndex = 3;
                         myScore = myScore + 10;
-                    } else if (mQuizIndex == 3) {
+                    }
+                    else if (mQuizIndex == 3) {
                         mQuizIndex = 6;
                         questions[2] = "3." + mFirstButton.getText().toString();
                         correct_incorrect[2] = R.drawable.red_mark;
                         openRewardPage();
-                    } else if (mQuizIndex == 4) {
+                    }
+                    else if (mQuizIndex == 4) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[3] = "4." + mFirstButton.getText().toString();
                         openRewardPage();
-                    } else if (mQuizIndex == 5) {
+                    }
+                    else if (mQuizIndex == 5) {
                         //Correct Answer
                         mQuizIndex = 6;
                         questions[4] = "5." + mFirstButton.getText().toString();
@@ -336,25 +335,29 @@ public class Quiz extends Fragment {
                         mQuizIndex = 2;
                         myScore = myScore + 10;
 
-                    } else if (mQuizIndex == 2) {
+                    }
+                    else if (mQuizIndex == 2) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[1] = "2." + mSecondButton.getText().toString();
                         correct_incorrect[1] = R.drawable.red_mark;
                         openRewardPage();
-                    } else if (mQuizIndex == 3) {
+                    }
+                    else if (mQuizIndex == 3) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[2] = "3." + mSecondButton.getText().toString();
                         correct_incorrect[2] = R.drawable.red_mark;
                         openRewardPage();
-                    } else if (mQuizIndex == 4) {
+                    }
+                    else if (mQuizIndex == 4) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[3] = "4." + mSecondButton.getText().toString();
                         correct_incorrect[3] = R.drawable.red_mark;
                         openRewardPage();
-                    } else if (mQuizIndex == 5) {
+                    }
+                    else if (mQuizIndex == 5) {
                         //Correct Answer
                         mQuizIndex = 6;
                         questions[4] = "5." + mSecondButton.getText().toString();
@@ -376,18 +379,21 @@ public class Quiz extends Fragment {
                         questions[0] = "1." + mThirdButton.getText().toString();
                         correct_incorrect[0] = R.drawable.red_mark;
                         openRewardPage();
-                    } else if (mQuizIndex == 2) {
+                    }
+                    else if (mQuizIndex == 2) {
                         //Wrong Answer
                         questions[1] = "2." + mThirdButton.getText().toString();
                         correct_incorrect[1] = R.drawable.red_mark;
                         openRewardPage();
-                    } else if (mQuizIndex == 3) {
+                    }
+                    else if (mQuizIndex == 3) {
                         //Wrong Answer
                         questions[2] = "3." + mThirdButton.getText().toString();
                         correct_incorrect[2] = R.drawable.red_mark;
                         openRewardPage();
 
-                    } else if (mQuizIndex == 4) {
+                    }
+                    else if (mQuizIndex == 4) {
                         //Correct Answer
                         questions[3] = "4." + mThirdButton.getText().toString();
                         correct_incorrect[3] = R.drawable.check_mark;
@@ -400,7 +406,8 @@ public class Quiz extends Fragment {
                         CorrectAnswer.show();
                         mQuizIndex = 5;
                         myScore = myScore + 10;
-                    } else if (mQuizIndex == 5) {
+                    }
+                    else if (mQuizIndex == 5) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[4] = "5." + mFirstButton.getText().toString();
@@ -422,13 +429,15 @@ public class Quiz extends Fragment {
                         questions[0] = "1." + mFourthButton.getText().toString();
                         correct_incorrect[0] = R.drawable.red_mark;
                         openRewardPage();
-                    } else if (mQuizIndex == 2) {
+                    }
+                    else if (mQuizIndex == 2) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[1] = "2." + mFourthButton.getText().toString();
                         correct_incorrect[1] = R.drawable.red_mark;
                         openRewardPage();
-                    } else if (mQuizIndex == 3) {
+                    }
+                    else if (mQuizIndex == 3) {
                         //Correct Answer
                         questions[2] = "3." + mFourthButton.getText().toString();
                         correct_incorrect[2] = R.drawable.check_mark;
@@ -441,13 +450,15 @@ public class Quiz extends Fragment {
                         CorrectAnswer.show();
                         mQuizIndex = 4;
                         myScore = myScore + 10;
-                    } else if (mQuizIndex == 4) {
+                    }
+                    else if (mQuizIndex == 4) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[3] = "4." + mFourthButton.getText().toString();
                         correct_incorrect[3] = R.drawable.red_mark;
                         openRewardPage();
-                    } else if (mQuizIndex == 5) {
+                    }
+                    else if (mQuizIndex == 5) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[4] = "5." + mFourthButton.getText().toString();
@@ -456,7 +467,8 @@ public class Quiz extends Fragment {
 
                 }
             });
-        } else if (pageName == "ThandiweAbdullah") {
+        }
+        else if (pageName == "ThandiweAbdullah") {
 
             mQuestion.setText(R.string.Q1Thandiwe);
             mFirstButton.setText(R.string.Q1_A1Thandiwe);
@@ -474,7 +486,8 @@ public class Quiz extends Fragment {
                         questions[0] = "1." + mFirstButton.getText().toString();
                         correct_incorrect[0] = R.drawable.red_mark;
                         openRewardPage();
-                    } else if (mQuizIndex == 2) {
+                    }
+                    else if (mQuizIndex == 2) {
                         //Correct Answer
                         questions[1] = "2." + mFirstButton.getText().toString();
                         correct_incorrect[1] = R.drawable.check_mark;
@@ -487,7 +500,8 @@ public class Quiz extends Fragment {
                         CorrectAnswer.show();
                         mQuizIndex = 3;
                         myScore = myScore + 10;
-                    } else if (mQuizIndex == 3) {
+                    }
+                    else if (mQuizIndex == 3) {
                         //Correct Answer
                         questions[2] = "3." + mFirstButton.getText().toString();
                         correct_incorrect[2] = R.drawable.check_mark;
@@ -500,13 +514,15 @@ public class Quiz extends Fragment {
                         CorrectAnswer.show();
                         mQuizIndex = 4;
                         myScore = myScore + 10;
-                    } else if (mQuizIndex == 4) {
+                    }
+                    else if (mQuizIndex == 4) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[3] = "4." + mFirstButton.getText().toString();
                         correct_incorrect[3] = R.drawable.red_mark;
                         openRewardPage();
-                    } else if (mQuizIndex == 5) {
+                    }
+                    else if (mQuizIndex == 5) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[4] = "5." + mFirstButton.getText().toString();
@@ -529,25 +545,29 @@ public class Quiz extends Fragment {
                         questions[0] = "1." + mSecondButton.getText().toString();
                         correct_incorrect[0] = R.drawable.red_mark;
                         openRewardPage();
-                    } else if (mQuizIndex == 2) {
+                    }
+                    else if (mQuizIndex == 2) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[1] = "2." + mSecondButton.getText().toString();
                         correct_incorrect[1] = R.drawable.red_mark;
                         openRewardPage();
-                    } else if (mQuizIndex == 3) {
+                    }
+                    else if (mQuizIndex == 3) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[2] = "3." + mSecondButton.getText().toString();
                         correct_incorrect[2] = R.drawable.red_mark;
                         openRewardPage();
-                    } else if (mQuizIndex == 4) {
+                    }
+                    else if (mQuizIndex == 4) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[3] = "4." + mSecondButton.getText().toString();
                         correct_incorrect[3] = R.drawable.red_mark;
                         openRewardPage();
-                    } else if (mQuizIndex == 5) {
+                    }
+                    else if (mQuizIndex == 5) {
                         //Correct Answer
                         mQuizIndex = 6;
                         questions[4] = "5." + mSecondButton.getText().toString();
@@ -569,25 +589,29 @@ public class Quiz extends Fragment {
                         questions[0] = "1." + mThirdButton.getText().toString();
                         correct_incorrect[0] = R.drawable.red_mark;
                         openRewardPage();
-                    } else if (mQuizIndex == 2) {
+                    }
+                    else if (mQuizIndex == 2) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[1] = "2." + mThirdButton.getText().toString();
                         correct_incorrect[1] = R.drawable.red_mark;
                         openRewardPage();
-                    } else if (mQuizIndex == 3) {
+                    }
+                    else if (mQuizIndex == 3) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[2] = "3." + mThirdButton.getText().toString();
                         correct_incorrect[2] = R.drawable.red_mark;
                         openRewardPage();
-                    } else if (mQuizIndex == 4) {
+                    }
+                    else if (mQuizIndex == 4) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[3] = "4." + mThirdButton.getText().toString();
                         correct_incorrect[3] = R.drawable.red_mark;
                         openRewardPage();
-                    } else if (mQuizIndex == 5) {
+                    }
+                    else if (mQuizIndex == 5) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[4] = "5." + mThirdButton.getText().toString();
@@ -616,18 +640,21 @@ public class Quiz extends Fragment {
                         CorrectAnswer.show();
                         mQuizIndex = 2;
                         myScore = myScore + 10;
-                    } else if (mQuizIndex == 2) {
+                    }
+                    else if (mQuizIndex == 2) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[1] = "2." + mFourthButton.getText().toString();
                         correct_incorrect[1] = R.drawable.red_mark;
                         openRewardPage();
-                    } else if (mQuizIndex == 3) {
+                    }
+                    else if (mQuizIndex == 3) {
                         //Wrong Answer
                         questions[2] = "3." + mFourthButton.getText().toString();
                         correct_incorrect[2] = R.drawable.red_mark;
                         openRewardPage();
-                    } else if (mQuizIndex == 4) {
+                    }
+                    else if (mQuizIndex == 4) {
                         //Correct Answer
                         questions[3] = "4." + mFourthButton.getText().toString();
                         correct_incorrect[3] = R.drawable.check_mark;
@@ -640,7 +667,8 @@ public class Quiz extends Fragment {
                         CorrectAnswer.show();
                         mQuizIndex = 5;
                         myScore = myScore + 10;
-                    } else if (mQuizIndex == 5) {
+                    }
+                    else if (mQuizIndex == 5) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[4] = "5." + mFourthButton.getText().toString();
@@ -649,7 +677,8 @@ public class Quiz extends Fragment {
 
                 }
             });
-        } else if (pageName == "BeverlyPalesaDitsie") {
+        }
+        else if (pageName == "BeverlyPalesaDitsie") {
 
             mQuestion.setText(R.string.Q1Beverly);
             mFirstButton.setText(R.string.Q1_A1Beverly);
@@ -667,19 +696,22 @@ public class Quiz extends Fragment {
                         mQuizIndex = 6;
                         questions[0] = "1." + mFirstButton.getText().toString();
                         correct_incorrect[0] = R.drawable.red_mark;
-                    } else if (mQuizIndex == 2) {
+                    }
+                    else if (mQuizIndex == 2) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[1] = "2." + mFirstButton.getText().toString();
                         correct_incorrect[1] = R.drawable.red_mark;
                         openRewardPage();
-                    } else if (mQuizIndex == 3) {
+                    }
+                    else if (mQuizIndex == 3) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[2] = "3." + mFirstButton.getText().toString();
                         correct_incorrect[2] = R.drawable.red_mark;
                         openRewardPage();
-                    } else if (mQuizIndex == 4) {
+                    }
+                    else if (mQuizIndex == 4) {
                         //Correct Answer
                         questions[3] = "4." + mFirstButton.getText().toString();
                         correct_incorrect[3] = R.drawable.check_mark;
@@ -692,7 +724,8 @@ public class Quiz extends Fragment {
                         CorrectAnswer.show();
                         mQuizIndex = 5;
                         myScore = myScore + 10;
-                    } else if (mQuizIndex == 5) {
+                    }
+                    else if (mQuizIndex == 5) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[4] = "5." + mFirstButton.getText().toString();
@@ -712,7 +745,8 @@ public class Quiz extends Fragment {
                         questions[0] = "1." + mSecondButton.getText().toString();
                         correct_incorrect[0] = R.drawable.red_mark;
                         openRewardPage();
-                    } else if (mQuizIndex == 2) {
+                    }
+                    else if (mQuizIndex == 2) {
                         //Correct Answer
                         questions[1] = "2." + mSecondButton.getText().toString();
                         correct_incorrect[1] = R.drawable.check_mark;
@@ -725,7 +759,8 @@ public class Quiz extends Fragment {
                         CorrectAnswer.show();
                         mQuizIndex = 3;
                         myScore = myScore + 10;
-                    } else if (mQuizIndex == 3) {
+                    }
+                    else if (mQuizIndex == 3) {
                         //Correct Answer
                         questions[2] = "3." + mSecondButton.getText().toString();
                         correct_incorrect[2] = R.drawable.check_mark;
@@ -738,13 +773,15 @@ public class Quiz extends Fragment {
                         CorrectAnswer.show();
                         mQuizIndex = 4;
                         myScore = myScore + 10;
-                    } else if (mQuizIndex == 4) {
+                    }
+                    else if (mQuizIndex == 4) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[3] = "4." + mSecondButton.getText().toString();
                         correct_incorrect[3] = R.drawable.red_mark;
                         openRewardPage();
-                    } else if (mQuizIndex == 5) {
+                    }
+                    else if (mQuizIndex == 5) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[4] = "5." + mSecondButton.getText().toString();
@@ -772,25 +809,29 @@ public class Quiz extends Fragment {
                         CorrectAnswer.show();
                         mQuizIndex = 2;
                         myScore = myScore + 10;
-                    } else if (mQuizIndex == 2) {
+                    }
+                    else if (mQuizIndex == 2) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[1] = "2." + mThirdButton.getText().toString();
                         correct_incorrect[1] = R.drawable.red_mark;
                         openRewardPage();
-                    } else if (mQuizIndex == 3) {
+                    }
+                    else if (mQuizIndex == 3) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[2] = "3." + mThirdButton.getText().toString();
                         correct_incorrect[2] = R.drawable.red_mark;
                         openRewardPage();
-                    } else if (mQuizIndex == 4) {
+                    }
+                    else if (mQuizIndex == 4) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[3] = "4." + mThirdButton.getText().toString();
                         correct_incorrect[3] = R.drawable.red_mark;
                         openRewardPage();
-                    } else if (mQuizIndex == 5) {
+                    }
+                    else if (mQuizIndex == 5) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[4] = "5." + mThirdButton.getText().toString();
@@ -813,25 +854,29 @@ public class Quiz extends Fragment {
                         correct_incorrect[0] = R.drawable.red_mark;
                         openRewardPage();
 
-                    } else if (mQuizIndex == 2) {
+                    }
+                    else if (mQuizIndex == 2) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[1] = "2." + mFourthButton.getText().toString();
                         correct_incorrect[1] = R.drawable.red_mark;
                         openRewardPage();
-                    } else if (mQuizIndex == 3) {
+                    }
+                    else if (mQuizIndex == 3) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[2] = "3." + mFourthButton.getText().toString();
                         correct_incorrect[2] = R.drawable.red_mark;
                         openRewardPage();
-                    } else if (mQuizIndex == 4) {
+                    }
+                    else if (mQuizIndex == 4) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[3] = "4." + mFourthButton.getText().toString();
                         correct_incorrect[3] = R.drawable.red_mark;
                         openRewardPage();
-                    } else if (mQuizIndex == 5) {
+                    }
+                    else if (mQuizIndex == 5) {
                         //Correct Answer
                         mQuizIndex = 6;
                         questions[4] = "5." + mFourthButton.getText().toString();
@@ -868,19 +913,22 @@ public class Quiz extends Fragment {
                         CorrectAnswer.show();
                         mQuizIndex = 2;
                         myScore = myScore + 10;
-                    } else if (mQuizIndex == 2) {
+                    }
+                    else if (mQuizIndex == 2) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[1] = "2." + mFirstButton.getText().toString();
                         correct_incorrect[1] = R.drawable.red_mark;
                         openRewardPage();
-                    } else if (mQuizIndex == 3) {
+                    }
+                    else if (mQuizIndex == 3) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[2] = "3." + mFirstButton.getText().toString();
                         correct_incorrect[2] = R.drawable.red_mark;
                         openRewardPage();
-                    } else if (mQuizIndex == 4) {
+                    }
+                    else if (mQuizIndex == 4) {
                         //Correct Answer
                         questions[3] = "4." + mFirstButton.getText().toString();
                         correct_incorrect[3] = R.drawable.check_mark;
@@ -893,7 +941,8 @@ public class Quiz extends Fragment {
                         CorrectAnswer.show();
                         mQuizIndex = 5;
                         myScore = myScore + 10;
-                    } else if (mQuizIndex == 5) {
+                    }
+                    else if (mQuizIndex == 5) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[4] = "5." + mFirstButton.getText().toString();
@@ -915,25 +964,29 @@ public class Quiz extends Fragment {
                         questions[0] = "1." + mSecondButton.getText().toString();
                         correct_incorrect[0] = R.drawable.red_mark;
                         openRewardPage();
-                    } else if (mQuizIndex == 2) {
+                    }
+                    else if (mQuizIndex == 2) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[1] = "2." + mSecondButton.getText().toString();
                         correct_incorrect[1] = R.drawable.red_mark;
                         openRewardPage();
-                    } else if (mQuizIndex == 3) {
+                    }
+                    else if (mQuizIndex == 3) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[2] = "3." + mSecondButton.getText().toString();
                         correct_incorrect[2] = R.drawable.red_mark;
                         openRewardPage();
-                    } else if (mQuizIndex == 4) {
+                    }
+                    else if (mQuizIndex == 4) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[3] = "4." + mSecondButton.getText().toString();
                         correct_incorrect[3] = R.drawable.red_mark;
                         openRewardPage();
-                    } else if (mQuizIndex == 5) {
+                    }
+                    else if (mQuizIndex == 5) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[4] = "5." + mSecondButton.getText().toString();
@@ -954,13 +1007,15 @@ public class Quiz extends Fragment {
                         questions[0] = "1." + mThirdButton.getText().toString();
                         correct_incorrect[0] = R.drawable.red_mark;
                         openRewardPage();
-                    } else if (mQuizIndex == 2) {
+                    }
+                    else if (mQuizIndex == 2) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[1] = "2." + mThirdButton.getText().toString();
                         correct_incorrect[1] = R.drawable.red_mark;
                         openRewardPage();
-                    } else if (mQuizIndex == 3) {
+                    }
+                    else if (mQuizIndex == 3) {
                         //Correct Answer
                         questions[2] = "3." + mThirdButton.getText().toString();
                         correct_incorrect[2] = R.drawable.check_mark;
@@ -973,13 +1028,15 @@ public class Quiz extends Fragment {
                         CorrectAnswer.show();
                         mQuizIndex = 4;
                         myScore = myScore + 10;
-                    } else if (mQuizIndex == 4) {
+                    }
+                    else if (mQuizIndex == 4) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[3] = "4." + mThirdButton.getText().toString();
                         correct_incorrect[3] = R.drawable.red_mark;
                         openRewardPage();
-                    } else if (mQuizIndex == 5) {
+                    }
+                    else if (mQuizIndex == 5) {
                         //Correct Answer
                         mQuizIndex = 6;
                         questions[4] = "5." + mThirdButton.getText().toString();
@@ -1003,7 +1060,8 @@ public class Quiz extends Fragment {
                         correct_incorrect[0] = R.drawable.red_mark;
                         openRewardPage();
 
-                    } else if (mQuizIndex == 2) {
+                    }
+                    else if (mQuizIndex == 2) {
                         //Correct Answer
                         questions[1] = "2." + mFourthButton.getText().toString();
                         correct_incorrect[1] = R.drawable.check_mark;
@@ -1016,19 +1074,22 @@ public class Quiz extends Fragment {
                         CorrectAnswer.show();
                         mQuizIndex = 3;
                         myScore = myScore + 10;
-                    } else if (mQuizIndex == 3) {
+                    }
+                    else if (mQuizIndex == 3) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[2] = "3." + mFourthButton.getText().toString();
                         correct_incorrect[2] = R.drawable.red_mark;
                         openRewardPage();
-                    } else if (mQuizIndex == 4) {
+                    }
+                    else if (mQuizIndex == 4) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[3] = "4." + mFourthButton.getText().toString();
                         correct_incorrect[3] = R.drawable.red_mark;
                         openRewardPage();
-                    } else if (mQuizIndex == 5) {
+                    }
+                    else if (mQuizIndex == 5) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[4] = "5." + mFourthButton.getText().toString();
@@ -1063,7 +1124,8 @@ public class Quiz extends Fragment {
                         CorrectAnswer.show();
                         mQuizIndex = 2;
                         myScore = myScore + 10;
-                    } else if (mQuizIndex == 2) {
+                    }
+                    else if (mQuizIndex == 2) {
                         //Correct Answer
                         questions[1] = "1." + mFirstButton.getText().toString();
                         correct_incorrect[1] = R.drawable.check_mark;
@@ -1076,19 +1138,22 @@ public class Quiz extends Fragment {
                         CorrectAnswer.show();
                         mQuizIndex = 3;
                         myScore = myScore + 10;
-                    } else if (mQuizIndex == 3) {
+                    }
+                    else if (mQuizIndex == 3) {
                         //Wrong
                         mQuizIndex = 6;
                         questions[2] = "3." + mFirstButton.getText().toString();
                         correct_incorrect[2] = R.drawable.red_mark;
                         openRewardPage();
-                    } else if (mQuizIndex == 4) {
+                    }
+                    else if (mQuizIndex == 4) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[3] = "4." + mFirstButton.getText().toString();
                         correct_incorrect[3] = R.drawable.red_mark;
                         openRewardPage();
-                    } else if (mQuizIndex == 5) {
+                    }
+                    else if (mQuizIndex == 5) {
                         //Correct Answer
                         mQuizIndex = 6;
                         questions[4] = "5." + mFirstButton.getText().toString();
@@ -1111,7 +1176,8 @@ public class Quiz extends Fragment {
                         questions[0] = "1." + mSecondButton.getText().toString();
                         correct_incorrect[0] = R.drawable.red_mark;
                         openRewardPage();
-                    } else if (mQuizIndex == 2) {
+                    }
+                    else if (mQuizIndex == 2) {
                         //Correct Answer
                         questions[1] = "2." + mSecondButton.getText().toString();
                         correct_incorrect[1] = R.drawable.check_mark;
@@ -1124,19 +1190,22 @@ public class Quiz extends Fragment {
                         CorrectAnswer.show();
                         mQuizIndex = 3;
                         myScore = myScore + 10;
-                    } else if (mQuizIndex == 3) {
+                    }
+                    else if (mQuizIndex == 3) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[2] = "3." + mSecondButton.getText().toString();
                         correct_incorrect[2] = R.drawable.red_mark;
                         openRewardPage();
-                    } else if (mQuizIndex == 4) {
+                    }
+                    else if (mQuizIndex == 4) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[3] = "4." + mSecondButton.getText().toString();
                         correct_incorrect[3] = R.drawable.red_mark;
                         openRewardPage();
-                    } else if (mQuizIndex == 5) {
+                    }
+                    else if (mQuizIndex == 5) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[4] = "5." + mSecondButton.getText().toString();
@@ -1157,19 +1226,22 @@ public class Quiz extends Fragment {
                         questions[0] = "1." + mThirdButton.getText().toString();
                         correct_incorrect[0] = R.drawable.red_mark;
                         openRewardPage();
-                    } else if (mQuizIndex == 2) {
+                    }
+                    else if (mQuizIndex == 2) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[1] = "2." + mThirdButton.getText().toString();
                         correct_incorrect[1] = R.drawable.red_mark;
                         openRewardPage();
-                    } else if (mQuizIndex == 3) {
+                    }
+                    else if (mQuizIndex == 3) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[2] = "3." + mThirdButton.getText().toString();
                         correct_incorrect[2] = R.drawable.red_mark;
                         openRewardPage();
-                    } else if (mQuizIndex == 4) {
+                    }
+                    else if (mQuizIndex == 4) {
                         //Correct Answer
                         questions[3] = "4." + mThirdButton.getText().toString();
                         correct_incorrect[3] = R.drawable.check_mark;
@@ -1182,7 +1254,8 @@ public class Quiz extends Fragment {
                         CorrectAnswer.show();
                         mQuizIndex = 5;
                         myScore = myScore + 10;
-                    } else if (mQuizIndex == 5) {
+                    }
+                    else if (mQuizIndex == 5) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[4] = "5." + mThirdButton.getText().toString();
@@ -1205,13 +1278,15 @@ public class Quiz extends Fragment {
                         correct_incorrect[0] = R.drawable.red_mark;
                         openRewardPage();
 
-                    } else if (mQuizIndex == 2) {
+                    }
+                    else if (mQuizIndex == 2) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[1] = "2." + mFourthButton.getText().toString();
                         correct_incorrect[1] = R.drawable.red_mark;
                         openRewardPage();
-                    } else if (mQuizIndex == 3) {
+                    }
+                    else if (mQuizIndex == 3) {
                         //Correct Answer
                         questions[2] = "3." + mFourthButton.getText().toString();
                         correct_incorrect[2] = R.drawable.check_mark;
@@ -1224,13 +1299,15 @@ public class Quiz extends Fragment {
                         CorrectAnswer.show();
                         mQuizIndex = 4;
                         myScore = myScore + 10;
-                    } else if (mQuizIndex == 4) {
+                    }
+                    else if (mQuizIndex == 4) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[3] = "4." + mFourthButton.getText().toString();
                         correct_incorrect[3] = R.drawable.red_mark;
                         openRewardPage();
-                    } else if (mQuizIndex == 5) {
+                    }
+                    else if (mQuizIndex == 5) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[4] = "5." + mFourthButton.getText().toString();
@@ -1258,13 +1335,15 @@ public class Quiz extends Fragment {
                         questions[0] = "1." + mFirstButton.getText().toString();
                         correct_incorrect[0] = R.drawable.red_mark;
                         openRewardPage();
-                    } else if (mQuizIndex == 2) {
+                    }
+                    else if (mQuizIndex == 2) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[1] = "2." + mFirstButton.getText().toString();
                         correct_incorrect[1] = R.drawable.red_mark;
                         openRewardPage();
-                    } else if (mQuizIndex == 3) {
+                    }
+                    else if (mQuizIndex == 3) {
                         //Correct Answer
                         questions[2] = "3." + mFirstButton.getText().toString();
                         correct_incorrect[2] = R.drawable.check_mark;
@@ -1277,12 +1356,14 @@ public class Quiz extends Fragment {
                         CorrectAnswer.show();
                         mQuizIndex = 4;
                         myScore = myScore + 10;
-                    } else if (mQuizIndex == 4) {
+                    }
+                    else if (mQuizIndex == 4) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[3] = "4." + mFirstButton.getText().toString();
                         openRewardPage();
-                    } else if (mQuizIndex == 5) {
+                    }
+                    else if (mQuizIndex == 5) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[4] = "5." + mFirstButton.getText().toString();
@@ -1311,7 +1392,8 @@ public class Quiz extends Fragment {
                         CorrectAnswer.show();
                         mQuizIndex = 2;
                         myScore = myScore + 10;
-                    } else if (mQuizIndex == 2) {
+                    }
+                    else if (mQuizIndex == 2) {
                         //Correct Answer
                         questions[1] = "2." + mSecondButton.getText().toString();
                         correct_incorrect[1] = R.drawable.check_mark;
@@ -1324,13 +1406,15 @@ public class Quiz extends Fragment {
                         CorrectAnswer.show();
                         mQuizIndex = 3;
                         myScore = myScore + 10;
-                    } else if (mQuizIndex == 3) {
+                    }
+                    else if (mQuizIndex == 3) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[2] = "3." + mSecondButton.getText().toString();
                         correct_incorrect[2] = R.drawable.red_mark;
                         openRewardPage();
-                    } else if (mQuizIndex == 4) {
+                    }
+                    else if (mQuizIndex == 4) {
                         //Correct Answer
                         questions[3] = "4." + mSecondButton.getText().toString();
                         correct_incorrect[3] = R.drawable.check_mark;
@@ -1343,7 +1427,8 @@ public class Quiz extends Fragment {
                         CorrectAnswer.show();
                         mQuizIndex = 5;
                         myScore = myScore + 10;
-                    } else if (mQuizIndex == 5) {
+                    }
+                    else if (mQuizIndex == 5) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[4] = "5." + mSecondButton.getText().toString();
@@ -1364,25 +1449,29 @@ public class Quiz extends Fragment {
                         questions[0] = "1." + mThirdButton.getText().toString();
                         correct_incorrect[0] = R.drawable.red_mark;
                         openRewardPage();
-                    } else if (mQuizIndex == 2) {
+                    }
+                    else if (mQuizIndex == 2) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[1] = "2." + mThirdButton.getText().toString();
                         correct_incorrect[1] = R.drawable.red_mark;
                         openRewardPage();
-                    } else if (mQuizIndex == 3) {
+                    }
+                    else if (mQuizIndex == 3) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[2] = "3." + mThirdButton.getText().toString();
                         correct_incorrect[2] = R.drawable.red_mark;
                         openRewardPage();
-                    } else if (mQuizIndex == 4) {
+                    }
+                    else if (mQuizIndex == 4) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[3] = "4." + mThirdButton.getText().toString();
                         correct_incorrect[3] = R.drawable.red_mark;
                         openRewardPage();
-                    } else if (mQuizIndex == 5) {
+                    }
+                    else if (mQuizIndex == 5) {
                         //Correct Answer
                         mQuizIndex = 6;
                         questions[4] = "5." + mThirdButton.getText().toString();
@@ -1406,25 +1495,29 @@ public class Quiz extends Fragment {
                         correct_incorrect[0] = R.drawable.red_mark;
                         openRewardPage();
 
-                    } else if (mQuizIndex == 2) {
+                    }
+                    else if (mQuizIndex == 2) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[1] = "2." + mFourthButton.getText().toString();
                         correct_incorrect[1] = R.drawable.red_mark;
                         openRewardPage();
-                    } else if (mQuizIndex == 3) {
+                    }
+                    else if (mQuizIndex == 3) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[2] = "3." + mFourthButton.getText().toString();
                         correct_incorrect[2] = R.drawable.red_mark;
                         openRewardPage();
-                    } else if (mQuizIndex == 4) {
+                    }
+                    else if (mQuizIndex == 4) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[3] = "4." + mFourthButton.getText().toString();
                         correct_incorrect[3] = R.drawable.red_mark;
                         openRewardPage();
-                    } else if (mQuizIndex == 5) {
+                    }
+                    else if (mQuizIndex == 5) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[4] = "5." + mFourthButton.getText().toString();
@@ -1452,7 +1545,8 @@ public class Quiz extends Fragment {
                         questions[0] = "1." + mFirstButton.getText().toString();
                         correct_incorrect[0] = R.drawable.red_mark;
                         openRewardPage();
-                    } else if (mQuizIndex == 2) {
+                    }
+                    else if (mQuizIndex == 2) {
                         //Correct Answer
                         questions[1] = "2." + mFirstButton.getText().toString();
                         correct_incorrect[1] = R.drawable.check_mark;
@@ -1465,18 +1559,21 @@ public class Quiz extends Fragment {
                         CorrectAnswer.show();
                         mQuizIndex = 3;
                         myScore = myScore + 10;
-                    } else if (mQuizIndex == 3) {
+                    }
+                    else if (mQuizIndex == 3) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[2] = "3." + mFirstButton.getText().toString();
                         correct_incorrect[2] = R.drawable.red_mark;
                         openRewardPage();
-                    } else if (mQuizIndex == 4) {
+                    }
+                    else if (mQuizIndex == 4) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[3] = "4." + mFirstButton.getText().toString();
                         openRewardPage();
-                    } else if (mQuizIndex == 5) {
+                    }
+                    else if (mQuizIndex == 5) {
                         //Correct Answer
                         mQuizIndex = 6;
                         questions[4] = "5." + mFirstButton.getText().toString();
@@ -1498,13 +1595,15 @@ public class Quiz extends Fragment {
                         questions[0] = "1." + mSecondButton.getText().toString();
                         correct_incorrect[0] = R.drawable.red_mark;
                         openRewardPage();
-                    } else if (mQuizIndex == 2) {
+                    }
+                    else if (mQuizIndex == 2) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[1] = "2." + mSecondButton.getText().toString();
                         correct_incorrect[1] = R.drawable.red_mark;
                         openRewardPage();
-                    } else if (mQuizIndex == 3) {
+                    }
+                    else if (mQuizIndex == 3) {
                         //Correct Answer
                         questions[2] = "3." + mSecondButton.getText().toString();
                         correct_incorrect[2] = R.drawable.check_mark;
@@ -1517,7 +1616,8 @@ public class Quiz extends Fragment {
                         CorrectAnswer.show();
                         mQuizIndex = 4;
                         myScore = myScore + 10;
-                    } else if (mQuizIndex == 4) {
+                    }
+                    else if (mQuizIndex == 4) {
                         //Correct Answer
                         questions[3] = "4." + mSecondButton.getText().toString();
                         correct_incorrect[3] = R.drawable.check_mark;
@@ -1530,7 +1630,8 @@ public class Quiz extends Fragment {
                         CorrectAnswer.show();
                         mQuizIndex = 5;
                         myScore = myScore + 10;
-                    } else if (mQuizIndex == 5) {
+                    }
+                    else if (mQuizIndex == 5) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[4] = "5." + mSecondButton.getText().toString();
@@ -1558,25 +1659,29 @@ public class Quiz extends Fragment {
                         CorrectAnswer.show();
                         mQuizIndex = 2;
                         myScore = myScore + 10;
-                    } else if (mQuizIndex == 2) {
+                    }
+                    else if (mQuizIndex == 2) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[1] = "2." + mThirdButton.getText().toString();
                         correct_incorrect[1] = R.drawable.red_mark;
                         openRewardPage();
-                    } else if (mQuizIndex == 3) {
+                    }
+                    else if (mQuizIndex == 3) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[2] = "3." + mThirdButton.getText().toString();
                         correct_incorrect[2] = R.drawable.red_mark;
                         openRewardPage();
-                    } else if (mQuizIndex == 4) {
+                    }
+                    else if (mQuizIndex == 4) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[3] = "4." + mThirdButton.getText().toString();
                         correct_incorrect[3] = R.drawable.red_mark;
                         openRewardPage();
-                    } else if (mQuizIndex == 5) {
+                    }
+                    else if (mQuizIndex == 5) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[4] = "5." + mThirdButton.getText().toString();
@@ -1599,25 +1704,29 @@ public class Quiz extends Fragment {
                         correct_incorrect[0] = R.drawable.red_mark;
                         openRewardPage();
 
-                    } else if (mQuizIndex == 2) {
+                    }
+                    else if (mQuizIndex == 2) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[1] = "2." + mFourthButton.getText().toString();
                         correct_incorrect[1] = R.drawable.red_mark;
                         openRewardPage();
-                    } else if (mQuizIndex == 3) {
+                    }
+                    else if (mQuizIndex == 3) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[2] = "3." + mFourthButton.getText().toString();
                         correct_incorrect[2] = R.drawable.red_mark;
                         openRewardPage();
-                    } else if (mQuizIndex == 4) {
+                    }
+                    else if (mQuizIndex == 4) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[3] = "4." + mFourthButton.getText().toString();
                         correct_incorrect[3] = R.drawable.red_mark;
                         openRewardPage();
-                    } else if (mQuizIndex == 5) {
+                    }
+                    else if (mQuizIndex == 5) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[4] = "5." + mFourthButton.getText().toString();
@@ -1645,7 +1754,8 @@ public class Quiz extends Fragment {
                         questions[0] = "1." + mFirstButton.getText().toString();
                         correct_incorrect[0] = R.drawable.red_mark;
                         openRewardPage();
-                    } else if (mQuizIndex == 2) {
+                    }
+                    else if (mQuizIndex == 2) {
                         //Correct Answer
                         questions[1] = "2." + mFirstButton.getText().toString();
                         correct_incorrect[1] = R.drawable.check_mark;
@@ -1658,19 +1768,22 @@ public class Quiz extends Fragment {
                         CorrectAnswer.show();
                         mQuizIndex = 3;
                         myScore = myScore + 10;
-                    } else if (mQuizIndex == 3) {
+                    }
+                    else if (mQuizIndex == 3) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[2] = "3." + mFirstButton.getText().toString();
                         correct_incorrect[2] = R.drawable.red_mark;
                         openRewardPage();
-                    } else if (mQuizIndex == 4) {
+                    }
+                    else if (mQuizIndex == 4) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[3] = "4." + mFirstButton.getText().toString();
                         correct_incorrect[3] = R.drawable.red_mark;
                         openRewardPage();
-                    } else if (mQuizIndex == 5) {
+                    }
+                    else if (mQuizIndex == 5) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[4] = "5." + mFirstButton.getText().toString();
@@ -1693,19 +1806,22 @@ public class Quiz extends Fragment {
                         questions[0] = "1." + mSecondButton.getText().toString();
                         correct_incorrect[0] = R.drawable.red_mark;
                         openRewardPage();
-                    } else if (mQuizIndex == 2) {
+                    }
+                    else if (mQuizIndex == 2) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[1] = "2." + mSecondButton.getText().toString();
                         correct_incorrect[1] = R.drawable.red_mark;
                         openRewardPage();
-                    } else if (mQuizIndex == 3) {
+                    }
+                    else if (mQuizIndex == 3) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[2] = "3." + mSecondButton.getText().toString();
                         correct_incorrect[2] = R.drawable.red_mark;
                         openRewardPage();
-                    } else if (mQuizIndex == 4) {
+                    }
+                    else if (mQuizIndex == 4) {
                         //Correct Answer
                         questions[3] = "4." + mSecondButton.getText().toString();
                         correct_incorrect[3] = R.drawable.check_mark;
@@ -1718,7 +1834,8 @@ public class Quiz extends Fragment {
                         CorrectAnswer.show();
                         mQuizIndex = 5;
                         myScore = myScore + 10;
-                    } else if (mQuizIndex == 5) {
+                    }
+                    else if (mQuizIndex == 5) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[4] = "5." + mSecondButton.getText().toString();
@@ -1739,13 +1856,15 @@ public class Quiz extends Fragment {
                         questions[0] = "1." + mThirdButton.getText().toString();
                         correct_incorrect[0] = R.drawable.red_mark;
                         openRewardPage();
-                    } else if (mQuizIndex == 2) {
+                    }
+                    else if (mQuizIndex == 2) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[1] = "2." + mThirdButton.getText().toString();
                         correct_incorrect[1] = R.drawable.red_mark;
                         openRewardPage();
-                    } else if (mQuizIndex == 3) {
+                    }
+                    else if (mQuizIndex == 3) {
                         //Correct Answer
                         questions[2] = "3." + mThirdButton.getText().toString();
                         correct_incorrect[2] = R.drawable.check_mark;
@@ -1758,13 +1877,15 @@ public class Quiz extends Fragment {
                         CorrectAnswer.show();
                         mQuizIndex = 4;
                         myScore = myScore + 10;
-                    } else if (mQuizIndex == 4) {
+                    }
+                    else if (mQuizIndex == 4) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[3] = "4." + mThirdButton.getText().toString();
                         correct_incorrect[3] = R.drawable.red_mark;
                         openRewardPage();
-                    } else if (mQuizIndex == 5) {
+                    }
+                    else if (mQuizIndex == 5) {
                         //Correct Answer
                         mQuizIndex = 6;
                         questions[4] = "5." + mThirdButton.getText().toString();
@@ -1794,24 +1915,28 @@ public class Quiz extends Fragment {
                         CorrectAnswer.show();
                         mQuizIndex = 2;
                         myScore = myScore + 10;
-                    } else if (mQuizIndex == 2) {
+                    }
+                    else if (mQuizIndex == 2) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[1] = "2." + mFourthButton.getText().toString();
                         correct_incorrect[1] = R.drawable.red_mark;
                         openRewardPage();
-                    } else if (mQuizIndex == 3) {
+                    }
+                    else if (mQuizIndex == 3) {
                         //Wrong Answer
                         questions[2] = "3." + mFourthButton.getText().toString();
                         correct_incorrect[2] = R.drawable.red_mark;
                         openRewardPage();
-                    } else if (mQuizIndex == 4) {
+                    }
+                    else if (mQuizIndex == 4) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         correct_incorrect[3] = R.drawable.red_mark;
                         questions[3] = "4." + mFourthButton.getText().toString();
                         openRewardPage();
-                    } else if (mQuizIndex == 5) {
+                    }
+                    else if (mQuizIndex == 5) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[4] = "5." + mFourthButton.getText().toString();
@@ -1839,13 +1964,15 @@ public class Quiz extends Fragment {
                         questions[0] = "1." + mFirstButton.getText().toString();
                         correct_incorrect[0] = R.drawable.red_mark;
                         openRewardPage();
-                    } else if (mQuizIndex == 2) {
+                    }
+                    else if (mQuizIndex == 2) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[1] = "2." + mFirstButton.getText().toString();
                         correct_incorrect[1] = R.drawable.red_mark;
                         openRewardPage();
-                    } else if (mQuizIndex == 3) {
+                    }
+                    else if (mQuizIndex == 3) {
                         //Correct Answer
                         questions[2] = "3." + mFirstButton.getText().toString();
                         correct_incorrect[2] = R.drawable.check_mark;
@@ -1858,7 +1985,8 @@ public class Quiz extends Fragment {
                         CorrectAnswer.show();
                         mQuizIndex = 4;
                         myScore = myScore + 10;
-                    } else if (mQuizIndex == 4) {
+                    }
+                    else if (mQuizIndex == 4) {
                         //Correct Answer
                         questions[3] = "4." + mFirstButton.getText().toString();
                         correct_incorrect[3] = R.drawable.check_mark;
@@ -1871,7 +1999,8 @@ public class Quiz extends Fragment {
                         CorrectAnswer.show();
                         mQuizIndex = 5;
                         myScore = myScore + 10;
-                    } else if (mQuizIndex == 5) {
+                    }
+                    else if (mQuizIndex == 5) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[4] = "5." + mFirstButton.getText().toString();
@@ -1899,25 +2028,29 @@ public class Quiz extends Fragment {
                         CorrectAnswer.show();
                         mQuizIndex = 2;
                         myScore = myScore + 10;
-                    } else if (mQuizIndex == 2) {
+                    }
+                    else if (mQuizIndex == 2) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[1] = "2." + mSecondButton.getText().toString();
                         correct_incorrect[1] = R.drawable.red_mark;
                         openRewardPage();
-                    } else if (mQuizIndex == 3) {
+                    }
+                    else if (mQuizIndex == 3) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[2] = "3." + mSecondButton.getText().toString();
                         correct_incorrect[2] = R.drawable.red_mark;
                         openRewardPage();
-                    } else if (mQuizIndex == 4) {
+                    }
+                    else if (mQuizIndex == 4) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[3] = "4." + mSecondButton.getText().toString();
                         correct_incorrect[3] = R.drawable.red_mark;
                         openRewardPage();
-                    } else if (mQuizIndex == 5) {
+                    }
+                    else if (mQuizIndex == 5) {
                         //Correct Answer
                         mQuizIndex = 6;
                         questions[4] = "5." + mSecondButton.getText().toString();
@@ -1938,7 +2071,8 @@ public class Quiz extends Fragment {
                         questions[0] = "1." + mThirdButton.getText().toString();
                         correct_incorrect[0] = R.drawable.red_mark;
                         openRewardPage();
-                    } else if (mQuizIndex == 2) {
+                    }
+                    else if (mQuizIndex == 2) {
                         //Correct Answer
                         questions[1] = "2." + mThirdButton.getText().toString();
                         correct_incorrect[1] = R.drawable.check_mark;
@@ -1951,19 +2085,22 @@ public class Quiz extends Fragment {
                         CorrectAnswer.show();
                         mQuizIndex = 3;
                         myScore = myScore + 10;
-                    } else if (mQuizIndex == 3) {
+                    }
+                    else if (mQuizIndex == 3) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[2] = "3." + mThirdButton.getText().toString();
                         correct_incorrect[2] = R.drawable.red_mark;
                         openRewardPage();
-                    } else if (mQuizIndex == 4) {
+                    }
+                    else if (mQuizIndex == 4) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[3] = "4." + mThirdButton.getText().toString();
                         correct_incorrect[3] = R.drawable.red_mark;
                         openRewardPage();
-                    } else if (mQuizIndex == 5) {
+                    }
+                    else if (mQuizIndex == 5) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[4] = "5." + mThirdButton.getText().toString();
@@ -1992,24 +2129,28 @@ public class Quiz extends Fragment {
                         CorrectAnswer.show();
                         mQuizIndex = 2;
                         myScore = myScore + 10;
-                    } else if (mQuizIndex == 2) {
+                    }
+                    else if (mQuizIndex == 2) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[1] = "2." + mFourthButton.getText().toString();
                         correct_incorrect[1] = R.drawable.red_mark;
                         openRewardPage();
-                    } else if (mQuizIndex == 3) {
+                    }
+                    else if (mQuizIndex == 3) {
                         //Wrong Answer
                         questions[2] = "3." + mFourthButton.getText().toString();
                         correct_incorrect[2] = R.drawable.red_mark;
                         openRewardPage();
-                    } else if (mQuizIndex == 4) {
+                    }
+                    else if (mQuizIndex == 4) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         correct_incorrect[3] = R.drawable.red_mark;
                         questions[3] = "4." + mFourthButton.getText().toString();
                         openRewardPage();
-                    } else if (mQuizIndex == 5) {
+                    }
+                    else if (mQuizIndex == 5) {
                         //Wrong Answer
                         mQuizIndex = 6;
                         questions[4] = "5." + mFourthButton.getText().toString();
@@ -2031,15 +2172,6 @@ public class Quiz extends Fragment {
         bundleQuizInfo.putStringArray("Questions", questions);
         bundleQuizInfo.putInt("Score", myScore);
         bundleQuizInfo.putIntArray("Accuracy", correct_incorrect);
-
-        int coinsCount = Integer.parseInt(currCoins) + myScore;
-
-        long AddCoinsID = DataBaseHelper.updateCoins(db, results.getString(2), String.valueOf(coinsCount));
-
-        if (AddCoinsID <= 0)
-            Toast.makeText(getActivity().getApplicationContext(), "Add coins was unsuccessful", Toast.LENGTH_LONG).show();
-        else
-            Toast.makeText(getActivity().getApplicationContext(), "Add coins was successful", Toast.LENGTH_LONG).show();
 
         nextFrag.setArguments(bundleQuizInfo);
 
