@@ -83,21 +83,21 @@ public class DataBaseHelper extends SQLiteOpenHelper {
 
     public static long updateCoins(SQLiteDatabase db, String username, String coins) {
         ContentValues contentValues = new ContentValues();
-        contentValues.put(DataBaseHelper.COL_2, username);
+        contentValues.put(DataBaseHelper.COL_3, username);
         contentValues.put(DataBaseHelper.COL_8, coins);
         String[] selectionArgs = { String.valueOf(username) };
-        long id = db.update(DataBaseHelper.TABLE_NAME,contentValues,DataBaseHelper.COL_2 +" = ? ",selectionArgs);
+        long id = db.update(DataBaseHelper.TABLE_NAME,contentValues,DataBaseHelper.COL_3 +" = ? ",selectionArgs);
         return id;
 
     }
 
     public static long updatePurchase(SQLiteDatabase db, String username, String coins, String purchase) {
         ContentValues contentValues = new ContentValues();
-        contentValues.put(DataBaseHelper.COL_2, username);
+        contentValues.put(DataBaseHelper.COL_3, username);
         contentValues.put(DataBaseHelper.COL_8, coins);
         contentValues.put(DataBaseHelper.COL_9, purchase);
         String[] selectionArgs = { String.valueOf(username) };
-        long id = db.update(DataBaseHelper.TABLE_NAME,contentValues,DataBaseHelper.COL_2 +" = ? ",selectionArgs);
+        long id = db.update(DataBaseHelper.TABLE_NAME,contentValues,DataBaseHelper.COL_3 +" = ? ",selectionArgs);
         return id;
 
     }

@@ -71,12 +71,17 @@ public class Donate extends Fragment {
                     db = openHelper.getWritableDatabase();
                     int coinsCount = Integer.parseInt(currCoins) - Integer.parseInt(numofcoins.getText().toString());
 
-                    long UpdateCoinsID = updateNewCoins(currUser, String.valueOf(coinsCount));
+                    if (coinsCount < 0) {
+                        Toast.makeText(getActivity().getApplicationContext(), "You cannot donate more than the coins you have", Toast.LENGTH_LONG).show();
+                    }
+                    else {
+                        long UpdateCoinsID = updateNewCoins(currUser, String.valueOf(coinsCount));
 
-                    if (UpdateCoinsID <= 0)
-                        Toast.makeText(getActivity().getApplicationContext(), "Update coins count was unsuccessful", Toast.LENGTH_LONG).show();
-                    else
-                        Toast.makeText(getActivity().getApplicationContext(), "Update coins count was successful", Toast.LENGTH_LONG).show();
+                        if (UpdateCoinsID <= 0)
+                            Toast.makeText(getActivity().getApplicationContext(), "Update coins count was unsuccessful", Toast.LENGTH_LONG).show();
+                        else
+                            Toast.makeText(getActivity().getApplicationContext(), "Update coins count was successful", Toast.LENGTH_LONG).show();
+                    }
                 }
             });
 
@@ -87,12 +92,17 @@ public class Donate extends Fragment {
                     db = openHelper.getWritableDatabase();
                     int coinsCount = Integer.parseInt(currCoins) - Integer.parseInt(numofcoins.getText().toString());
 
-                    long UpdateCoinsID = updateNewCoins(currUser, String.valueOf(coinsCount));
+                    if (coinsCount < 0) {
+                        Toast.makeText(getActivity().getApplicationContext(), "You cannot donate more than the coins you have", Toast.LENGTH_LONG).show();
+                    }
+                    else {
+                        long UpdateCoinsID = updateNewCoins(currUser, String.valueOf(coinsCount));
 
-                    if (UpdateCoinsID <= 0)
-                        Toast.makeText(getActivity().getApplicationContext(), "Update coins count was unsuccessful", Toast.LENGTH_LONG).show();
-                    else
-                        Toast.makeText(getActivity().getApplicationContext(), "Update coins count was successful", Toast.LENGTH_LONG).show();
+                        if (UpdateCoinsID <= 0)
+                            Toast.makeText(getActivity().getApplicationContext(), "Update coins count was unsuccessful", Toast.LENGTH_LONG).show();
+                        else
+                            Toast.makeText(getActivity().getApplicationContext(), "Update coins count was successful", Toast.LENGTH_LONG).show();
+                    }
                 }
             });
 
@@ -103,12 +113,17 @@ public class Donate extends Fragment {
                     db = openHelper.getWritableDatabase();
                     int coinsCount = Integer.parseInt(currCoins) - Integer.parseInt(numofcoins.getText().toString());
 
-                    long UpdateCoinsID = updateNewCoins(currUser, String.valueOf(coinsCount));
+                    if (coinsCount < 0) {
+                        Toast.makeText(getActivity().getApplicationContext(), "You cannot donate more than the coins you have", Toast.LENGTH_LONG).show();
+                    }
+                    else {
+                        long UpdateCoinsID = updateNewCoins(currUser, String.valueOf(coinsCount));
 
-                    if (UpdateCoinsID <= 0)
-                        Toast.makeText(getActivity().getApplicationContext(), "Update coins count was unsuccessful", Toast.LENGTH_LONG).show();
-                    else
-                        Toast.makeText(getActivity().getApplicationContext(), "Update coins count was successful", Toast.LENGTH_LONG).show();
+                        if (UpdateCoinsID <= 0)
+                            Toast.makeText(getActivity().getApplicationContext(), "Update coins count was unsuccessful", Toast.LENGTH_LONG).show();
+                        else
+                            Toast.makeText(getActivity().getApplicationContext(), "Update coins count was successful", Toast.LENGTH_LONG).show();
+                    }
                 }
             });
         return profileView;

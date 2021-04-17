@@ -84,7 +84,7 @@ public class Shop extends Fragment {
                 if (ButtonClicks == 0) {
                     int coinsCount = Integer.parseInt(currCoins) - char1price;
                     newPurch = null;
-                    if (coinsCount > 0) {
+                    if (coinsCount >= 0) {
                         if (currPurchase.contains("Character1")) {
                             Toast.makeText(getActivity().getApplicationContext(), "You have already purchased Character1", Toast.LENGTH_LONG).show();
                         }
@@ -121,7 +121,7 @@ public class Shop extends Fragment {
                 if (ButtonClicks == 0) {
                     int coinsCount = Integer.parseInt(currCoins) - char2price;
                     newPurch = null;
-                    if (coinsCount > 0) {
+                    if (coinsCount >= 0) {
                         if (currPurchase.contains("Character2")) {
                             Toast.makeText(getActivity().getApplicationContext(), "You have already purchased Character2", Toast.LENGTH_LONG).show();
                         } else {
@@ -135,7 +135,7 @@ public class Shop extends Fragment {
                             if (UpdateCoinsID <= 0)
                                 Toast.makeText(getActivity().getApplicationContext(), "Purchase was not successful. Please try again later", Toast.LENGTH_LONG).show();
                             else
-                                Toast.makeText(getActivity().getApplicationContext(), "Purchase was not successful", Toast.LENGTH_LONG).show();
+                                Toast.makeText(getActivity().getApplicationContext(), "Purchase was successful", Toast.LENGTH_LONG).show();
 
                             character2Cost.setText(R.string.characterPurchased);
                             Image2.setImageResource(R.drawable.antelope_character);
@@ -156,7 +156,7 @@ public class Shop extends Fragment {
                 if (ButtonClicks == 0) {
                     int coinsCount = Integer.parseInt(currCoins) - char3price;
                     newPurch = null;
-                    if (coinsCount > 0) {
+                    if (coinsCount >= 0) {
                         if (currPurchase.contains("Character3")) {
                             Toast.makeText(getActivity().getApplicationContext(), "You have already purchased Character3", Toast.LENGTH_LONG).show();
                         }
@@ -193,7 +193,7 @@ public class Shop extends Fragment {
 //                if (ButtonClicks == 0) {
 //                    int coinsCount = Integer.parseInt(currCoins) - char4price;
 //                    newPurch = null;
-//                    if (coinsCount > 0) {
+//                    if (coinsCount >= 0) {
 //                        if (currPurchase.contains("Character4")) {
 //                            Toast.makeText(getActivity().getApplicationContext(), "You have already purchased Character1", Toast.LENGTH_LONG).show();
 //                        }
@@ -230,7 +230,7 @@ public class Shop extends Fragment {
 //                if (ButtonClicks == 0) {
 //                    int coinsCount = Integer.parseInt(currCoins) - char5price;
 //                    newPurch = null;
-//                    if (coinsCount > 0) {
+//                    if (coinsCount >= 0) {
 //                        if (currPurchase.contains("Character5")) {
 //                            Toast.makeText(getActivity().getApplicationContext(), "You have already purchased Character5", Toast.LENGTH_LONG).show();
 //                        }
